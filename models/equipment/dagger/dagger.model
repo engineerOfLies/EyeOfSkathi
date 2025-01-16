@@ -1,0 +1,8 @@
+{
+    "model":
+    {
+        "obj":"models/equipment/dagger/dagger.obj",
+        "texture":"models/equipment/dagger/dagger_skin.png",
+        "materialFile":"models/equipment/equipment.material"
+    }
+}

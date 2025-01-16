@@ -1,0 +1,8 @@
+{
+    "model":
+    {
+        "obj":"models/village/skathian_house.obj",
+        "texture":"models/village/hut_skin.png",
+        "materialFile": "models/village/village_base.material"
+    }
+}

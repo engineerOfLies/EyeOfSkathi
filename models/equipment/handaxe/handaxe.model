@@ -1,0 +1,8 @@
+{
+    "model":
+    {
+        "obj":"models/equipment/handaxe/handaxe.obj",
+        "texture":"models/equipment/handaxe/axeskin.png",
+        "materialFile":"models/equipment/equipment.material"
+    }
+}

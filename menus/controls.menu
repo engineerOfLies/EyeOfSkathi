@@ -1,0 +1,502 @@
+{
+    "window":
+    {
+        "name":"controls",
+        "color":[255,255,255,230],
+        "dimensions" : [0,0.05,0.675,0.8],
+        "justify" : "center",
+        "elements":
+        [
+            {
+                "type": "button",
+                "name" : "item_down",
+                "hotkey":"item_down"
+            },
+            {
+                "type": "button",
+                "name" : "item_up",
+                "hotkey":"item_up"
+            },
+            {
+                "type": "button",
+                "name" : "close",
+                "hotkey":"close"
+            },
+            {
+                "type": "label",
+                "name":"name",
+                "bounds": [0,0,1,40],
+                "text":"Controls",
+                "justify" : "center",
+                "align" : "middle",
+                "style":"H2"
+            },
+            {
+                "type": "actor",
+                "bounds": [0,41,0.95,2],
+                "color": [255,255,255,255],
+                "justify" : "center",
+                "align" : "middle",
+                "scaleToFit": true,
+                "image": "images/ui/border.png"
+            },
+            {
+                "type": "list",
+                "bounds": [10,45,0.25,1],
+                "name":"item_list",
+                "style": "vertical",
+                "item_size" : [1,24],
+                "packed":true,
+                "elements":
+                [
+                    {
+                        "type": "button",
+                        "name":"ok_control",
+                        "id" : 1,
+                        "canHasFocus":true,
+                        "sound":"confirm",
+                        "color": [0,192,192,255],
+                        "highColor": [0,255,255,255],
+                        "pressColor": [0,128,128,255],
+                        "bounds": [0,0,1,32],
+                        "label":
+                        {
+                            "type": "label",
+                            "bounds": [0,0,1,32],
+                            "text":"OK",
+                            "justify" : "left",
+                            "align" : "middle",
+                            "style":"H5"
+                        }
+                    },
+                    {
+                        "type": "button",
+                        "name":"cancel_control",
+                        "id" : 2,
+                        "canHasFocus":true,
+                        "sound":"confirm",
+                        "color": [0,192,192,255],
+                        "highColor": [0,255,255,255],
+                        "pressColor": [0,128,128,255],
+                        "bounds": [0,0,1,32],
+                        "label":
+                        {
+                            "type": "label",
+                            "bounds": [0,0,1,32],
+                            "text":"Cancel",
+                            "justify" : "left",
+                            "align" : "middle",
+                            "style":"H5"
+                        }
+                    },
+                    {
+                        "type": "button",
+                        "name":"walk_forward",
+                        "id" : 3,
+                        "canHasFocus":true,
+                        "sound":"confirm",
+                        "color": [0,192,192,255],
+                        "highColor": [0,255,255,255],
+                        "pressColor": [0,128,128,255],
+                        "bounds": [0,0,1,32],
+                        "label":
+                        {
+                            "type": "label",
+                            "bounds": [0,0,1,32],
+                            "text":"Walk Forward",
+                            "justify" : "left",
+                            "align" : "middle",
+                            "style":"H5"
+                        }
+                    },
+                    {
+                        "type": "button",
+                        "name":"walk_back",
+                        "id" : 4,
+                        "canHasFocus":true,
+                        "sound":"confirm",
+                        "color": [0,192,192,255],
+                        "highColor": [0,255,255,255],
+                        "pressColor": [0,128,128,255],
+                        "bounds": [0,0,1,32],
+                        "label":
+                        {
+                            "type": "label",
+                            "bounds": [0,0,1,32],
+                            "text":"Walk Back",
+                            "justify" : "left",
+                            "align" : "middle",
+                            "style":"H5"
+                        }
+                    },
+                    {
+                        "type": "button",
+                        "name":"step_left",
+                        "id" : 5,
+                        "canHasFocus":true,
+                        "sound":"confirm",
+                        "color": [0,192,192,255],
+                        "highColor": [0,255,255,255],
+                        "pressColor": [0,128,128,255],
+                        "bounds": [0,0,1,32],
+                        "label":
+                        {
+                            "type": "label",
+                            "bounds": [0,0,1,32],
+                            "text":"Step Left",
+                            "justify" : "left",
+                            "align" : "middle",
+                            "style":"H5"
+                        }
+                    },
+                    {
+                        "type": "button",
+                        "name":"step_right",
+                        "id" : 6,
+                        "canHasFocus":true,
+                        "sound":"confirm",
+                        "color": [0,192,192,255],
+                        "highColor": [0,255,255,255],
+                        "pressColor": [0,128,128,255],
+                        "bounds": [0,0,1,32],
+                        "label":
+                        {
+                            "type": "label",
+                            "bounds": [0,0,1,32],
+                            "text":"Step Right",
+                            "justify" : "left",
+                            "align" : "middle",
+                            "style":"H5"
+                        }
+                    },
+                    {
+                        "type": "button",
+                        "name":"turn_left",
+                        "id" : 7,
+                        "canHasFocus":true,
+                        "sound":"confirm",
+                        "color": [0,192,192,255],
+                        "highColor": [0,255,255,255],
+                        "pressColor": [0,128,128,255],
+                        "bounds": [0,0,1,32],
+                        "label":
+                        {
+                            "type": "label",
+                            "bounds": [0,0,1,32],
+                            "text":"Turn Left",
+                            "justify" : "left",
+                            "align" : "middle",
+                            "style":"H5"
+                        }
+                    },
+                    {
+                        "type": "button",
+                        "name":"turn_right",
+                        "id" : 7,
+                        "canHasFocus":true,
+                        "sound":"confirm",
+                        "color": [0,192,192,255],
+                        "highColor": [0,255,255,255],
+                        "pressColor": [0,128,128,255],
+                        "bounds": [0,0,1,32],
+                        "label":
+                        {
+                            "type": "label",
+                            "bounds": [0,0,1,32],
+                            "text":"Turn Right",
+                            "justify" : "left",
+                            "align" : "middle",
+                            "style":"H5"
+                        }
+                    },
+                    {
+                        "type": "button",
+                        "name":"options_menu",
+                        "id" : 8,
+                        "canHasFocus":true,
+                        "sound":"confirm",
+                        "color": [0,192,192,255],
+                        "highColor": [0,255,255,255],
+                        "pressColor": [0,128,128,255],
+                        "bounds": [0,0,1,32],
+                        "label":
+                        {
+                            "type": "label",
+                            "bounds": [0,0,1,32],
+                            "text":"Options Menu",
+                            "justify" : "left",
+                            "align" : "middle",
+                            "style":"H5"
+                        }
+                    },
+                    {
+                        "type": "button",
+                        "name":"interact",
+                        "id" : 9,
+                        "canHasFocus":true,
+                        "sound":"confirm",
+                        "color": [0,192,192,255],
+                        "highColor": [0,255,255,255],
+                        "pressColor": [0,128,128,255],
+                        "bounds": [0,0,1,32],
+                        "label":
+                        {
+                            "type": "label",
+                            "bounds": [0,0,1,32],
+                            "text":"Talk / Open / Use",
+                            "justify" : "left",
+                            "align" : "middle",
+                            "style":"H5"
+                        }
+                    },
+                    {
+                        "type": "button",
+                        "name":"top_action",
+                        "id" : 10,
+                        "canHasFocus":true,
+                        "sound":"confirm",
+                        "color": [0,192,192,255],
+                        "highColor": [0,255,255,255],
+                        "pressColor": [0,128,128,255],
+                        "bounds": [0,0,1,32],
+                        "label":
+                        {
+                            "type": "label",
+                            "bounds": [0,0,1,32],
+                            "text":"Top Action",
+                            "justify" : "left",
+                            "align" : "middle",
+                            "style":"H5"
+                        }
+                    },
+                    {
+                        "type": "button",
+                        "name":"bottom_action",
+                        "id" : 11,
+                        "canHasFocus":true,
+                        "sound":"confirm",
+                        "color": [0,192,192,255],
+                        "highColor": [0,255,255,255],
+                        "pressColor": [0,128,128,255],
+                        "bounds": [0,0,1,32],
+                        "label":
+                        {
+                            "type": "label",
+                            "bounds": [0,0,1,32],
+                            "text":"Bottom Action",
+                            "justify" : "left",
+                            "align" : "middle",
+                            "style":"H5"
+                        }
+                    },
+                    {
+                        "type": "button",
+                        "name":"left_action",
+                        "id" : 12,
+                        "canHasFocus":true,
+                        "sound":"confirm",
+                        "color": [0,192,192,255],
+                        "highColor": [0,255,255,255],
+                        "pressColor": [0,128,128,255],
+                        "bounds": [0,0,1,32],
+                        "label":
+                        {
+                            "type": "label",
+                            "bounds": [0,0,1,32],
+                            "text":"Left Action",
+                            "justify" : "left",
+                            "align" : "middle",
+                            "style":"H5"
+                        }
+                    },
+                    {
+                        "type": "button",
+                        "name":"right_action",
+                        "id" : 13,
+                        "canHasFocus":true,
+                        "sound":"confirm",
+                        "color": [0,192,192,255],
+                        "highColor": [0,255,255,255],
+                        "pressColor": [0,128,128,255],
+                        "bounds": [0,0,1,32],
+                        "label":
+                        {
+                            "type": "label",
+                            "bounds": [0,0,1,32],
+                            "text":"Right Action",
+                            "justify" : "left",
+                            "align" : "middle",
+                            "style":"H5"
+                        }
+                    },
+                    {
+                        "type": "button",
+                        "name":"flash_light",
+                        "id" : 14,
+                        "canHasFocus":true,
+                        "sound":"confirm",
+                        "color": [0,192,192,255],
+                        "highColor": [0,255,255,255],
+                        "pressColor": [0,128,128,255],
+                        "bounds": [0,0,1,32],
+                        "label":
+                        {
+                            "type": "label",
+                            "bounds": [0,0,1,32],
+                            "text":"Toggle Flashlight",
+                            "justify" : "left",
+                            "align" : "middle",
+                            "style":"H5"
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "list",
+                "bounds": [0.25,45,0.25,1],
+                "name":"item_values_list",
+                "style": "vertical",
+                "item_size" : [1,24],
+                "packed":true,
+                "elements":
+                [
+                    {
+                        "type": "label",
+                        "bounds": [0,0,1,32],
+                        "name":"ok_button",
+                        "text":"K",
+                        "justify" : "left",
+                        "align" : "middle",
+                        "style":"H5"
+                    },
+                    {
+                        "type": "label",
+                        "bounds": [0,0,1,32],
+                        "name":"cancel_button",
+                        "text":"L",
+                        "justify" : "left",
+                        "align" : "middle",
+                        "style":"H5"
+                    },
+                    {
+                        "type": "label",
+                        "bounds": [0,0,1,32],
+                        "name":"forward_button",
+                        "text":"W",
+                        "justify" : "left",
+                        "align" : "middle",
+                        "style":"H5"
+                    },
+                    {
+                        "type": "label",
+                        "bounds": [0,0,1,32],
+                        "name":"back_button",
+                        "text":"S",
+                        "justify" : "left",
+                        "align" : "middle",
+                        "style":"H5"
+                    },
+                    {
+                        "type": "label",
+                        "bounds": [0,0,1,32],
+                        "name":"step_left_button",
+                        "text":"A",
+                        "justify" : "left",
+                        "align" : "middle",
+                        "style":"H5"
+                    },
+                    {
+                        "type": "label",
+                        "bounds": [0,0,1,32],
+                        "name":"step_right_button",
+                        "text":"D",
+                        "justify" : "left",
+                        "align" : "middle",
+                        "style":"H5"
+                    },
+                    {
+                        "type": "label",
+                        "bounds": [0,0,1,32],
+                        "name":"turn_left_button",
+                        "text":"Q",
+                        "justify" : "left",
+                        "align" : "middle",
+                        "style":"H5"
+                    },
+                    {
+                        "type": "label",
+                        "bounds": [0,0,1,32],
+                        "name":"turn_right_button",
+                        "text":"E",
+                        "justify" : "left",
+                        "align" : "middle",
+                        "style":"H5"
+                    },
+                    {
+                        "type": "label",
+                        "bounds": [0,0,1,32],
+                        "name":"options_button",
+                        "text":"F1",
+                        "justify" : "left",
+                        "align" : "middle",
+                        "style":"H5"
+                    },
+                    {
+                        "type": "label",
+                        "bounds": [0,0,1,32],
+                        "name":"interact_button",
+                        "text":"U",
+                        "justify" : "left",
+                        "align" : "middle",
+                        "style":"H5"
+                    },
+                    {
+                        "type": "label",
+                        "bounds": [0,0,1,32],
+                        "name":"top_action_button",
+                        "text":"I",
+                        "justify" : "left",
+                        "align" : "middle",
+                        "style":"H5"
+                    },
+                    {
+                        "type": "label",
+                        "bounds": [0,0,1,32],
+                        "name":"bottom_action_button",
+                        "text":"K",
+                        "justify" : "left",
+                        "align" : "middle",
+                        "style":"H5"
+                    },
+                    {
+                        "type": "label",
+                        "bounds": [0,0,1,32],
+                        "name":"left_action_button",
+                        "text":"J",
+                        "justify" : "left",
+                        "align" : "middle",
+                        "style":"H5"
+                    },
+                    {
+                        "type": "label",
+                        "bounds": [0,0,1,32],
+                        "name":"right_action_button",
+                        "text":"L",
+                        "justify" : "left",
+                        "align" : "middle",
+                        "style":"H5"
+                    },
+                    {
+                        "type": "label",
+                        "bounds": [0,0,1,32],
+                        "name":"flash_light_button",
+                        "text":"F",
+                        "justify" : "left",
+                        "align" : "middle",
+                        "style":"H5"
+                    }
+                ]
+            }
+        ]
+    }
+}

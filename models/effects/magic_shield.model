@@ -1,0 +1,8 @@
+{
+    "model":
+    {
+        "obj":"models/effects/magic_shield.obj",
+        "texture":"models/effects/magic_shield_skin.png",
+        "materialFile":"models/projectiles/energy_bolt.material"
+    }
+}

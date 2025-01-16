@@ -1,0 +1,551 @@
+{
+    "actionList":
+    [
+        {
+            "action": "dungeon_idle",
+            "startFrame": 2,
+            "endFrame": 33,
+            "frameRate": 0.5,
+            "type": "loop"
+        },
+        {
+            "action": "left_block",
+            "startFrame": 34,
+            "endFrame": 53,
+            "frameRate": 0.5,
+            "type": "pass"
+        },
+        {
+            "action": "left_block_start",
+            "startFrame": 34,
+            "endFrame": 45,
+            "frameRate": 0.75,
+            "type": "pass"
+        },
+        {
+            "action": "left_block_damage",
+            "startFrame": 44,
+            "endFrame": 46,
+            "frameRate": 0.2,
+            "type": "none"
+        },
+        {
+            "action": "left_block_recover",
+            "startFrame": 46,
+            "endFrame": 53,
+            "frameRate": 0.75,
+            "type": "pass"
+        },
+        {
+            "action": "deflect",
+            "startFrame": 54,
+            "endFrame": 66,
+            "frameRate": 0.5,
+            "type": "pass"
+        },
+        {
+            "action": "right_slash",
+            "startFrame": 66,
+            "endFrame": 84,
+            "frameRate": 0.5,
+            "type": "pass"
+        },
+        {
+            "action": "right_slash_start",
+            "startFrame": 66,
+            "endFrame": 76,
+            "frameRate": 0.5,
+            "type": "pass"
+        },
+        {
+            "action": "right_slash_damage",
+            "startFrame": 76,
+            "endFrame": 76,
+            "frameRate": 0,
+            "type": "none"
+        },
+        {
+            "action": "right_slash_recover",
+            "startFrame": 77,
+            "endFrame": 84,
+            "frameRate": 0.75,
+            "type": "pass"
+        },
+        {
+            "action": "right_stab",
+            "startFrame": 85,
+            "endFrame": 106,
+            "frameRate": 0.6,
+            "type": "pass"
+        },
+        {
+            "action": "right_stab_start",
+            "startFrame": 85,
+            "endFrame": 101,
+            "frameRate": 0.6,
+            "type": "pass"
+        },
+        {
+            "action": "right_stab_damage",
+            "startFrame": 101,
+            "endFrame": 101,
+            "frameRate": 0,
+            "type": "none"
+        },
+        {
+            "action": "right_stab_recover",
+            "startFrame": 102,
+            "endFrame": 106,
+            "frameRate": 0.75,
+            "type": "pass"
+        },
+        {
+            "action": "dodge_left",
+            "startFrame": 107,
+            "endFrame": 119,
+            "frameRate": 0.5,
+            "type": "pass"
+        },
+        {
+            "action": "dodge_right",
+            "startFrame": 120,
+            "endFrame": 133,
+            "frameRate": 0.5,
+            "type": "pass"
+        },
+        {
+            "action": "dodge_right_damage",
+            "startFrame": 125,
+            "endFrame": 127,
+            "frameRate": 0,
+            "type": "none"
+        },
+        {
+            "action": "pain",
+            "startFrame": 134,
+            "endFrame": 140,
+            "frameRate": 0.4,
+            "type": "pass"
+        },
+        {
+            "action": "pain1",
+            "startFrame": 134,
+            "endFrame": 140,
+            "frameRate": 0.4,
+            "type": "pass"
+        },
+        {
+            "action": "pain2",
+            "startFrame": 140,
+            "endFrame": 146,
+            "frameRate": 0.4,
+            "type": "pass"
+        },
+        {
+            "action": "right_hack",
+            "startFrame": 147,
+            "endFrame": 162,
+            "frameRate": 0.4,
+            "type": "pass"
+        },
+        {
+            "action": "right_hack_start",
+            "startFrame": 147,
+            "endFrame": 156,
+            "frameRate": 0.4,
+            "type": "pass"
+        },
+        {
+            "action": "right_hack_damage",
+            "startFrame": 156,
+            "endFrame": 156,
+            "frameRate": 0,
+            "type": "none"
+        },
+        {
+            "action": "right_hack_recover",
+            "startFrame": 157,
+            "endFrame": 162,
+            "frameRate": 0.75,
+            "type": "pass"
+        },
+        {
+            "action": "dungeon_walk",
+            "startFrame": 164,
+            "endFrame": 174,
+            "frameRate": 0.4,
+            "type": "loop"
+        },
+        {
+            "action": "idle",
+            "startFrame": 177,
+            "endFrame": 185,
+            "frameRate": 0.2,
+            "type": "loop"
+        },
+        {
+            "action": "walk",
+            "startFrame": 187,
+            "endFrame": 198,
+            "frameRate": 0.5,
+            "type": "loop"
+        },
+        {
+            "action": "interact",
+            "startFrame": 199,
+            "endFrame": 209,
+            "frameRate": 0.4,
+            "type": "pass"
+        },
+        {
+            "action": "item_use",
+            "startFrame": 209,
+            "endFrame": 218,
+            "frameRate": 0.2,
+            "type": "pass"
+        },
+        {
+            "action": "stand_waiting0",
+            "startFrame": 219,
+            "endFrame": 238,
+            "frameRate": 0.1,
+            "type": "loop"
+        },
+        {
+            "action": "stand_waiting1",
+            "startFrame": 240,
+            "endFrame": 250,
+            "frameRate": 0.1,
+            "type": "loop"
+        },
+        {
+            "action": "die",
+            "startFrame": 251,
+            "endFrame": 263,
+            "frameRate": 0.5,
+            "type": "pass"
+        },
+        {
+            "action": "dead",
+            "startFrame": 263,
+            "endFrame": 263,
+            "frameRate": 0,
+            "type": "none"
+        },
+        {
+            "action": "right_shoot",
+            "startFrame": 264,
+            "endFrame": 279,
+            "frameRate": 0.4,
+            "type": "pass"
+        },
+        {
+            "action": "right_shoot_start",
+            "startFrame": 264,
+            "endFrame": 269,
+            "frameRate": 0.4,
+            "type": "pass"
+        },
+        {
+            "action": "right_shoot_damage",
+            "startFrame": 270,
+            "endFrame": 270,
+            "frameRate": 0,
+            "type": "none"
+        },
+        {
+            "action": "right_shoot_recover",
+            "startFrame": 270,
+            "endFrame": 279,
+            "frameRate": 0.75,
+            "type": "pass"
+        },
+        {
+            "action": "left_cast",
+            "startFrame": 279,
+            "endFrame": 299,
+            "frameRate": 0.4,
+            "type": "pass"
+        },
+        {
+            "action": "left_cast_start",
+            "startFrame": 279,
+            "endFrame": 289,
+            "frameRate": 0.4,
+            "type": "pass"
+        },
+        {
+            "action": "left_cast_damage",
+            "startFrame": 289,
+            "endFrame": 289,
+            "frameRate": 0,
+            "type": "none"
+        },
+        {
+            "action": "left_cast_recover",
+            "startFrame": 290,
+            "endFrame": 299,
+            "frameRate": 0.75,
+            "type": "pass"
+        },
+        {
+            "action": "2h_idle",
+            "startFrame": 300,
+            "endFrame": 319,
+            "frameRate": 0.2,
+            "type": "loop"
+        },
+        {
+            "action": "2h_block",
+            "startFrame": 320,
+            "endFrame": 335,
+            "frameRate": 0.75,
+            "type": "pass"
+        },
+        {
+            "action": "2h_block_start",
+            "startFrame": 320,
+            "endFrame": 325,
+            "frameRate": 0.75,
+            "type": "pass"
+        },
+        {
+            "action": "2h_block_damage",
+            "startFrame": 325,
+            "endFrame": 327,
+            "frameRate": 0.2,
+            "type": "pass"
+        },
+        {
+            "action": "2h_block_recover",
+            "startFrame": 328,
+            "endFrame": 335,
+            "frameRate": 0.75,
+            "type": "pass"
+        },
+        {
+            "action": "2h_hack",
+            "startFrame": 335,
+            "endFrame": 349,
+            "frameRate": 0.4,
+            "type": "pass"
+        },
+        {
+            "action": "2h_hack_start",
+            "startFrame": 335,
+            "endFrame": 344,
+            "frameRate": 0.4,
+            "type": "pass"
+        },
+        {
+            "action": "2h_hack_damage",
+            "startFrame": 344,
+            "endFrame": 344,
+            "frameRate": 0,
+            "type": "none"
+        },
+        {
+            "action": "2h_hack_recover",
+            "startFrame": 344,
+            "endFrame": 349,
+            "frameRate": 0.75,
+            "type": "pass"
+        },
+        {
+            "action": "right_cast",
+            "startFrame": 350,
+            "endFrame": 370,
+            "frameRate": 0.4,
+            "type": "pass"
+        },
+        {
+            "action": "right_cast_start",
+            "startFrame": 350,
+            "endFrame": 360,
+            "frameRate": 0,
+            "type": "none"
+        },
+        {
+            "action": "right_cast_damage",
+            "startFrame": 360,
+            "endFrame": 360,
+            "frameRate": 0,
+            "type": "none"
+        },
+        {
+            "action": "right_cast_recover",
+            "startFrame": 360,
+            "endFrame": 370,
+            "frameRate": 0.75,
+            "type": "pass"
+        },
+        {
+            "action": "right_block",
+            "startFrame": 371,
+            "endFrame": 390,
+            "frameRate": 0.5,
+            "type": "pass"
+        },
+        {
+            "action": "right_block_start",
+            "startFrame": 371,
+            "endFrame": 381,
+            "frameRate": 0,
+            "type": "none"
+        },
+        {
+            "action": "right_block_damage",
+            "startFrame": 382,
+            "endFrame": 384,
+            "frameRate": 0,
+            "type": "none"
+        },
+        {
+            "action": "right_block_recover",
+            "startFrame": 384,
+            "endFrame": 390,
+            "frameRate": 0.75,
+            "type": "pass"
+        },
+        {
+            "action": "left_slash",
+            "startFrame": 390,
+            "endFrame": 407,
+            "frameRate": 0.5,
+            "type": "pass"
+        },
+        {
+            "action": "left_slash_start",
+            "startFrame": 390,
+            "endFrame": 398,
+            "frameRate": 0.5,
+            "type": "pass"
+        },
+        {
+            "action": "left_slash_damage",
+            "startFrame": 399,
+            "endFrame": 399,
+            "frameRate": 0,
+            "type": "none"
+        },
+        {
+            "action": "left_slash_recover",
+            "startFrame": 400,
+            "endFrame": 407,
+            "frameRate": 0.75,
+            "type": "pass"
+        },
+        {
+            "action": "left_stab",
+            "startFrame": 408,
+            "endFrame": 429,
+            "frameRate": 0.6,
+            "type": "pass"
+        },
+        {
+            "action": "left_stab_start",
+            "startFrame": 408,
+            "endFrame": 423,
+            "frameRate": 0.6,
+            "type": "pass"
+        },
+        {
+            "action": "left_stab_damage",
+            "startFrame": 423,
+            "endFrame": 423,
+            "frameRate": 0,
+            "type": "none"
+        },
+        {
+            "action": "left_stab_recover",
+            "startFrame": 424,
+            "endFrame": 429,
+            "frameRate": 0.75,
+            "type": "pass"
+        },
+        {
+            "action": "left_hack",
+            "startFrame": 430,
+            "endFrame": 445,
+            "frameRate": 0.4,
+            "type": "pass"
+        },
+        {
+            "action": "left_hack_start",
+            "startFrame": 430,
+            "endFrame": 437,
+            "frameRate": 0.4,
+            "type": "pass"
+        },
+        {
+            "action": "left_hack_damage",
+            "startFrame": 438,
+            "endFrame": 438,
+            "frameRate": 0,
+            "type": "none"
+        },
+        {
+            "action": "left_hack_recover",
+            "startFrame": 439,
+            "endFrame": 445,
+            "frameRate": 0.75,
+            "type": "pass"
+        },
+        {
+            "action": "left_shoot",
+            "startFrame": 446,
+            "endFrame": 461,
+            "frameRate": 0.4,
+            "type": "pass"
+        },
+        {
+            "action": "left_shoot_start",
+            "startFrame": 446,
+            "endFrame": 451,
+            "frameRate": 0.4,
+            "type": "pass"
+        },
+        {
+            "action": "left_shoot_damage",
+            "startFrame": 452,
+            "endFrame": 452,
+            "frameRate": 0,
+            "type": "none"
+        },
+        {
+            "action": "left_shoot_recover",
+            "startFrame": 453,
+            "endFrame": 461,
+            "frameRate": 0.75,
+            "type": "pass"
+        },
+        {
+            "action": "stand_waiting2",
+            "startFrame": 462,
+            "endFrame": 473,
+            "frameRate": 0.1,
+            "type": "loop"
+        },
+        {
+            "action": "stand_waiting3",
+            "startFrame": 474,
+            "endFrame": 484,
+            "frameRate": 0.1,
+            "type": "loop"
+        },
+        {
+            "action": "sitting1",
+            "startFrame": 485,
+            "endFrame": 495,
+            "frameRate": 0.05,
+            "type": "loop"
+        },
+        {
+            "action": "sitting2",
+            "startFrame": 496,
+            "endFrame": 507,
+            "frameRate": 0.05,
+            "type": "loop"
+        }
+    ]
+}

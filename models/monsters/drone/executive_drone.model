@@ -1,0 +1,25 @@
+{
+    "model":
+    {
+        "gltf":"models/monsters/drone/executive_drone.gltf",
+        "texture":"models/monsters/drone/executive_drone.png",
+        "armature":"models/monsters/drone/executive_drone.gltf",
+        "actionListFile":"models/monsters/drone/drone_actions.anim",
+        "material":
+        {
+            "name":"drone_base",
+            "ambient":[128,128,128,255],
+            "diffuse":[255,255,255,255],
+            "specular":[128,128,128,64],
+            "transparency":1,
+            "shininess":128
+        },
+        "matrix":
+        {
+            "#comment":"this is a delta on what is loaded from file",
+            "position":[0,0,0],
+            "rotation":[0,0,180],
+            "scale":[1,1,1]
+        }
+    }
+}

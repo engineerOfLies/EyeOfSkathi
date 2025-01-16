@@ -1,0 +1,16 @@
+{
+    "model":
+    {
+        "obj":"models/world/terrain.obj",
+        "texture":"models/world/terrain.png",
+        "material":
+        {
+            "name":"world_base",
+            "ambient":[32,32,32,255],
+            "diffuse":[255,255,255,255],
+            "specular":[8,8,8,8],
+            "transparency":1,
+            "shininess":2
+        }
+    }
+}

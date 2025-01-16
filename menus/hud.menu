@@ -1,0 +1,218 @@
+{
+    "window":
+    {
+        "name":"hud",
+        "dimensions" : [0,0,1,100],
+        "align" : "bottom",
+        "elements":
+        [
+            {
+                "type": "button",
+                "name" : "options",
+                "hotkey":"options"
+            },
+            {
+                "type": "button",
+                "name" : "level_save",
+                "hotkey":"level_save"
+            },
+            {
+                "type": "button",
+                "name" : "print_stats",
+                "hotkey":"print_stats"
+            },
+            {
+                "type": "button",
+                "name" : "hide_hud",
+                "hotkey":"hide_hud"
+            },
+            {
+                "type": "button",
+                "name" : "state_dump",
+                "hotkey" :"state_dump"
+            },
+            {
+                "type": "list",
+                "name":"statusbarsback",
+                "bounds": [1,1,200,1],
+                "style": "vertical",
+                "item_size" : [100,16],
+                "elements":
+                [
+                    {
+                        "type": "label",
+                        "name": "health_s",
+                        "color":[0,0,0,255],
+                        "bounds": [10,0,100,20],
+                        "text":"Health",
+                        "justify" : "left",
+                        "align" : "middle",
+                        "style":"H6"
+                    },
+                    {
+                        "type": "actor",
+                        "bounds": [10,0,90,1],
+                        "color": [32,32,32,255],
+                        "scale": [90,0.5],
+                        "image": "images/ui/gradient.png"
+                    },
+                    {
+                        "type": "label",
+                        "name": "stamina_s",
+                        "color":[0,0,0,255],
+                        "bounds": [10,0,100,20],
+                        "text":"Stamina",
+                        "justify" : "left",
+                        "align" : "middle",
+                        "style":"H6"
+                    },
+                    {
+                        "type": "actor",
+                        "bounds": [10,0,90,1],
+                        "color": [32,32,32,255],
+                        "scale": [90,0.5],
+                        "image": "images/ui/gradient.png"
+                    },
+                    {
+                        "type": "label",
+                        "name": "mana_s",
+                        "color": [0,0,0,255],
+                        "bounds": [10,0,100,20],
+                        "text":"Mana",
+                        "justify" : "left",
+                        "align" : "middle",
+                        "style":"H6"
+                    },
+                    {
+                        "type": "actor",
+                        "bounds": [10,0,90,1],
+                        "color": [32,32,32,255],
+                        "scale": [90,0.5],
+                        "image": "images/ui/gradient.png"
+                    }
+                ]
+            },
+            {
+                "type": "list",
+                "name":"statusbars",
+                "bounds": [0,0,200,1],
+                "style": "vertical",
+                "item_size" : [100,16],
+                "elements":
+                [
+                    {
+                        "type": "label",
+                        "name": "health",
+                        "bounds": [10,0,100,20],
+                        "text":"Health",
+                        "justify" : "left",
+                        "align" : "middle",
+                        "style":"H6"
+                    },
+                    {
+                        "type": "actor",
+                        "name": "healthbar",
+                        "bounds": [10,0,90,1],
+                        "color": [255,0,0,255],
+                        "scale": [90,0.5],
+                        "image": "images/ui/gradient.png"
+                    },
+                    {
+                        "type": "label",
+                        "name": "stamina",
+                        "bounds": [10,0,100,20],
+                        "text":"Stamina",
+                        "justify" : "left",
+                        "align" : "middle",
+                        "style":"H6"
+                    },
+                    {
+                        "type": "actor",
+                        "name": "staminabar",
+                        "bounds": [10,0,90,1],
+                        "color": [0,255,0,255],
+                        "scale": [90,0.5],
+                        "image": "images/ui/gradient.png"
+                    },
+                    {
+                        "type": "label",
+                        "name": "mana",
+                        "bounds": [10,0,100,20],
+                        "text":"Mana",
+                        "justify" : "left",
+                        "align" : "middle",
+                        "style":"H6"
+                    },
+                    {
+                        "type": "actor",
+                        "name": "manabar",
+                        "bounds": [10,0,90,1],
+                        "color": [0,0,255,255],
+                        "scale": [90,0.5],
+                        "image": "images/ui/gradient.png"
+                    }
+                ]
+            },
+            {
+                "type": "button",
+                "name":"item",
+                "bounds": [-126,1,48,48],
+                "hotkey":"item",
+                "justify":"center",
+                "actor" :
+                {
+                    "type": "actor",
+                    "bounds": [0,0,1,1],
+                    "justify":"center",
+                    "image":"images/ui/item_frame.png",
+                    "scale":[0.75,0.75]
+                }
+            },
+            {
+                "type": "button",
+                "name":"dodge",
+                "bounds": [-126,49,48,48],
+                "hotkey":"dodge",
+                "justify":"center",
+                "actor" :
+                {
+                    "type": "actor",
+                    "bounds": [0,0,1,1],
+                    "justify":"center",
+                    "image":"images/ui/item_frame.png",
+                    "scale":[0.75,0.75]
+                }
+            },
+            {
+                "type": "button",
+                "name":"leftAction",
+                "bounds": [-182,25,48,48],
+                "hotkey":"leftAction",
+                "justify":"center",
+                "actor" :
+                {
+                    "type": "actor",
+                    "bounds": [0,0,1,1],
+                    "justify":"center",
+                    "image":"images/ui/item_frame.png",
+                    "scale":[0.75,0.75]
+                }
+            },
+            {
+                "type": "button",
+                "name":"rightAction",
+                "bounds": [-70,25,48,48],
+                "hotkey":"rightAction",
+                "justify":"center",
+                "actor" :
+                {
+                    "type": "actor",
+                    "bounds": [0,0,1,1],
+                    "justify":"center",
+                    "image":"images/ui/item_frame.png",
+                    "scale":[0.75,0.75]
+                }
+            }
+        ]
+    }
+}

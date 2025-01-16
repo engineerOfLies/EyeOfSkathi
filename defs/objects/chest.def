@@ -1,0 +1,22 @@
+{
+    "name":"chest",
+    "model":"models/objects/chest.model",
+    "color":[255,255,255,255],
+    "bounds":
+    {   
+        "box":
+        {
+            "m":[-0.5,-0.5,0],
+            "s":[1,1,1]
+        }
+    },
+    "sounds":
+    [
+        {
+            "name":"open",
+            "file":"sounds/effects/chest_open.wav"
+        }
+    ],
+    "solid":1,
+    "#comment":"above is standard entity data, below is custom to this entity"
+}

@@ -1,0 +1,45 @@
+{
+    "introduction":
+    [
+        {
+            "title":"The Munnin Colony Ship",
+            "background":"images/story/colony_intro.png",
+            "dialog":"The Solarian colony ship, Munnin.  The name means memory.  It was part of the Solarian Government's push to establish humans outside of the Sol system.  It was built to land a permanent colony on an unhabited, but viable planet where it would slowly terraform the planet into a world where humans and similar species could prosper."
+        },
+        {
+            "title":"Lost in Transit",
+            "background":"images/story/colony_ship_transit.png",
+            "dialog":"Unfortunately, while in fourth space transit, it reported an emergency.  Afterwards, all contact with the ship was lost.  An interstellar search was launched to find the missing colony and 1000 lives on board."
+        },
+        {
+            "title":"The Search",
+            "background":"images/story/stars.png",
+            "dialog":"In spite of the great interstellar search effort, no trace of the ship was found.  A bounty was issued to anyone who could find the lost ship.  Many have tried, but none have been successful."
+        },
+        {
+            "title":"Your Search",
+            "background":"images/story/scouting.png",
+            "dialog":"You, like many before you, searched as well.  You found an original recording of the last emergency message sent out by the colony ship.  It was highly distorted.  Most thought it was due to signal degridation, but you had a hunch it was the result of a very specific type of solar magnetic inteference."
+        },
+        {
+            "title":"The Skathi System",
+            "background":"images/story/planet_skathi.png",
+            "dialog":"The Eye of Skathi is a Magnetar.  A neutron star with an extremely powerful magnetic field.  The type of which would explain the magnetic distortion found in the last signal of the Munnin colony ship.  As luck would have it, the fourth planet in the system has an inhabitable planet."
+        },
+        {
+            "title":"Skathi IV",
+            "background":"images/story/player_arrival.png",
+            "dialog":"As you approach the planet, your ship sensors pick up a signal.  It's an SOS from the Munnin Colony!  This is it, your search paid off!  You signal the colony below and let them that their rescue is finally happening after months of isolation."
+        },
+        {
+            "title":"An Attack",
+            "background":"images/story/player_attacked.png",
+            "dialog":"Before you can engage your FTL drive, your ship is fired uppon from somewhere on the planet surface.  Your engines are hit before you can do anything and your ship begins to fall to the planet surface below."
+        },
+        {
+            "title":"Impact",
+            "background":"images/story/player_impact.png",
+            "dialog":"Your safegaurds save your life as you ship makes impact with the planet surface.  You blackout as the ship's fire supression systems fail..."
+        }
+    ]
+}

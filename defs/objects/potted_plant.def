@@ -1,0 +1,13 @@
+{
+    "name":"potted_plant1",
+    "model":"models/objects/potted_plant.model",
+    "bounds":
+    {   
+        "box":
+        {
+            "m":[-0.5,-0.5,0],
+            "s":[1,1,1]
+        }
+    },
+    "solid":1
+}

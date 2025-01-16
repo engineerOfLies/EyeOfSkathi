@@ -1,0 +1,16 @@
+{
+    "model":
+    {
+        "obj":"models/objects/exit_sign.obj",
+        "texture":"models/objects/exit_sign.png",
+        "material":
+        {
+            "name":"object_base",
+            "ambient":[255,255,255,255],
+            "diffuse":[255,255,255,255],
+            "specular":[8,8,8,8],
+            "transparency":1,
+            "shininess":5
+        }
+    }
+}

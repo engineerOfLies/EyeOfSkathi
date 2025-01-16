@@ -1,0 +1,23 @@
+{
+    "model":
+    {
+        "obj":"models/town/house.obj",
+        "texture":"models/town/house_skin.png",
+        "matrix":
+        {
+            "#comment":"this is a delta on what is loaded from file",
+            "position":[0,0,0],
+            "rotation":[0,0,180],
+            "scale":[1,1,1]
+        },
+        "material":
+        {
+            "name":"facility_base",
+            "ambient":[64,64,64,255],
+            "diffuse":[100,100,255,255],
+            "specular":[8,8,8,8],
+            "transparency":1,
+            "shininess":2
+        }
+    }
+}

@@ -1,0 +1,66 @@
+{
+    "name":"Western Pass",
+    "seed":9,
+    "tileSet":"defs/tiles/tileset.def",
+    "wallLights":"wall_light",
+    "doorEnts":"defs/objects/door.def",
+    "music":"sounds/bgm/dungeon3.wav",
+    "levels":
+    [
+        {
+            "name": "level_1",
+            "prefab": 1,
+            "music": "sounds/bgm/dungeon3.wav",
+            "wallLights": "wall_light",
+            "doorEnts": "defs/objects/door.def",
+            "color": [
+                160,
+                200,
+                160,
+                255
+            ],
+            "exits": [
+                {
+                    "type": 4,
+                    "id": 0,
+                    "roomId": 4,
+                    "location": [
+                        17,
+                        2
+                    ],
+                    "destination": "world",
+                    "toExit": 5
+                },
+                {
+                    "type": 4,
+                    "id": 1,
+                    "roomId": 1,
+                    "location": [
+                        7,
+                        12
+                    ],
+                    "destination": "world",
+                    "toExit": 6
+                }
+            ],
+            "updateRate": 10000,
+            "wandering": {
+                "name": "monster_scorpion",
+                "limit": 5,
+            },
+            "spawns":[{"entity":"wall_light","location":[7.000000,4.000000,0.000000],"rotation":180.000000},{"entity":"wall_light","location":[11.000000,8.000000,0.000000],"rotation":-90.000000},{"entity":"wall_light","location":[8.000000,12.000000,0.000000],"rotation":0.000000},{"entity":"wall_light","location":[3.000000,8.000000,0.000000],"rotation":90.000000},{"entity":"wall_light","location":[15.000000,6.000000,0.000000],"rotation":180.000000},{"entity":"wall_light","location":[17.000000,8.000000,0.000000],"rotation":-90.000000},{"entity":"wall_light","location":[15.000000,10.000000,0.000000],"rotation":0.000000},{"entity":"wall_light","location":[12.000000,8.000000,0.000000],"rotation":90.000000},{"entity":"wall_light","location":[22.000000,6.000000,0.000000],"rotation":-90.000000},{"entity":"wall_light","location":[22.000000,8.000000,0.000000],"rotation":-90.000000},{"entity":"wall_light","location":[20.000000,10.000000,0.000000],"rotation":0.000000},{"entity":"wall_light","location":[19.000000,10.000000,0.000000],"rotation":0.000000},{"entity":"wall_light","location":[20.000000,0.000000,0.000000],"rotation":180.000000},{"entity":"wall_light","location":[23.000000,2.000000,0.000000],"rotation":-90.000000},{"entity":"wall_light","location":[22.000000,4.000000,0.000000],"rotation":0.000000},{"entity":"wall_light","location":[17.000000,1.000000,0.000000],"rotation":90.000000},
+            {"entity":"door","location":[11.000000,9.000000,0.000000],"rotation":90.000000,"args":{"color":[160,200,160,255],"state":0}},
+            {"entity":"door","location":[17.000000,9.000000,0.000000],"rotation":90.000000,"args":{"color":[160,200,160,255],"state":0}},
+            {
+                "entity":"door",
+                "location":[21.000000,4.000000,0.000000],
+                "rotation":180.000000,
+                "args":
+                {
+                    "color":[160,200,160,255],
+                    "locked":1,
+                    "keyItem":"western_pass_key"
+                }
+            }],
+            "tilemap":{"size":[30.000000,15.000000],"offset":[0.000000,0.000000],"numTiles":450,"tileSetFile":"defs/tiles/tileset.def","tiles":[[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,2,2,2,2,2,2,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,1,1,1,1,1,2,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4,1,1,1,1,1,2,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,1,1,1,1,1,2,0,0,0,0,0,0],[0,0,0,2,2,2,2,2,2,2,2,2,0,0,0,0,0,2,2,2,2,5,2,2,0,0,0,0,0,0],[0,0,0,2,1,1,1,1,1,1,1,2,0,0,0,0,0,0,0,0,2,1,2,0,0,0,0,0,0,0],[0,0,0,2,1,1,1,1,1,1,1,2,2,2,2,2,2,2,0,0,2,1,2,0,0,0,0,0,0,0],[0,0,0,2,1,1,1,1,1,1,1,2,2,1,1,1,1,2,0,2,2,1,2,0,0,0,0,0,0,0],[0,0,0,2,1,1,1,1,1,1,1,2,2,1,1,1,1,2,2,2,1,1,2,0,0,0,0,0,0,0],[0,0,0,2,1,1,1,1,1,1,1,5,1,1,1,1,1,5,1,1,1,1,2,0,0,0,0,0,0,0],[0,0,0,2,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,0,0,0,0,0,0,0],[0,0,0,2,1,1,1,1,1,1,1,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],[0,0,0,2,2,2,2,4,2,2,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]]},"rooms":[{"id":1,"size":81,"rtype":0,"depth":0,"bounds":[3.000000,4.000000,9.000000,9.000000],"children":1,"parentId":0,"parentDir":0,"parentOverlap":[0.000000,0.000000,0.000000,0.000000],"exits":[]},{"id":2,"size":30,"rtype":0,"depth":1,"bounds":[12.000000,6.000000,6.000000,5.000000],"children":1,"parentId":1,"parentDir":1,"parentOverlap":[0.000000,0.000000,0.000000,0.000000],"exits":[]},{"id":3,"size":30,"rtype":1,"depth":2,"bounds":[18.000000,5.000000,5.000000,6.000000],"children":1,"parentId":2,"parentDir":1,"parentOverlap":[0.000000,0.000000,0.000000,0.000000],"exits":[]},{"id":4,"size":35,"rtype":0,"depth":3,"bounds":[17.000000,0.000000,7.000000,5.000000],"children":0,"parentId":3,"parentDir":0,"parentOverlap":[0.000000,0.000000,0.000000,0.000000],"exits":[]}]}    ]
+}

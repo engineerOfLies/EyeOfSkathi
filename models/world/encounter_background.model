@@ -1,0 +1,21 @@
+{
+    "model":
+    {
+        "obj":"models/world/encounter_background.obj",
+        "texture":"models/world/terrain.png",
+        "matrix":
+        {
+            "position":[10,0,0],
+            "scale":[2,2,2]
+        },
+        "material":
+        {
+            "name":"world_base",
+            "ambient":[32,32,32,255],
+            "diffuse":[255,255,255,255],
+            "specular":[8,8,8,8],
+            "transparency":1,
+            "shininess":2
+        }
+    }
+}

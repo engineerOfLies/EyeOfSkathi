@@ -1,0 +1,16 @@
+{
+    "model":
+    {
+        "obj":"models/world/encounter_tree.obj",
+        "texture":"models/world/forest_skin.png",
+        "material":
+        {
+            "name":"forest_base",
+            "ambient":[16,16,16,255],
+            "diffuse":[255,255,255,255],
+            "specular":[8,8,8,8],
+            "transparency":1,
+            "shininess":2
+        }
+    }
+}

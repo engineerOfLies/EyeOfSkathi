@@ -1,0 +1,266 @@
+{
+    "creation":
+    [
+        {
+            "background":"images/story/wakeup.png",
+            "title":"You are alive",
+            "dialog":"You awaken in a strange bed.  The walls around you are unfamiliar.  Everything is sterile.  You have flashes of how you got here.  You were tracking the lost Colony ship 'Munnin' when your ship was struck with an unknown energy blast from the planet below.  You blacked out shortly after crash landing.  You thought you should be dead."
+        },
+        {
+            "background":"images/story/doctor_intro.png",
+            "title":"Dr. Biggs",
+            "dialog":"Oh good you're awake!  I was worried you wouldn't make it, you had quite the fall there.  I am Dr. Biggs and you are in my Med Lab.  Your ship crash landed not far from our town.  You were pretty banged up when we pulled you from your ship.  It's a miracle you survived. Probably due to your enhancements."
+        },
+        {
+            "background":"images/story/doctor_intro.png",
+            "title":"Dr. Biggs",
+            "dialog":"We were not able to read your identity chip, it seems to have been damaged in the crash.  Please, can you verify some information for us so we can make you a new one?  This will also be a good test to see how your memory is."
+        },
+        {
+            "background":"images/story/doctor_intro.png",
+            "title":"Dr. Biggs",
+            "dialog":"Our scans show you have been augmented with nanites.  That is not available for the average citizen.  Did you serve in the military?",
+            "question":"What's your background?",
+            "topics":
+            [
+                {
+                    "name":"Yes, I used to be in the military.",
+                    "strength":2,
+                    "endurance":2,
+                    "response":"Great to hear, we could use another member to help with security around here.  Tell me, did you have a combat specialty?",
+                    "question":"What's your specialty?",
+                    "topics":
+                    [
+                        {
+                            "name":"As an Officer, I had very extensive swordsmanship training.",
+                            "classname":"Officer",
+                            "strength":1,
+                            "dexterity":1,
+                            "focus":1,
+                            "mind":1,
+                            "giveItems":
+                            [
+                                "lunge_attack",
+                                "2h_sword1",
+                                "light_jacket1",
+                                "light_boots1"
+                            ]
+                        },
+                        {
+                            "name":"I was a Knight in heavy infantry.  Really good with heavy weapons.",
+                            "classname":"Knight",
+                            "strength":2,
+                            "endurance":2,
+                            "giveItems":
+                            [
+                                "axe1",
+                                "shield1",
+                                "heavy_jacket1",
+                                "heavy_boots1"
+                            ]
+                        },
+                        {
+                            "name":"Like most Soldiers, I was a pretty good shot.",
+                            "classname":"Soldier",
+                            "strength":1,
+                            "dexterity":1,
+                            "agility":1,
+                            "focus":1,
+                            "giveItems":
+                            [
+                                "blaster1",
+                                "shield1",
+                                "focus_shot",
+                                "light_jacket1",
+                                "light_boots1"
+                            ]
+                        },
+                        {
+                            "name":"Nah, I barely completed basic training before leaving.",
+                            "classname":"Grunt",
+                            "strength":1,
+                            "dexterity":1,
+                            "agility":1,
+                            "focus":1,
+                            "giveItems":
+                            [
+                                "blaster1",
+                                "dagger1",
+                                "light_jacket1",
+                                "light_boots1"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name":"No, but I have done some contract work.",
+                    "dexterity":2,
+                    "agility":2,
+                    "giveItems":
+                    [
+                        "stealth"
+                    ],
+                    "response":"Oh, maybe we can contract your services while you are here.  There is plenty that needs to be done around here.  What kind of contract work do you do?",
+                    "question":"What's your specialty?",
+                    "topics":
+                    [
+                        {
+                            "name":"I was a Hunter, I was licensed to bring people to justice.",
+                            "classname":"Hunter",
+                            "strength":1,
+                            "dexterity":1,
+                            "agility":1,
+                            "focus":1,
+                            "giveItems":
+                            [
+                                "blaster1",
+                                "sword1",
+                                "leather_vest1",
+                                "leather_boots1",
+                                "quick_shot"
+                            ]
+                        },
+                        {
+                            "name":"I worked in… security.  Helping to test defenses, a bit of a Rogue.",
+                            "classname":"Rogue",
+                            "dexterity":2,
+                            "agility":2,
+                            "giveItems":
+                            [
+                                "dagger1",
+                                "dagger1",
+                                "leather_vest1",
+                                "leather_boots1",
+                                "trap_craft",
+                                "lock_crack"
+                            ]
+                        },
+                        {
+                            "name":"I used to be a spy.  Mostly intelligence gathering.",
+                            "classname":"Spy",
+                            "agility":1,
+                            "dexterity":1,
+                            "mind":1,
+                            "focus":1,
+                            "giveItems":
+                            [
+                                "dagger1",
+                                "blaster1",
+                                "leather_vest1",
+                                "leather_boots1",
+                                "trap_craft"
+                            ]
+                        },
+                        {
+                            "name":"I was mostly contracted to... terminate specific targets.",
+                            "classname":"Assassin",
+                            "strength":1,
+                            "endurance":1,
+                            "dexterity":1,
+                            "agility":1,
+                            "giveItems":
+                            [
+                                "sword1",
+                                "dagger1",
+                                "leather_vest1",
+                                "leather_boots1",
+                                "vital_strike"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name":"Actually, I got them when I was a Technomage's apprentice.",
+                    "focus":2,
+                    "mind":2,
+                    "response":"Wow, we could really use someone around here with magical abilities.  What type of magic to you practice?",
+                    "question":"What's your specialty?",
+                    "topics":
+                    [
+                        {
+                            "name":"Technomancy - I like working with machines.",
+                            "classname":"Technomancer",
+                            "dexterity":1,
+                            "mind":1,
+                            "focus":2,
+                            "giveItems":
+                            [
+                                "blaster1",
+                                "technomancy",
+                                "wand1",
+                                "magic_shield",
+                                "robe1",
+                                "trousers1"
+                            ]
+                        },
+                        {
+                            "name":"Biomancy - Medical Magic!",
+                            "classname":"Biomancer",
+                            "dexterity":1,
+                            "mind":1,
+                            "focus":2,
+                            "giveItems":
+                            [
+                                "dagger1",
+                                "biomancy",
+                                "bio_heal",
+                                "wand1",
+                                "robe1",
+                                "trousers1"
+                            ]
+                        },
+                        {
+                            "name":"Sorcery - Elemental magic is my forte",
+                            "classname":"Sorcerer",
+                            "dexterity":1,
+                            "mind":1,
+                            "focus":2,
+                            "giveItems":
+                            [
+                                "dagger1",
+                                "sorcery",
+                                "wand1",
+                                "flame_bolt",
+                                "robe1",
+                                "trousers1"
+                            ]
+                        },
+                        {
+                            "name":"As a Wizard, I study magic itself.",
+                            "classname":"Wizard",
+                            "dexterity":1,
+                            "mind":1,
+                            "focus":2,
+                            "giveItems":
+                            [
+                                "dagger1",
+                                "wizardry",
+                                "wand1",
+                                "mana_bolt",
+                                "robe1",
+                                "trousers1"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name":"I don’t recall",
+                    "classname":"Free Agent",
+                    "random":4,
+                    "attributePoints":4,
+                    "giveMoney":100,
+                    "giveItems":
+                    [
+                        "dagger1"
+                    ],
+                    "response":"I am sure it will come back to you in time"
+                }
+            ]
+        },
+        {
+            "background":"images/story/doctor_intro.png",
+            "title":"Identity",
+            "dialog":"You seem like you will be a great addition to our colony.  Last question, what should we call you?"
+        }    
+    ]
+}

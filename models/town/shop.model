@@ -1,0 +1,15 @@
+{
+    "model":
+    {
+        "obj":"models/town/house.obj",
+        "texture":"models/town/shop_skin.png",
+        "matrix":
+        {
+            "#comment":"this is a delta on what is loaded from file",
+            "position":[0,0,0.001],
+            "rotation":[0,0,180],
+            "scale":[1,1,1]
+        },
+        "materialFile":"models/town/house.material"
+    }
+}

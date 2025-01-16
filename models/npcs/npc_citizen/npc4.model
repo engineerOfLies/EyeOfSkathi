@@ -1,0 +1,17 @@
+{
+    "model":
+    {
+        "gltf":"models/npcs/npc_citizen/npc_male.gltf",
+        "texture":"models/npcs/npc_citizen/npc_citizen_skin3.png",
+        "armature":"models/player/human_armature.gltf",
+        "actionListFile":"models/player/human_actions.anim",
+        "materialFile":"models/player/human_male.material",
+        "matrix":
+        {
+            "#comment":"this is a delta on what is loaded from file",
+            "position":[0,0,0],
+            "rotation":[0,90,-90],
+            "scale":[1,1,1]
+        }
+    }
+}

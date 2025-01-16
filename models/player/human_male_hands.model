@@ -1,0 +1,17 @@
+{
+    "model":
+    {
+        "gltf":"models/player/human_male_hands.gltf",
+        "texture":"models/player/head_skin.png",
+        "armature":"models/player/human_armature.gltf",
+        "materialFile":"models/player/human_male.material",
+        "actionListFile":"models/player/human_actions.anim",
+        "matrix":
+        {
+            "#comment":"this is a delta on what is loaded from file",
+            "position":[0,0,0],
+            "rotation":[0,90,-90],
+            "scale":[1,1,1]
+        }
+    }
+}

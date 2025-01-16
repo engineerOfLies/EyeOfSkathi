@@ -1,0 +1,8 @@
+{
+    "model":
+    {
+        "obj":"models/projectiles/blaster_bolt.obj",
+        "texture":"models/projectiles/blaster_bolt_skin.png",
+        "materialFile":"models/projectiles/energy_bolt.material"
+    }
+}

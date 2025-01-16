@@ -1,0 +1,24 @@
+{
+    "name":"door_cave",
+    "model":"models/objects/cave_door.model",
+    "scale":[1,1,1],
+    "color":[255,255,255,255],
+    "bounds":
+    {   
+        "box":
+        {
+            "m":[-0.5,-0.5,0],
+            "s":[1,1,1]
+        }
+    },
+    "sounds":
+    [
+        {
+            "name":"open",
+            "file":"sounds/effects/rocks_falling.wav"
+        }
+    ],
+    "solid":1,
+    "stayOpen":1,
+    "levelColor":1
+}

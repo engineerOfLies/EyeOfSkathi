@@ -1,0 +1,14 @@
+{
+    "name":"shop",
+    "model":"models/town/shop.model",
+    "scale":[1,1,1],
+    "color":[255,255,255,255],
+    "bounds":
+    {   
+        "box":
+        {
+            "m":[-0.5,-0.5,0],
+            "s":[0.9,0.9,0.9]
+        }
+    }
+}

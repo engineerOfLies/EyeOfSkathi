@@ -1,0 +1,8 @@
+{
+    "model":
+    {
+        "obj":"models/world/facility.obj",
+        "texture":"models/world/facility_skin.png",
+        "materialFile":"models/world/world_exit_base.material"
+    }
+}

@@ -1,0 +1,26 @@
+{
+    "tileSet":
+    [
+        {
+            "name":"forest",
+            "index":1,
+            "model":"models/world/forest.model",
+            "description":"sparse forest."
+        },
+        {
+            "name":"forest",
+            "index":2,
+            "model":"models/world/forest.model",
+            "description":"sparse forest."
+        },
+        {
+            "name":"thick_forest",
+            "index":3,
+            "alignToFloor":false,
+            "solid":true,
+            "flat":false,
+            "model":"models/world/thick_forest.model",
+            "description":"dense forest."
+        }
+    ]
+}

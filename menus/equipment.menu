@@ -1,0 +1,864 @@
+{
+    "window":
+    {
+        "name":"inventory",
+        "color":[255,255,255,230],
+        "dimensions" : [210,0.05,0.6275,0.8],
+        "elements":
+        [
+            {
+                "type": "button",
+                "name" : "item_down",
+                "hotkey":"item_down"
+            },
+            {
+                "type": "button",
+                "name" : "item_up",
+                "hotkey":"item_up"
+            },
+            {
+                "type": "button",
+                "name" : "item_left",
+                "hotkey":"item_left"
+            },
+            {
+                "type": "button",
+                "name" : "item_right",
+                "hotkey":"item_right"
+            },
+            {
+                "type": "button",
+                "name" : "close",
+                "hotkey":"close"
+            },
+            {
+                "type": "label",
+                "bounds": [0,0,1,40],
+                "text":"Equipment",
+                "justify" : "center",
+                "align" : "middle",
+                "style":"H2"
+            },
+            {
+                "type": "actor",
+                "bounds": [0,41,0.95,2],
+                "color": [255,255,255,255],
+                "justify" : "center",
+                "align" : "middle",
+                "scaleToFit": true,
+                "image": "images/ui/border.png"
+            },
+            {
+                "type": "button",
+                "name":"right",
+                "id":1,
+                "bounds": [20,48,64,80],
+                "justify" : "center",
+                "align" : "middle",
+                "canHasFocus":true,
+                "color": [0,192,192,255],
+                "highColor": [0,255,255,255],
+                "pressColor": [0,128,128,255],
+                "actor":
+                {
+                    "type": "actor",
+                    "bounds": [0,0,64,64],
+                    "color": [255,255,255,255],
+                    "justify" : "left",
+                    "align" : "middle",
+                    "scaleToFit": true,
+                    "image": "images/ui/item_frame.png"
+                },
+                "label" :
+                {
+                    "type": "label",
+                    "bounds": [0,40,1,1],
+                    "text":"Right",
+                    "justify" : "center",
+                    "align" : "middle",
+                    "style":"normal"
+                }
+            },
+            {
+                "type": "actor",
+                "name":"right_icon",
+                "bounds": [20,48,64,64],
+                "color": [255,255,255,255],
+                "justify" : "left",
+                "align" : "middle",
+                "scaleToFit": true
+            },
+            {
+                "type": "button",
+                "name":"left",
+                "id":2,
+                "canHasFocus":true,
+                "bounds": [120,48,64,80],
+                "justify" : "center",
+                "align" : "middle",
+                "color": [0,192,192,255],
+                "highColor": [0,255,255,255],
+                "pressColor": [0,128,128,255],
+                "actor":
+                {
+                    "type": "actor",
+                    "bounds": [0,0,64,64],
+                    "color": [255,255,255,255],
+                    "justify" : "left",
+                    "align" : "middle",
+                    "scaleToFit": true,
+                    "image": "images/ui/item_frame.png"
+                },
+                "label" :
+                {
+                    "type": "label",
+                    "bounds": [0,40,1,1],
+                    "text":"Left",
+                    "justify" : "center",
+                    "align" : "middle",
+                    "style":"normal"
+                }
+            },
+            {
+                "type": "actor",
+                "name":"left_icon",
+                "bounds": [120,48,64,64],
+                "color": [255,255,255,255],
+                "justify" : "left",
+                "align" : "middle",
+                "scaleToFit": true
+            },
+            {
+                "type": "button",
+                "name":"head",
+                "id":3,
+                "canHasFocus":true,
+                "bounds": [20,160,64,80],
+                "justify" : "center",
+                "align" : "middle",
+                "color": [0,192,192,255],
+                "highColor": [0,255,255,255],
+                "pressColor": [0,128,128,255],
+                "actor":
+                {
+                    "type": "actor",
+                    "bounds": [0,0,64,64],
+                    "color": [255,255,255,255],
+                    "justify" : "left",
+                    "align" : "middle",
+                    "scaleToFit": true,
+                    "image": "images/ui/item_frame.png"
+                },
+                "label" :
+                {
+                    "type": "label",
+                    "bounds": [0,40,1,1],
+                    "text":"Head",
+                    "justify" : "center",
+                    "align" : "middle",
+                    "style":"normal"
+                }
+            },
+            {
+                "type": "actor",
+                "name":"head_icon",
+                "bounds": [20,160,64,64],
+                "color": [255,255,255,255],
+                "justify" : "left",
+                "align" : "middle",
+                "scaleToFit": true
+            },
+            {
+                "type": "button",
+                "name":"body",
+                "id":4,
+                "canHasFocus":true,
+                "bounds": [120,160,64,80],
+                "justify" : "center",
+                "align" : "middle",
+                "color": [0,192,192,255],
+                "highColor": [0,255,255,255],
+                "pressColor": [0,128,128,255],
+                "actor":
+                {
+                    "type": "actor",
+                    "bounds": [0,0,64,64],
+                    "color": [255,255,255,255],
+                    "justify" : "left",
+                    "align" : "middle",
+                    "scaleToFit": true,
+                    "image": "images/ui/item_frame.png"
+                },
+                "label" :
+                {
+                    "type": "label",
+                    "bounds": [0,40,1,1],
+                    "text":"Body",
+                    "justify" : "center",
+                    "align" : "middle",
+                    "style":"normal"
+                }
+            },
+            {
+                "type": "actor",
+                "name":"body_icon",
+                "bounds": [120,160,64,64],
+                "color": [255,255,255,255],
+                "justify" : "left",
+                "align" : "middle",
+                "scaleToFit": true
+            },
+            {
+                "type": "button",
+                "name":"legs",
+                "id":5,
+                "canHasFocus":true,
+                "bounds": [220,160,64,80],
+                "justify" : "center",
+                "align" : "middle",
+                "color": [0,192,192,255],
+                "highColor": [0,255,255,255],
+                "pressColor": [0,128,128,255],
+                "actor":
+                {
+                    "type": "actor",
+                    "bounds": [0,0,64,64],
+                    "color": [255,255,255,255],
+                    "justify" : "left",
+                    "align" : "middle",
+                    "scaleToFit": true,
+                    "image": "images/ui/item_frame.png"
+                },
+                "label" :
+                {
+                    "type": "label",
+                    "bounds": [0,40,1,1],
+                    "text":"Legs",
+                    "justify" : "center",
+                    "align" : "middle",
+                    "style":"normal"
+                }
+            },
+            {
+                "type": "actor",
+                "name":"legs_icon",
+                "bounds": [220,160,64,64],
+                "color": [255,255,255,255],
+                "justify" : "left",
+                "align" : "middle",
+                "scaleToFit": true
+            },
+            {
+                "type": "button",
+                "name":"accessory1",
+                "id":6,
+                "canHasFocus":true,
+                "bounds": [20,270,64,80],
+                "justify" : "center",
+                "align" : "middle",
+                "color": [0,192,192,255],
+                "highColor": [0,255,255,255],
+                "pressColor": [0,128,128,255],
+                "actor":
+                {
+                    "type": "actor",
+                    "bounds": [0,0,64,64],
+                    "color": [255,255,255,255],
+                    "justify" : "left",
+                    "align" : "middle",
+                    "scaleToFit": true,
+                    "image": "images/ui/item_frame.png"
+                },
+                "label" :
+                {
+                    "type": "label",
+                    "bounds": [0,40,1,1],
+                    "text":"Accessory",
+                    "justify" : "center",
+                    "align" : "middle",
+                    "style":"normal"
+                }
+            },
+            {
+                "type": "actor",
+                "name":"accessory1_icon",
+                "bounds": [20,270,64,64],
+                "color": [255,255,255,255],
+                "justify" : "left",
+                "align" : "middle",
+                "scaleToFit": true
+            },
+            {
+                "type": "button",
+                "name":"accessory2",
+                "id":7,
+                "canHasFocus":true,
+                "bounds": [120,270,64,80],
+                "justify" : "center",
+                "align" : "middle",
+                "color": [0,192,192,255],
+                "highColor": [0,255,255,255],
+                "pressColor": [0,128,128,255],
+                "actor":
+                {
+                    "type": "actor",
+                    "bounds": [0,0,64,64],
+                    "color": [255,255,255,255],
+                    "justify" : "left",
+                    "align" : "middle",
+                    "scaleToFit": true,
+                    "image": "images/ui/item_frame.png"
+                },
+                "label" :
+                {
+                    "type": "label",
+                    "bounds": [0,40,1,1],
+                    "text":"Accessory",
+                    "justify" : "center",
+                    "align" : "middle",
+                    "style":"normal"
+                }
+            },
+            {
+                "type": "actor",
+                "name":"accessory2_icon",
+                "bounds": [120,270,64,64],
+                "color": [255,255,255,255],
+                "justify" : "left",
+                "align" : "middle",
+                "scaleToFit": true
+            },
+            {
+                "type": "button",
+                "name":"accessory3",
+                "id":8,
+                "canHasFocus":true,
+                "bounds": [220,270,64,80],
+                "justify" : "center",
+                "align" : "middle",
+                "color": [0,192,192,255],
+                "highColor": [0,255,255,255],
+                "pressColor": [0,128,128,255],
+                "actor":
+                {
+                    "type": "actor",
+                    "bounds": [0,0,64,64],
+                    "color": [255,255,255,255],
+                    "justify" : "left",
+                    "align" : "middle",
+                    "scaleToFit": true,
+                    "image": "images/ui/item_frame.png"
+                },
+                "label" :
+                {
+                    "type": "label",
+                    "bounds": [0,40,1,1],
+                    "text":"Accessory",
+                    "justify" : "center",
+                    "align" : "middle",
+                    "style":"normal"
+                }
+            },
+            {
+                "type": "actor",
+                "name":"accessory3_icon",
+                "bounds": [220,270,64,64],
+                "color": [255,255,255,255],
+                "justify" : "left",
+                "align" : "middle",
+                "scaleToFit": true
+            },
+            {
+                "type": "button",
+                "name":"tool1",
+                "id":9,
+                "canHasFocus":true,
+                "bounds": [20,380,64,80],
+                "justify" : "center",
+                "align" : "middle",
+                "color": [0,192,192,255],
+                "highColor": [0,255,255,255],
+                "pressColor": [0,128,128,255],
+                "actor":
+                {
+                    "type": "actor",
+                    "bounds": [0,0,64,64],
+                    "color": [255,255,255,255],
+                    "justify" : "left",
+                    "align" : "middle",
+                    "scaleToFit": true,
+                    "image": "images/ui/item_frame.png"
+                },
+                "label" :
+                {
+                    "type": "label",
+                    "bounds": [0,40,1,1],
+                    "text":"Tool",
+                    "justify" : "center",
+                    "align" : "middle",
+                    "style":"normal"
+                }
+            },
+            {
+                "type": "actor",
+                "name":"tool1_icon",
+                "bounds": [20,380,64,64],
+                "color": [255,255,255,255],
+                "justify" : "left",
+                "align" : "middle",
+                "scaleToFit": true
+            },
+            {
+                "type": "button",
+                "name":"tool2",
+                "id":10,
+                "canHasFocus":true,
+                "bounds": [120,380,64,80],
+                "justify" : "center",
+                "align" : "middle",
+                "color": [0,192,192,255],
+                "highColor": [0,255,255,255],
+                "pressColor": [0,128,128,255],
+                "actor":
+                {
+                    "type": "actor",
+                    "bounds": [0,0,64,64],
+                    "color": [255,255,255,255],
+                    "justify" : "left",
+                    "align" : "middle",
+                    "scaleToFit": true,
+                    "image": "images/ui/item_frame.png"
+                },
+                "label" :
+                {
+                    "type": "label",
+                    "bounds": [0,40,1,1],
+                    "text":"Tool",
+                    "justify" : "center",
+                    "align" : "middle",
+                    "style":"normal"
+                }
+            },
+            {
+                "type": "actor",
+                "name":"tool2_icon",
+                "bounds": [120,380,64,64],
+                "color": [255,255,255,255],
+                "justify" : "left",
+                "align" : "middle",
+                "scaleToFit": true
+            },
+            {
+                "type": "button",
+                "name":"tool3",
+                "id":11,
+                "canHasFocus":true,
+                "bounds": [220,380,64,80],
+                "justify" : "center",
+                "align" : "middle",
+                "color": [0,192,192,255],
+                "highColor": [0,255,255,255],
+                "pressColor": [0,128,128,255],
+                "actor":
+                {
+                    "type": "actor",
+                    "bounds": [0,0,64,64],
+                    "color": [255,255,255,255],
+                    "justify" : "left",
+                    "align" : "middle",
+                    "scaleToFit": true,
+                    "image": "images/ui/item_frame.png"
+                },
+                "label" :
+                {
+                    "type": "label",
+                    "bounds": [0,40,1,1],
+                    "text":"Tool",
+                    "justify" : "center",
+                    "align" : "middle",
+                    "style":"normal"
+                }
+            },
+            {
+                "type": "actor",
+                "name":"tool3_icon",
+                "bounds": [220,380,64,64],
+                "color": [255,255,255,255],
+                "justify" : "left",
+                "align" : "middle",
+                "scaleToFit": true
+            },
+            {
+                "type": "button",
+                "name":"tool4",
+                "id":12,
+                "canHasFocus":true,
+                "bounds": [320,380,64,80],
+                "justify" : "center",
+                "align" : "middle",
+                "color": [0,192,192,255],
+                "highColor": [0,255,255,255],
+                "pressColor": [0,128,128,255],
+                "actor":
+                {
+                    "type": "actor",
+                    "bounds": [0,0,64,64],
+                    "color": [255,255,255,255],
+                    "justify" : "left",
+                    "align" : "middle",
+                    "scaleToFit": true,
+                    "image": "images/ui/item_frame.png"
+                },
+                "label" :
+                {
+                    "type": "label",
+                    "bounds": [0,40,1,1],
+                    "text":"Tool",
+                    "justify" : "center",
+                    "align" : "middle",
+                    "style":"normal"
+                }
+            },
+            {
+                "type": "actor",
+                "name":"tool4_icon",
+                "bounds": [320,380,64,64],
+                "color": [255,255,255,255],
+                "justify" : "left",
+                "align" : "middle",
+                "scaleToFit": true
+            },
+            {
+                "type": "button",
+                "name":"spell1",
+                "id":13,
+                "canHasFocus":true,
+                "bounds": [20,480,64,80],
+                "justify" : "center",
+                "align" : "middle",
+                "color": [0,192,192,255],
+                "highColor": [0,255,255,255],
+                "pressColor": [0,128,128,255],
+                "actor":
+                {
+                    "type": "actor",
+                    "bounds": [0,0,64,64],
+                    "color": [255,255,255,255],
+                    "justify" : "left",
+                    "align" : "middle",
+                    "scaleToFit": true,
+                    "image": "images/ui/item_frame.png"
+                },
+                "label" :
+                {
+                    "type": "label",
+                    "bounds": [0,40,1,1],
+                    "text":"Spell",
+                    "justify" : "center",
+                    "align" : "middle",
+                    "style":"normal"
+                }
+            },
+            {
+                "type": "actor",
+                "name":"spell1_icon",
+                "bounds": [20,480,64,64],
+                "color": [255,255,255,255],
+                "justify" : "left",
+                "align" : "middle",
+                "scaleToFit": true
+            },
+            {
+                "type": "button",
+                "name":"spell2",
+                "id":14,
+                "canHasFocus":true,
+                "bounds": [120,480,64,80],
+                "justify" : "center",
+                "align" : "middle",
+                "color": [0,192,192,255],
+                "highColor": [0,255,255,255],
+                "pressColor": [0,128,128,255],
+                "actor":
+                {
+                    "type": "actor",
+                    "bounds": [0,0,64,64],
+                    "color": [255,255,255,255],
+                    "justify" : "left",
+                    "align" : "middle",
+                    "scaleToFit": true,
+                    "image": "images/ui/item_frame.png"
+                },
+                "label" :
+                {
+                    "type": "label",
+                    "bounds": [0,40,1,1],
+                    "text":"Spell",
+                    "justify" : "center",
+                    "align" : "middle",
+                    "style":"normal"
+                }
+            },
+            {
+                "type": "actor",
+                "name":"spell2_icon",
+                "bounds": [120,480,64,64],
+                "color": [255,255,255,255],
+                "justify" : "left",
+                "align" : "middle",
+                "scaleToFit": true
+            },
+            {
+                "type": "button",
+                "name":"spell3",
+                "id":15,
+                "canHasFocus":true,
+                "bounds": [220,480,64,80],
+                "justify" : "center",
+                "align" : "middle",
+                "color": [0,192,192,255],
+                "highColor": [0,255,255,255],
+                "pressColor": [0,128,128,255],
+                "actor":
+                {
+                    "type": "actor",
+                    "bounds": [0,0,64,64],
+                    "color": [255,255,255,255],
+                    "justify" : "left",
+                    "align" : "middle",
+                    "scaleToFit": true,
+                    "image": "images/ui/item_frame.png"
+                },
+                "label" :
+                {
+                    "type": "label",
+                    "bounds": [0,40,1,1],
+                    "text":"Spell",
+                    "justify" : "center",
+                    "align" : "middle",
+                    "style":"normal"
+                }
+            },
+            {
+                "type": "actor",
+                "name":"spell3_icon",
+                "bounds": [220,480,64,64],
+                "color": [255,255,255,255],
+                "justify" : "left",
+                "align" : "middle",
+                "scaleToFit": true
+            },
+            {
+                "type": "button",
+                "name":"spell4",
+                "id":16,
+                "canHasFocus":true,
+                "bounds": [320,480,64,80],
+                "justify" : "center",
+                "align" : "middle",
+                "color": [0,192,192,255],
+                "highColor": [0,255,255,255],
+                "pressColor": [0,128,128,255],
+                "actor":
+                {
+                    "type": "actor",
+                    "bounds": [0,0,64,64],
+                    "color": [255,255,255,255],
+                    "justify" : "left",
+                    "align" : "middle",
+                    "scaleToFit": true,
+                    "image": "images/ui/item_frame.png"
+                },
+                "label" :
+                {
+                    "type": "label",
+                    "bounds": [0,40,1,1],
+                    "text":"Spell",
+                    "justify" : "center",
+                    "align" : "middle",
+                    "style":"normal"
+                }
+            },
+            {
+                "type": "actor",
+                "name":"spell4_icon",
+                "bounds": [320,480,64,64],
+                "color": [255,255,255,255],
+                "justify" : "left",
+                "align" : "middle",
+                "scaleToFit": true
+            },
+            {
+                "type": "button",
+                "name":"spell5",
+                "id":17,
+                "canHasFocus":true,
+                "bounds": [420,480,64,80],
+                "justify" : "center",
+                "align" : "middle",
+                "color": [0,192,192,255],
+                "highColor": [0,255,255,255],
+                "pressColor": [0,128,128,255],
+                "actor":
+                {
+                    "type": "actor",
+                    "bounds": [0,0,64,64],
+                    "color": [255,255,255,255],
+                    "justify" : "left",
+                    "align" : "middle",
+                    "scaleToFit": true,
+                    "image": "images/ui/item_frame.png"
+                },
+                "label" :
+                {
+                    "type": "label",
+                    "bounds": [0,40,1,1],
+                    "text":"Spell",
+                    "justify" : "center",
+                    "align" : "middle",
+                    "style":"normal"
+                }
+            },
+            {
+                "type": "actor",
+                "name":"spell5_icon",
+                "bounds": [420,480,64,64],
+                "color": [255,255,255,255],
+                "justify" : "left",
+                "align" : "middle",
+                "scaleToFit": true
+            },
+            {
+                "type": "button",
+                "name":"spell6",
+                "id":18,
+                "canHasFocus":true,
+                "bounds": [520,480,64,80],
+                "justify" : "center",
+                "align" : "middle",
+                "color": [0,192,192,255],
+                "highColor": [0,255,255,255],
+                "pressColor": [0,128,128,255],
+                "actor":
+                {
+                    "type": "actor",
+                    "bounds": [0,0,64,64],
+                    "color": [255,255,255,255],
+                    "justify" : "left",
+                    "align" : "middle",
+                    "scaleToFit": true,
+                    "image": "images/ui/item_frame.png"
+                },
+                "label" :
+                {
+                    "type": "label",
+                    "bounds": [0,40,1,1],
+                    "text":"Spell",
+                    "justify" : "center",
+                    "align" : "middle",
+                    "style":"normal"
+                }
+            },
+            {
+                "type": "actor",
+                "name":"spell6_icon",
+                "bounds": [520,480,64,64],
+                "color": [255,255,255,255],
+                "justify" : "left",
+                "align" : "middle",
+                "scaleToFit": true
+            },
+            {
+                "type": "button",
+                "name":"spell7",
+                "id":19,
+                "canHasFocus":true,
+                "bounds": [620,480,64,80],
+                "justify" : "center",
+                "align" : "middle",
+                "color": [0,192,192,255],
+                "highColor": [0,255,255,255],
+                "pressColor": [0,128,128,255],
+                "actor":
+                {
+                    "type": "actor",
+                    "bounds": [0,0,64,64],
+                    "color": [255,255,255,255],
+                    "justify" : "left",
+                    "align" : "middle",
+                    "scaleToFit": true,
+                    "image": "images/ui/item_frame.png"
+                },
+                "label" :
+                {
+                    "type": "label",
+                    "bounds": [0,40,1,1],
+                    "text":"Spell",
+                    "justify" : "center",
+                    "align" : "middle",
+                    "style":"normal"
+                }
+            },
+            {
+                "type": "actor",
+                "name":"spell7_icon",
+                "bounds": [620,480,64,64],
+                "color": [255,255,255,255],
+                "justify" : "left",
+                "align" : "middle",
+                "scaleToFit": true
+            },
+            {
+                "type": "button",
+                "name":"spell8",
+                "id":20,
+                "canHasFocus":true,
+                "bounds": [720,480,64,80],
+                "justify" : "center",
+                "align" : "middle",
+                "color": [0,192,192,255],
+                "highColor": [0,255,255,255],
+                "pressColor": [0,128,128,255],
+                "actor":
+                {
+                    "type": "actor",
+                    "bounds": [0,0,64,64],
+                    "color": [255,255,255,255],
+                    "justify" : "left",
+                    "align" : "middle",
+                    "scaleToFit": true,
+                    "image": "images/ui/item_frame.png"
+                },
+                "label" :
+                {
+                    "type": "label",
+                    "bounds": [0,40,1,1],
+                    "text":"Spell",
+                    "justify" : "center",
+                    "align" : "middle",
+                    "style":"normal"
+                }
+            },
+            {
+                "type": "actor",
+                "name":"spell8_icon",
+                "bounds": [720,480,64,64],
+                "color": [255,255,255,255],
+                "justify" : "left",
+                "align" : "middle",
+                "scaleToFit": true
+            },
+            {
+                "type": "list",
+                "bounds": [0.5,44,0.7,1],
+                "name":"item_details",
+                "style": "vertical",
+                "item_size" : [1,20],
+                "packed":true,
+                "elements":
+                [
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,59 @@
+{
+    "window":
+    {
+        "dimensions" : [0,0,200,0.8],
+        "align" : "middle",
+        "justify" : "center",
+        "elements":
+        [
+            {
+                "type": "button",
+                "name" : "item_down",
+                "hotkey":"item_down"
+            },
+            {
+                "type": "button",
+                "name" : "item_up",
+                "hotkey":"item_up"
+            },
+            {
+                "type": "button",
+                "name" : "close",
+                "hotkey":"close"
+            },
+            {
+                "type": "list",
+                "name": "list",
+                "id" : 0,
+                "bounds": [0,8,1,1],
+                "color" : [255,255,255,255],
+                "style": "vertical",
+                "item_size" : [1,28],
+                "elements":
+                [
+                    {
+                        "type": "label",
+                        "name" : "title",
+                        "bounds": [0,0,1,24],
+                        "color" : [255,255,255,255],
+                        "text":"Title",
+                        "justify" : "center",
+                        "align" : "middle",
+                        "style":"H5"
+                    },
+                    {
+                        "type": "list",
+                        "name": "options",
+                        "bounds": [6,10,0.95,1],
+                        "color" : [255,255,255,255],
+                        "style": "vertical",
+                        "item_size" : [1,28],
+                        "elements":
+                        [
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

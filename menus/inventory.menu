@@ -1,0 +1,98 @@
+{
+    "window":
+    {
+        "name":"inventory",
+        "color":[255,255,255,230],
+        "dimensions" : [0,0.05,0.675,0.8],
+        "justify" : "center",
+        "elements":
+        [
+            {
+                "type": "button",
+                "name" : "item_down",
+                "hotkey":"item_down"
+            },
+            {
+                "type": "button",
+                "name" : "item_up",
+                "hotkey":"item_up"
+            },
+            {
+                "type": "button",
+                "name" : "close",
+                "hotkey":"close"
+            },
+            {
+                "type": "label",
+                "name":"name",
+                "bounds": [0,0,1,40],
+                "text":"Inventory",
+                "justify" : "center",
+                "align" : "middle",
+                "style":"H2"
+            },
+            {
+                "type": "actor",
+                "bounds": [0.275,42,8,120],
+                "color": [255,255,255,255],
+                "justify" : "center",
+                "align" : "middle",
+                "scaleToFit": true,
+                "rotation":90,
+                "image": "images/ui/border.png"
+            },
+            {
+                "type": "actor",
+                "bounds": [0,41,0.95,2],
+                "color": [255,255,255,255],
+                "justify" : "center",
+                "align" : "middle",
+                "scaleToFit": true,
+                "image": "images/ui/border.png"
+            },
+            {
+                "type": "list",
+                "bounds": [4,44,0.25,1],
+                "name":"item_list",
+                "style": "vertical",
+                "cropped":true,
+                "scrolls":true,
+                "item_size" : [1,24],
+                "packed":true,
+                "elements":
+                [
+                ]
+            },
+            {
+                "type": "actor",
+                "name":"item_background",
+                "bounds": [0.28,48,64,64],
+                "color": [255,255,255,255],
+                "justify" : "left",
+                "align" : "middle",
+                "scaleToFit": true,
+                "image": "images/ui/item_frame.png"
+            },
+            {
+                "type": "actor",
+                "name":"item_icon",
+                "bounds": [0.28,48,64,64],
+                "color": [255,255,255,255],
+                "justify" : "left",
+                "align" : "middle",
+                "scaleToFit": true
+            },
+            {
+                "type": "list",
+                "bounds": [0.28,120,0.7,1],
+                "name":"item_details",
+                "style": "vertical",
+                "item_size" : [1,28],
+                "packed":true,
+                "elements":
+                [
+                ]
+            }
+        ]
+    }
+}

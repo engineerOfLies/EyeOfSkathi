@@ -1,0 +1,33 @@
+{
+    "model":
+    {
+        "gltf":"models/objects/tech_chest.gltf",
+        "texture":"models/objects/tech_chest_skin.png",
+        "armature":"models/objects/chest.gltf",
+        "materialFile":"models/objects/chest.material",
+        "actionList":
+        [
+            {
+                "action": "closed",
+                "startFrame": 0,
+                "endFrame": 0,
+                "frameRate": 0,
+                "type": "none"
+            },
+            {
+                "action": "opened",
+                "startFrame": 10,
+                "endFrame": 10,
+                "frameRate": 0,
+                "type": "none"
+            },
+            {
+                "action": "open",
+                "startFrame": 0,
+                "endFrame": 10,
+                "frameRate": 0.5,
+                "type": "pass"
+            }
+        ]
+    }
+}

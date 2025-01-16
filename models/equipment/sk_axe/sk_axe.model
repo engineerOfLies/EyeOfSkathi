@@ -1,0 +1,8 @@
+{
+    "model":
+    {
+        "obj":"models/equipment/sk_axe/sk_axe.obj",
+        "texture":"models/equipment/sk_axe/sk_axe_skin.png",
+        "materialFile":"models/equipment/equipment.material"
+    }
+}

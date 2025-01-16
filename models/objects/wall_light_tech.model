@@ -1,0 +1,16 @@
+{
+    "model":
+    {
+        "obj":"models/objects/wall_light_tech.obj",
+        "texture":"models/tiles/walltile_tech.png",
+        "material":
+        {
+            "name":"wall_light_base",
+            "ambient":[255,255,255,255],
+            "diffuse":[255,255,255,255],
+            "specular":[8,8,8,8],
+            "transparency":1,
+            "shininess":1
+        }
+    }
+}

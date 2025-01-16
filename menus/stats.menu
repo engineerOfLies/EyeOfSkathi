@@ -1,0 +1,688 @@
+{
+    "window":
+    {
+        "name":"stats",
+        "color":[255,255,255,230],
+        "dimensions" : [0,0.05,0.675,0.8],
+        "justify" : "center",
+        "elements":
+        [
+            {
+                "type": "button",
+                "name" : "item_down",
+                "hotkey":"item_down"
+            },
+            {
+                "type": "button",
+                "name" : "item_up",
+                "hotkey":"item_up"
+            },
+            {
+                "type": "button",
+                "name" : "close",
+                "hotkey":"close"
+            },
+            {
+                "type": "label",
+                "name":"name",
+                "bounds": [0,0,1,40],
+                "text":"Character Name",
+                "justify" : "center",
+                "align" : "middle",
+                "style":"H2"
+            },
+            {
+                "type": "actor",
+                "bounds": [0.5,42,8,120],
+                "color": [255,255,255,255],
+                "justify" : "center",
+                "align" : "middle",
+                "scaleToFit": true,
+                "rotation":90,
+                "image": "images/ui/border.png"
+            },
+            {
+                "type": "actor",
+                "bounds": [0,41,0.95,2],
+                "color": [255,255,255,255],
+                "justify" : "center",
+                "align" : "middle",
+                "scaleToFit": true,
+                "image": "images/ui/border.png"
+            },
+            {
+                "type": "list",
+                "bounds": [4,44,0.5,1],
+                "name":"label_list",
+                "style": "vertical",
+                "item_size" : [1,40],
+                "packed":true,
+                "elements":
+                [
+                    {
+                        "type": "label",
+                        "bounds": [0,0,1,32],
+                        "text":"Species",
+                        "justify" : "left",
+                        "align" : "middle",
+                        "style":"H5"
+                    },
+                    {
+                        "type": "label",
+                        "bounds": [0,0,1,32],
+                        "text":"Class",
+                        "justify" : "left",
+                        "align" : "middle",
+                        "style":"H5"
+                    },
+                    {
+                        "type": "label",
+                        "bounds": [0,0,1,32],
+                        "text":"Level",
+                        "justify" : "left",
+                        "align" : "middle",
+                        "style":"H5"
+                    },
+                    {
+                        "type": "label",
+                        "bounds": [0,0,1,32],
+                        "text":"XP",
+                        "justify" : "left",
+                        "align" : "middle",
+                        "style":"H5"
+                    },
+                    {
+                        "type": "label",
+                        "bounds": [0,0,1,32],
+                        "text":"Needed XP",
+                        "justify" : "left",
+                        "align" : "middle",
+                        "style":"H5"
+                    },
+                    {
+                        "type": "label",
+                        "bounds": [0,0,1,32],
+                        "text":"Free AP",
+                        "justify" : "left",
+                        "align" : "middle",
+                        "style":"H5"
+                    },
+                    {
+                        "type": "actor",
+                        "bounds": [0,0,0.95,2],
+                        "color": [255,255,255,255],
+                        "justify" : "center",
+                        "align" : "middle",
+                        "scaleToFit": true,
+                        "image": "images/ui/border.png"
+                    },
+                    {
+                        "type": "label",
+                        "bounds": [0,0,1,32],
+                        "text":"Health",
+                        "justify" : "left",
+                        "align" : "middle",
+                        "style":"H5"
+                    },
+                    {
+                        "type": "label",
+                        "bounds": [0,0,1,32],
+                        "text":"Stamina",
+                        "justify" : "left",
+                        "align" : "middle",
+                        "style":"H5"
+                    },
+                    {
+                        "type": "label",
+                        "bounds": [0,0,1,32],
+                        "text":"Mana",
+                        "justify" : "left",
+                        "align" : "middle",
+                        "style":"H5"
+                    },
+                    {
+                        "type": "actor",
+                        "bounds": [0,0,0.95,2],
+                        "color": [255,255,255,255],
+                        "justify" : "center",
+                        "align" : "middle",
+                        "scaleToFit": true,
+                        "image": "images/ui/border.png"
+                    },
+                    {
+                        "type": "button",
+                        "name":"upgradeStrength",
+                        "id" : 1,
+                        "canHasFocus":true,
+                        "sound":"confirm",
+                        "color": [0,192,192,255],
+                        "highColor": [0,255,255,255],
+                        "pressColor": [0,128,128,255],
+                        "bounds": [0,0,1,32],
+                        "label":
+                        {
+                            "type": "label",
+                            "bounds": [0,0,1,32],
+                            "text":"Strength",
+                            "justify" : "left",
+                            "align" : "middle",
+                            "style":"H5"
+                        }
+                    },
+                    {
+                        "type": "button",
+                        "name":"upgradeEndurance",
+                        "id" : 2,
+                        "canHasFocus":true,
+                        "sound":"confirm",
+                        "color": [0,192,192,255],
+                        "highColor": [0,255,255,255],
+                        "pressColor": [0,128,128,255],
+                        "bounds": [0,0,1,32],
+                        "label":
+                        {
+                            "type": "label",
+                            "bounds": [0,0,1,32],
+                            "text":"Endurance",
+                            "justify" : "left",
+                            "align" : "middle",
+                            "style":"H5"
+                        }
+                    },
+                    {
+                        "type": "button",
+                        "name":"upgradeDexterity",
+                        "id" : 3,
+                        "canHasFocus":true,
+                        "sound":"confirm",
+                        "color": [0,192,192,255],
+                        "highColor": [0,255,255,255],
+                        "pressColor": [0,128,128,255],
+                        "bounds": [0,0,1,32],
+                        "label":
+                        {
+                            "type": "label",
+                            "bounds": [0,0,1,32],
+                            "text":"Dexterity",
+                            "justify" : "left",
+                            "align" : "middle",
+                            "style":"H5"
+                        }
+                    },
+                    {
+                        "type": "button",
+                        "name":"upgradeAgility",
+                        "id" : 4,
+                        "canHasFocus":true,
+                        "sound":"confirm",
+                        "color": [0,192,192,255],
+                        "highColor": [0,255,255,255],
+                        "pressColor": [0,128,128,255],
+                        "bounds": [0,0,1,32],
+                        "label":
+                        {
+                            "type": "label",
+                            "bounds": [0,0,1,32],
+                            "text":"Agility",
+                            "justify" : "left",
+                            "align" : "middle",
+                            "style":"H5"
+                        }
+                    },
+                    {
+                        "type": "button",
+                        "name":"upgradeFocus",
+                        "id" : 5,
+                        "canHasFocus":true,
+                        "sound":"confirm",
+                        "color": [0,192,192,255],
+                        "highColor": [0,255,255,255],
+                        "pressColor": [0,128,128,255],
+                        "bounds": [0,0,1,32],
+                        "label":
+                        {
+                            "type": "label",
+                            "bounds": [0,0,1,32],
+                            "text":"Focus",
+                            "justify" : "left",
+                            "align" : "middle",
+                            "style":"H5"
+                        }
+                    },
+                    {
+                        "type": "button",
+                        "name":"upgradeMind",
+                        "id" : 6,
+                        "canHasFocus":true,
+                        "sound":"confirm",
+                        "color": [0,192,192,255],
+                        "highColor": [0,255,255,255],
+                        "pressColor": [0,128,128,255],
+                        "bounds": [0,0,1,32],
+                        "label":
+                        {
+                            "type": "label",
+                            "bounds": [0,0,1,32],
+                            "text":"MIND",
+                            "justify" : "left",
+                            "align" : "middle",
+                            "style":"H5"
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "list",
+                "name":"values_list",
+                "bounds": [134,44,0.5,1],
+                "style": "vertical",
+                "item_size" : [1,40],
+                "packed":true,
+                "elements":
+                [
+                    {
+                        "type": "label",
+                        "name":"species",
+                        "bounds": [0,0,1,32],
+                        "text":": Human",
+                        "justify" : "left",
+                        "align" : "middle",
+                        "style":"H5"
+                    },
+                    {
+                        "type": "label",
+                        "name":"class",
+                        "bounds": [0,0,1,32],
+                        "text":": Hunter",
+                        "justify" : "left",
+                        "align" : "middle",
+                        "style":"H5"
+                    },
+                    {
+                        "type": "label",
+                        "name":"level",
+                        "bounds": [0,0,1,32],
+                        "text":": 1",
+                        "justify" : "left",
+                        "align" : "middle",
+                        "style":"H5"
+                    },
+                    {
+                        "type": "label",
+                        "name":"xp",
+                        "bounds": [0,0,1,32],
+                        "text":": 0",
+                        "justify" : "left",
+                        "align" : "middle",
+                        "style":"H5"
+                    },
+                    {
+                        "type": "label",
+                        "name":"needed_xp",
+                        "bounds": [0,0,1,32],
+                        "text":": 0",
+                        "justify" : "left",
+                        "align" : "middle",
+                        "style":"H5"
+                    },
+                    {
+                        "type": "label",
+                        "name":"ap",
+                        "bounds": [0,0,1,32],
+                        "text":": 0",
+                        "justify" : "left",
+                        "align" : "middle",
+                        "style":"H5"
+                    },
+                    {
+                        "type": "label",
+                        "bounds": [0,0,0.95,2],
+                        "color": [255,255,255,255],
+                        "justify" : "center",
+                        "text":" ",
+                        "align" : "middle",
+                    },
+                    {
+                        "type": "label",
+                        "name":"health",
+                        "bounds": [0,0,1,32],
+                        "text":"Health: */*",
+                        "justify" : "left",
+                        "align" : "middle",
+                        "style":"H5"
+                    },
+                    {
+                        "type": "label",
+                        "name":"stamina",
+                        "bounds": [0,0,1,32],
+                        "text":"Stamina: */*",
+                        "justify" : "left",
+                        "align" : "middle",
+                        "style":"H5"
+                    },
+                    {
+                        "type": "label",
+                        "name":"mana",
+                        "bounds": [0,0,1,32],
+                        "text":"Mana: */*",
+                        "justify" : "left",
+                        "align" : "middle",
+                        "style":"H5"
+                    },
+                    {
+                        "type": "label",
+                        "bounds": [0,0,0.95,2],
+                        "color": [255,255,255,255],
+                        "justify" : "center",
+                        "text":" ",
+                        "align" : "middle",
+                    },
+                    {
+                        "type": "label",
+                        "name":"strength",
+                        "bounds": [0,0,1,32],
+                        "text":": *",
+                        "justify" : "left",
+                        "align" : "middle",
+                        "style":"H5"
+                    },
+                    {
+                        "type": "label",
+                        "name":"endurance",
+                        "bounds": [0,0,1,32],
+                        "text":": *",
+                        "justify" : "left",
+                        "align" : "middle",
+                        "style":"H5"
+                    },
+                    {
+                        "type": "label",
+                        "name":"dexterity",
+                        "bounds": [0,0,1,32],
+                        "text":": *",
+                        "justify" : "left",
+                        "align" : "middle",
+                        "style":"H5"
+                    },
+                    {
+                        "type": "label",
+                        "name":"agility",
+                        "bounds": [0,0,1,32],
+                        "text":": *",
+                        "justify" : "left",
+                        "align" : "middle",
+                        "style":"H5"
+                    },
+                    {
+                        "type": "label",
+                        "name":"focus",
+                        "bounds": [0,0,1,32],
+                        "text":": *",
+                        "justify" : "left",
+                        "align" : "middle",
+                        "style":"H5"
+                    },
+                    {
+                        "type": "label",
+                        "name":"mind",
+                        "bounds": [0,0,1,32],
+                        "text":": *",
+                        "justify" : "left",
+                        "align" : "middle",
+                        "style":"H5"
+                    }
+                ]
+            },
+            {
+                "type": "list",
+                "bounds": [0.51,44,0.5,1],
+                "name":"label_list_right",
+                "style": "vertical",
+                "item_size" : [1,40],
+                "packed":true,
+                "elements":
+                [
+                    {
+                        "type": "label",
+                        "bounds": [0,0,1,32],
+                        "text":"Credits",
+                        "justify" : "left",
+                        "align" : "middle",
+                        "style":"H5"
+                    },
+                    {
+                        "type": "label",
+                        "bounds": [0,0,1,32],
+                        "text":"Coins",
+                        "justify" : "left",
+                        "align" : "middle",
+                        "style":"H5"
+                    },
+                    {
+                        "type": "actor",
+                        "bounds": [0,0,0.95,2],
+                        "color": [255,255,255,255],
+                        "justify" : "center",
+                        "align" : "middle",
+                        "scaleToFit": true,
+                        "image": "images/ui/border.png"
+                    },
+                    {
+                        "type": "label",
+                        "bounds": [0,0,1,32],
+                        "text":"Right Hand",
+                        "justify" : "left",
+                        "align" : "middle",
+                        "style":"H5"
+                    },
+                    {
+                        "type": "label",
+                        "bounds": [0,0,1,32],
+                        "text":"Left Hand",
+                        "justify" : "left",
+                        "align" : "middle",
+                        "style":"H5"
+                    },
+                    {
+                        "type": "label",
+                        "bounds": [0,0,1,32],
+                        "text":"Body",
+                        "justify" : "left",
+                        "align" : "middle",
+                        "style":"H5"
+                    },
+                    {
+                        "type": "label",
+                        "bounds": [0,0,1,32],
+                        "text":"Accessory",
+                        "justify" : "left",
+                        "align" : "middle",
+                        "style":"H5"
+                    },
+                    {
+                        "type": "label",
+                        "bounds": [0,0,1,32],
+                        "text":"Accessory",
+                        "justify" : "left",
+                        "align" : "middle",
+                        "style":"H5"
+                    },
+                    {
+                        "type": "label",
+                        "bounds": [0,0,1,32],
+                        "text":"Accessory",
+                        "justify" : "left",
+                        "align" : "middle",
+                        "style":"H5"
+                    },
+                    {
+                        "type": "actor",
+                        "bounds": [0,0,0.95,2],
+                        "color": [255,255,255,255],
+                        "justify" : "center",
+                        "align" : "middle",
+                        "scaleToFit": true,
+                        "image": "images/ui/border.png"
+                    },
+                    {
+                        "type": "label",
+                        "bounds": [0,0,1,32],
+                        "text":"Tool",
+                        "justify" : "left",
+                        "align" : "middle",
+                        "style":"H5"
+                    },
+                    {
+                        "type": "label",
+                        "bounds": [0,0,1,32],
+                        "text":"Tool",
+                        "justify" : "left",
+                        "align" : "middle",
+                        "style":"H5"
+                    },
+                    {
+                        "type": "label",
+                        "bounds": [0,0,1,32],
+                        "text":"Tool",
+                        "justify" : "left",
+                        "align" : "middle",
+                        "style":"H5"
+                    },
+                    {
+                        "type": "label",
+                        "bounds": [0,0,1,32],
+                        "text":"Tool",
+                        "justify" : "left",
+                        "align" : "middle",
+                        "style":"H5"
+                    }
+                ]
+            },
+            {
+                "type": "list",
+                "bounds": [0.675,44,0.5,1],
+                "name":"label_list_right",
+                "style": "vertical",
+                "item_size" : [1,40],
+                "packed":true,
+                "elements":
+                [
+                    {
+                        "type": "label",
+                        "bounds": [0,0,1,32],
+                        "name":"credits",
+                        "text":": 0",
+                        "justify" : "left",
+                        "align" : "middle",
+                        "style":"H5"
+                    },
+                    {
+                        "type": "label",
+                        "bounds": [0,0,1,32],
+                        "name":"coins",
+                        "text":": 0",
+                        "justify" : "left",
+                        "align" : "middle",
+                        "style":"H5"
+                    },
+                    {
+                        "type": "label",
+                        "bounds": [0,0,0.95,2],
+                        "color": [255,255,255,255],
+                        "justify" : "center",
+                        "text":" ",
+                        "align" : "middle",
+                    },
+                    {
+                        "type": "label",
+                        "bounds": [0,0,1,32],
+                        "name":"right_hand",
+                        "justify" : "left",
+                        "align" : "middle",
+                        "style":"H5"
+                    },
+                    {
+                        "type": "label",
+                        "bounds": [0,0,1,32],
+                        "name":"left_hand",
+                        "justify" : "left",
+                        "align" : "middle",
+                        "style":"H5"
+                    },
+                    {
+                        "type": "label",
+                        "bounds": [0,0,1,32],
+                        "name":"body",
+                        "justify" : "left",
+                        "align" : "middle",
+                        "style":"H5"
+                    },
+                    {
+                        "type": "label",
+                        "bounds": [0,0,1,32],
+                        "name":"accessory1",
+                        "justify" : "left",
+                        "align" : "middle",
+                        "style":"H5"
+                    },
+                    {
+                        "type": "label",
+                        "bounds": [0,0,1,32],
+                        "name":"accessory2",
+                        "justify" : "left",
+                        "align" : "middle",
+                        "style":"H5"
+                    },
+                    {
+                        "type": "label",
+                        "bounds": [0,0,1,32],
+                        "name":"accessory3",
+                        "justify" : "left",
+                        "align" : "middle",
+                        "style":"H5"
+                    },
+                    {
+                        "type": "label",
+                        "bounds": [0,0,0.95,2],
+                        "color": [255,255,255,255],
+                        "justify" : "center",
+                        "text":" ",
+                        "align" : "middle",
+                    },
+                    {
+                        "type": "label",
+                        "bounds": [0,0,1,32],
+                        "name":"tool1",
+                        "justify" : "left",
+                        "align" : "middle",
+                        "style":"H5"
+                    },
+                    {
+                        "type": "label",
+                        "bounds": [0,0,1,32],
+                        "name":"tool2",
+                        "justify" : "left",
+                        "align" : "middle",
+                        "style":"H5"
+                    },
+                    {
+                        "type": "label",
+                        "bounds": [0,0,1,32],
+                        "name":"tool3",
+                        "justify" : "left",
+                        "align" : "middle",
+                        "style":"H5"
+                    },
+                    {
+                        "type": "label",
+                        "bounds": [0,0,1,32],
+                        "name":"tool4",
+                        "justify" : "left",
+                        "align" : "middle",
+                        "style":"H5"
+                    }
+                ]
+            }
+        ]
+    }
+}

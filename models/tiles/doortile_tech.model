@@ -1,0 +1,8 @@
+{
+    "model":
+    {
+        "obj":"models/tiles/doortile_tech.obj",
+        "texture":"models/tiles/walltile_tech.png",
+        "materialFile":"models/tiles/tech_tile.material"
+    }
+}

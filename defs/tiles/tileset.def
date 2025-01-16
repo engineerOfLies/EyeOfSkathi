@@ -1,0 +1,42 @@
+{
+    "tileSet":
+    [
+        {
+            "name":"Stone Floor",
+            "index":1,
+            "floor":true,
+            "model":"models/tiles/floortile.model",
+            "description":"The floor is made of solid stone tiles."
+        },
+        {
+            "name":"Stone Brick",
+            "index":2,
+            "cornerPiece":true,
+            "alignToFloor":true,
+            "solid":true,
+            "model":"models/tiles/walltile.model",
+            "description":"This wall is made of solid stone bricks.  Very precisely cut to have no gaps."
+        },
+        {
+            "name":"Stone Stairs Down",
+            "index":3,
+            "alignToFloor":true,
+            "model":"models/tiles/downstairs.model",
+            "description":"The path leads below"
+        },
+        {
+            "name":"Stone Stairs Up",
+            "index":4,
+            "alignToFloor":true,
+            "model":"models/tiles/upstairs.model",
+            "description":"This path leads higher up"
+        },
+        {
+            "name":"Door Way",
+            "index":5,
+            "alignToFloor":true,
+            "model":"models/tiles/doortile.model",
+            "description":"A doorway through"
+        }
+    ]
+}

@@ -1,0 +1,6 @@
+{
+    "model":
+    {
+        "obj":"models/world/terrain_walkmask.obj"
+    }
+}

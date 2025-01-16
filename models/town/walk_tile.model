@@ -1,0 +1,16 @@
+{
+    "model":
+    {
+        "obj":"models/town/walk_tile.obj",
+        "texture":"models/town/walk_tile.png",
+        "material":
+        {
+            "name":"walk_base",
+            "ambient":[16,16,16,255],
+            "diffuse":[255,255,255,255],
+            "specular":[8,8,8,8],
+            "transparency":1,
+            "shininess":2
+        }
+    }
+}

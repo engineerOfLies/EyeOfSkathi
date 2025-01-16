@@ -1,0 +1,8 @@
+{
+    "model":
+    {
+        "obj":"models/objects/bed.obj",
+        "texture":"models/objects/bed_skin.png",
+        "materialFile":"models/objects/object.material"
+    }
+}

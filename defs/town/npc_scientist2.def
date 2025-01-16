@@ -1,0 +1,18 @@
+{
+    "name":"npc_scientist2",
+    "model":"models/npcs/npc_scientist/npc_scientist2.model",
+    "color":[255,255,255,255],
+    "speedMax":0.075,
+    "solid":1,
+    "turnSpeedMax":0.05,
+    "health":100,
+    "bounds":
+    {
+        "sphere":
+        {
+            "c":[0,0,0.5],
+            "r":0.35
+        }
+    },
+    "#comment":"above is standard entity data, below is custom to this entity"
+}

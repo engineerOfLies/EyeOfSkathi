@@ -1,0 +1,8 @@
+{
+    "model":
+    {
+        "obj":"models/tiles/cave_doorway.obj",
+        "texture":"models/tiles/cave_skin.png",
+        "materialFile":"models/tiles/dungeon_tile.material"
+    }
+}

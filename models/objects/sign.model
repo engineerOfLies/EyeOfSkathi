@@ -1,0 +1,8 @@
+{
+    "model":
+    {
+        "obj":"models/objects/sign.obj",
+        "texture":"models/objects/sign_skin.png",
+        "materialFile":"models/objects/object.material"
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "model":
+    {
+        "obj":"models/village/path_tile.obj",
+        "texture":"models/village/path_tile.png",
+        "materialFile": "models/village/village_base.material"
+    }
+}

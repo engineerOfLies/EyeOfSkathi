@@ -1,0 +1,40 @@
+{
+    "model":
+    {
+        "gltf":"models/objects/floor_switch/floor_switch.gltf",
+        "armature":"models/objects/floor_switch/floor_switch.gltf",
+        "texture":"models/tiles/walltile.png",
+        "materialFile":"models/objects/object.material",
+        "actionList":
+        [
+            {
+                "action": "off",
+                "startFrame": 0,
+                "endFrame": 0,
+                "frameRate": 0,
+                "type": "none"
+            },
+            {
+                "action": "on",
+                "startFrame": 5,
+                "endFrame": 5,
+                "frameRate": 0,
+                "type": "none"
+            },
+            {
+                "action": "activating",
+                "startFrame": 1,
+                "endFrame": 5,
+                "frameRate": 0.25,
+                "type": "pass"
+            },
+            {
+                "action": "deactivating",
+                "startFrame": 6,
+                "endFrame": 10,
+                "frameRate": 0.25,
+                "type": "pass"
+            }
+        ]
+    }
+}

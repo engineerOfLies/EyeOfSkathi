@@ -1,0 +1,11 @@
+{
+    "material":
+    {
+        "name":"object_base",
+        "ambient":[32,32,32,255],
+        "diffuse":[255,255,255,255],
+        "specular":[16,16,16,16],
+        "transparency":1,
+        "shininess":2
+    }
+}

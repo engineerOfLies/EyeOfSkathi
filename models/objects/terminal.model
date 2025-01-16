@@ -1,0 +1,8 @@
+{
+    "model":
+    {
+        "obj":"models/objects/tech_terminal.obj",
+        "texture":"models/tiles/terminal_tech.png",
+        "materialFile":"models/objects/object.material"
+    }
+}

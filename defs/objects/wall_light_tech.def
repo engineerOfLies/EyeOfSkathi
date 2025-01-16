@@ -1,0 +1,21 @@
+{
+    "name":"wall_light_tech",
+    "model":"models/objects/wall_light_tech.model",
+    "scale":[1,1,1],
+    "color":[255,255,255,255],
+    "solid":0,
+    "#comment":"above is standard entity data, below is custom to this entity",
+    "offsetHeight":0.95,
+    "offsetWall":0.55,
+    "light":
+    {
+        "color":[255,255,255,255],
+        "direction":[0,1,0,1],
+        "position":[0,0,0,1.0],
+        "ambientCoefficient":0.02,
+        "attenuation":1.1,
+        "angle":0,
+        "brightness":1
+    },
+    "levelColor":1
+}

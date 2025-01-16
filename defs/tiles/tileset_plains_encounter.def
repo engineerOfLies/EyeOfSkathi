@@ -1,0 +1,31 @@
+{
+    "tileSet":
+    [
+        {
+            "name":"floor",
+            "index":1,
+            "floor":true
+        },
+        {
+            "name":"forest",
+            "index":2,
+            "floor":false,
+            "model":"models/world/encounter_forest.model",
+            "description":"sparse forest."
+        },
+        {
+            "name":"exit",
+            "index":3,
+            "cornerPiece":true,
+            "model":"models/tiles/encounter_boarder.model",
+            "description":"sparse forest."
+        },
+        {
+            "name":"tree",
+            "index":4,
+            "floor":false,
+            "model":"models/world/encounter_tree.model",
+            "description":"sparse forest."
+        }
+    ]
+}

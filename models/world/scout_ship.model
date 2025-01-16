@@ -1,0 +1,8 @@
+{
+    "model":
+    {
+        "obj":"models/world/scout_ship.obj",
+        "texture":"models/world/scout_ship.png",
+        "materialFile":"models/world/world_exit_base.material"
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "model":
+    {
+        "obj":"models/world/town.obj",
+        "texture":"models/world/town_skin.png",
+        "materialFile":"models/world/world_exit_base.material"
+    }
+}

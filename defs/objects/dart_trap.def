@@ -1,0 +1,37 @@
+{
+    "name":"dart_trap",
+    "model":"models/objects/dart_trap/dart_trap.model",
+    "color":[255,255,255,255],
+    "bounds":
+    {   
+        "box":
+        {
+            "m":[-0.5,-0.5,0],
+            "s":[1,1,1]
+        }
+    },
+    "sounds":
+    [
+        {
+            "name":"open",
+            "file":"sounds/effects/chest_open.wav"
+        }
+    ],
+    "levelColor":1,
+    "resets":1,
+    "attack":
+    {
+        "name":"shoot",
+        "damageFrame":0,
+        "damageType":"physical",
+        "damageAmount":10,
+        "hits":1,
+        "unblockable":false,
+        "undodgeable":false,
+        "recoverFrames":20,
+        "rangeMin":1,
+        "rangeMax":10,
+        "accuracy":0.75,
+        "projectile":"dart_trap_dart"
+    }
+}

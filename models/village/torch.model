@@ -1,0 +1,8 @@
+{
+    "model":
+    {
+        "obj":"models/village/torch.obj",
+        "texture":"models/village/torch_skin.png",
+        "materialFile": "models/village/village_base.material"
+    }
+}

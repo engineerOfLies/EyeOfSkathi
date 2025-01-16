@@ -1,0 +1,8 @@
+{
+    "model":
+    {
+        "obj":"models/world/colony_ship.obj",
+        "texture":"models/world/colony_ship_skin.png",
+        "materialFile":"models/world/world_exit_base.material"
+    }
+}

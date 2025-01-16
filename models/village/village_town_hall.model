@@ -1,0 +1,8 @@
+{
+    "model":
+    {
+        "obj":"models/village/village_town_hall.obj",
+        "texture":"models/village/town_hall_skin.png",
+        "materialFile": "models/village/village_base.material"
+    }
+}

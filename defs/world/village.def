@@ -1,0 +1,14 @@
+{
+    "name":"map_exit",
+    "model":"models/world/native_town.model",
+    "scale":[1,1,1],
+    "color":[255,255,255,255],
+    "bounds":
+    {   
+        "box":
+        {
+            "m":[-1,-1,-1],
+            "s":[2,2,2]
+        }
+    }
+}

@@ -1,0 +1,40 @@
+{
+    "tileSet":
+    [
+        {
+            "name":"Path Floor",
+            "index":1,
+            "floor":true,
+            "model":"models/town/walk_tile.model",
+            "description":"Sidewalk"
+        },
+        {
+            "name":"forest",
+            "index":7,
+            "solid":true,
+            "model":"models/town/forest.model",
+            "description":"dense forest."
+        },
+        {
+            "name":"house_exit",
+            "index":3,
+            "alignToFloor":true,
+            "description":"dense forest."
+        },
+        {
+            "name":"Town Gate",
+            "index":4,
+            "alignToFloor":true,
+            "model":"models/town/town_exit.model",
+            "description":"This path leads higher up"
+        },
+        {
+            "name":"Solar Collector",
+            "index":6,
+            "alignToFloor":false,
+            "solid":true,
+            "model":"models/town/solar_collector.model",
+            "description":"This helps generate power for the colony."
+        }
+    ]
+}

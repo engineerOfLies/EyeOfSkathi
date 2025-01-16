@@ -1,0 +1,369 @@
+{
+    "name":"Scout Ship",
+    "seed":101,
+    "tileSet":"defs/tiles/tileset_tech.def",
+    "doorEnts":"defs/objects/door_tech.def",
+    "wallLights":"wall_light_tech",
+    "music":"sounds/bgm/dungeon.wav",
+    "levels":
+    [
+        {
+            "name": "level_1",
+            "prefab": 1,
+            "musicFilename": "sounds/bgm/dungeon.wav",
+            "wallLights": "wall_light_tech",
+            "doorEnts": "defs/objects/door_tech.def",
+            "color": [
+                255,
+                160,
+                160,
+                255
+            ],
+            "exits": [
+                {
+                    "type": 5,
+                    "id": 0,
+                    "roomId": 4,
+                    "location": [
+                        5,
+                        26
+                    ],
+                    "destination": "world",
+                    "toExit": 12
+                }
+            ],
+            "spawns": [
+                {
+                    "entity": "terminal",
+                    "location": [
+                        5,
+                        2,
+                        0
+                    ],
+                    "rotation": 180,
+                    "args":
+                    {
+                        "events":
+                        [
+                            {
+                                "conditions":
+                                [
+                                    {
+                                        "event":"scout_blackbox",
+                                        "value":"true",
+                                        "state":1
+                                    }
+                                ],
+                                "message":"You already retreived the ship's blackbox from the terminal."
+                            },
+                            {
+                                "conditions":
+                                [
+                                    {
+                                        "event":"scout_blackbox",
+                                        "value":"true",
+                                        "state":0
+                                    }
+                                ],
+                                "message":"You disengage the ship's blackbox from the terminal.",
+                                "giveItem":
+                                {
+                                    "name":"scout_blackbox",
+                                    "amount":1
+                                },
+                                "setEvent":
+                                {
+                                    "event":"scout_blackbox",
+                                    "value":"true"
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "entity": "wall_light_tech",
+                    "location": [
+                        4,
+                        3,
+                        0
+                    ],
+                    "rotation": 90
+                },
+                {
+                    "entity": "wall_light_tech",
+                    "location": [
+                        8,
+                        6,
+                        0
+                    ],
+                    "rotation": -90
+                },
+                {
+                    "entity": "wall_light_tech",
+                    "location": [
+                        7,
+                        8,
+                        0
+                    ],
+                    "rotation": 0
+                },
+                {
+                    "entity": "door_tech",
+                    "location": [
+                        5,
+                        26,
+                        0
+                    ],
+                    "rotation": 0
+                },
+                {
+                    "entity": "wall_light_tech",
+                    "location": [
+                        2,
+                        6,
+                        0
+                    ],
+                    "rotation": 90
+                },
+                {
+                    "entity": "wall_light_tech",
+                    "location": [
+                        7,
+                        10,
+                        0
+                    ],
+                    "rotation": -90
+                },
+                {
+                    "entity": "wall_light_tech",
+                    "location": [
+                        7,
+                        11,
+                        0
+                    ],
+                    "rotation": -90
+                },
+                {
+                    "entity": "wall_light_tech",
+                    "location": [
+                        5,
+                        12,
+                        0
+                    ],
+                    "rotation": 90
+                },
+                {
+                    "entity": "wall_light_tech",
+                    "location": [
+                        7,
+                        15,
+                        0
+                    ],
+                    "rotation": -90
+                },
+                {
+                    "entity": "wall_light_tech",
+                    "location": [
+                        4,
+                        19,
+                        0
+                    ],
+                    "rotation": 90
+                },
+                {
+                    "entity": "wall_light_tech",
+                    "location": [
+                        6,
+                        21,
+                        0
+                    ],
+                    "rotation": 180
+                },
+                {
+                    "entity": "wall_light_tech",
+                    "location": [
+                        7,
+                        24,
+                        0
+                    ],
+                    "rotation": -90
+                },
+                {
+                    "entity": "wall_light_tech",
+                    "location": [
+                        6,
+                        26,
+                        0
+                    ],
+                    "rotation": 0
+                },
+                {
+                    "entity": "wall_light_tech",
+                    "location": [
+                        2,
+                        24,
+                        0
+                    ],
+                    "rotation": 90
+                },
+                {
+                    "entity": "door_tech",
+                    "location": [
+                        6,
+                        8,
+                        0
+                    ],
+                    "rotation": 180,
+                    "args": {
+                        "color": [
+                            255,
+                            160,
+                            160,
+                            255
+                        ],
+                        "state": 0
+                    }
+                },
+                {
+                    "entity": "door_tech",
+                    "location": [
+                        5,
+                        21,
+                        0
+                    ],
+                    "rotation": 0,
+                    "args": {
+                        "color": [
+                            255,
+                            160,
+                            160,
+                            255
+                        ],
+                        "state": 0
+                    }
+                },
+                {
+                    "entity": "tech_chest",
+                    "location": [
+                        3,
+                        4,
+                        0
+                    ],
+                    "rotation": 90,
+                    "args": {
+                        "open": 0,
+                        "loot": "credits",
+                        "count": 150
+                    }
+                },
+                {
+                    "entity": "monster_red_slime",
+                    "location": [
+                        5,
+                        17,
+                        0
+                    ],
+                    "rotation": 90,
+                    "args": {
+                        "health": 5,
+                        "loot": "credits",
+                        "count": 10
+                    }
+                },
+                {
+                    "entity": "monster_service_drone",
+                    "location": [
+                        5,
+                        11,
+                        0
+                    ],
+                    "rotation": 90,
+                    "args": {
+                        "health": 5,
+                        "loot": "credits",
+                        "count": 10
+                    }
+                },
+                {
+                    "entity": "monster_red_slime",
+                    "location": [
+                        5,
+                        4,
+                        0
+                    ],
+                    "rotation": 270,
+                    "args": {
+                        "health": 5,
+                        "loot": "credits",
+                        "count": 10
+                    }
+                },
+                {
+                    "entity": "monster_service_drone",
+                    "location": [
+                        3,
+                        23,
+                        0
+                    ],
+                    "rotation": 270,
+                    "args": {
+                        "health": 5,
+                        "loot": "credits",
+                        "count": 10
+                    }
+                },
+                {
+                    "entity": "monster_red_slime",
+                    "location": [
+                        6,
+                        9,
+                        0
+                    ],
+                    "rotation": 270,
+                    "args": {
+                        "health": 5,
+                        "loot": "credits",
+                        "count": 10
+                    }
+                }
+            ],
+            "tilemap":
+            {
+                "size":[12.000000,27.000000],
+                "offset":[0.000000,0.000000],
+                "numTiles":324,
+                "tileSetFile":"defs/tiles/tileset_tech.def",
+                "tiles":
+                [
+                    [0,0,0,0,0,0,0,0,0,0,0,0],
+                    [0,0,0,0,0,0,0,0,0,0,0,0],
+                    [0,0,0,0,0,2,0,0,0,0,0,0],
+                    [0,0,2,2,2,1,2,2,2,0,0,0],
+                    [0,0,2,1,1,1,1,1,2,0,0,0],
+                    [0,0,2,1,1,1,1,1,2,0,0,0],
+                    [0,0,2,1,1,1,1,1,2,0,0,0],
+                    [0,0,2,1,1,1,1,1,2,0,0,0],
+                    [0,0,2,2,2,2,5,2,2,0,0,0],
+                    [0,0,0,0,0,2,1,2,0,0,0,0],
+                    [0,0,0,0,2,2,1,2,0,0,0,0],
+                    [0,0,0,0,2,1,1,2,0,0,0,0],
+                    [0,0,0,0,2,2,1,2,0,0,0,0],
+                    [0,0,0,0,0,2,1,2,0,0,0,0],
+                    [0,0,0,0,0,2,1,2,0,0,0,0],
+                    [0,0,0,0,0,2,1,2,0,0,0,0],
+                    [0,0,0,0,2,2,1,2,0,0,0,0],
+                    [0,0,0,0,2,1,1,2,0,0,0,0],
+                    [0,0,0,0,2,1,2,2,0,0,0,0],
+                    [0,0,0,0,2,1,2,0,0,0,0,0],
+                    [0,0,0,0,2,1,2,0,0,0,0,0],
+                    [0,0,2,2,2,5,2,2,0,0,0,0],
+                    [0,0,2,1,1,1,1,2,0,0,0,0],
+                    [0,0,2,1,1,1,1,2,0,0,0,0],
+                    [0,0,2,1,1,1,1,2,0,0,0,0],
+                    [0,0,2,1,1,1,1,2,0,0,0,0],
+                    [0,0,2,2,2,5,2,2,0,0,0,0]
+                ]
+            }
+        }
+    ]
+}

@@ -1,0 +1,11 @@
+{
+    "equipmentSlots":
+    [
+        "head",
+        "body",
+        "legs",
+        "leftHand",
+        "rightHand",
+        "accessory"
+    ]
+}

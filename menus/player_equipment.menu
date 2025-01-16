@@ -1,0 +1,179 @@
+{
+    "window":
+    {
+        "name":"equipment",
+        "color":[255,255,255,200],
+        "dimensions" : [-250,0.05,250,0.8],
+        "elements":
+        [
+
+            {
+                "type": "list",
+                "bounds": [4,44,0.95,1],
+                "name":"label_list",
+                "style": "vertical",
+                "item_size" : [1,40],
+                "packed":true,
+                "elements":
+                [
+                    {
+                        "type": "label",
+                        "bounds": [0,0,1,28],
+                        "text":"Right Hand",
+                        "justify" : "left",
+                        "align" : "middle",
+                        "style":"H4"
+                    },
+                    {
+                        "type": "label",
+                        "bounds": [5,0,1,28],
+                        "text":"<weapon>",
+                        "name":"right_hand",
+                        "justify" : "left",
+                        "align" : "middle",
+                        "style":"normal"
+                    },
+                    {
+                        "type": "label",
+                        "bounds": [10,0,1,28],
+                        "name":"right_hand_effect",
+                        "text":"Damage",
+                        "justify" : "left",
+                        "align" : "middle",
+                        "style":"normal"
+                    },
+                    {
+                        "type": "label",
+                        "bounds": [0,0,1,28],
+                        "text":"Left Hand",
+                        "justify" : "left",
+                        "align" : "middle",
+                        "style":"H4"
+                    },
+                    {
+                        "type": "label",
+                        "bounds": [5,0,1,28],
+                        "text":"<weapon>",
+                        "name":"left_hand",
+                        "justify" : "left",
+                        "align" : "middle",
+                        "style":"normal"
+                    },
+                    {
+                        "type": "label",
+                        "bounds": [10,0,1,28],
+                        "name":"left_hand_effect",
+                        "text":"Damage",
+                        "justify" : "left",
+                        "align" : "middle",
+                        "style":"normal"
+                    },
+                    {
+                        "type": "label",
+                        "bounds": [0,0,1,28],
+                        "text":"Body",
+                        "justify" : "left",
+                        "align" : "middle",
+                        "style":"H4"
+                    },
+                    {
+                        "type": "label",
+                        "bounds": [5,0,1,28],
+                        "text":"<armor>",
+                        "name":"body",
+                        "justify" : "left",
+                        "align" : "middle",
+                        "style":"normal"
+                    },
+                    {
+                        "type": "label",
+                        "bounds": [10,0,1,28],
+                        "text":"Protection",
+                        "name":"armor_effect",
+                        "justify" : "left",
+                        "align" : "middle",
+                        "style":"normal"
+                    },
+                    {
+                        "type": "label",
+                        "bounds": [0,0,1,28],
+                        "text":"Accessory",
+                        "justify" : "left",
+                        "align" : "middle",
+                        "style":"H4"
+                    },
+                    {
+                        "type": "label",
+                        "bounds": [10,0,1,28],
+                        "name":"accessor1",
+                        "text":"<empty>",
+                        "justify" : "left",
+                        "align" : "middle",
+                        "style":"normal"
+                    },
+                    {
+                        "type": "label",
+                        "bounds": [10,0,1,28],
+                        "name":"accessor3_effect",
+                        "text":"<empty>",
+                        "justify" : "left",
+                        "align" : "middle",
+                        "style":"normal"
+                    },
+                    {
+                        "type": "label",
+                        "bounds": [0,0,1,28],
+                        "text":"Accessory",
+                        "justify" : "left",
+                        "align" : "middle",
+                        "style":"H4"
+                    },
+                    {
+                        "type": "label",
+                        "bounds": [10,0,1,28],
+                        "name":"accessor2",
+                        "text":"<empty>",
+                        "justify" : "left",
+                        "align" : "middle",
+                        "style":"normal"
+                    },
+                    {
+                        "type": "label",
+                        "bounds": [10,0,1,28],
+                        "name":"accessor3_effect",
+                        "text":"<empty>",
+                        "justify" : "left",
+                        "align" : "middle",
+                        "style":"normal"
+                    },
+                    {
+                        "type": "label",
+                        "bounds": [0,0,1,28],
+                        "text":"Accessory",
+                        "justify" : "left",
+                        "align" : "middle",
+                        "style":"H4"
+                    },
+                    {
+                        "type": "label",
+                        "bounds": [10,0,1,28],
+                        "name":"accessor3",
+                        "text":"<empty>",
+                        "justify" : "left",
+                        "align" : "middle",
+                        "style":"normal"
+                    },
+                    {
+                        "type": "label",
+                        "bounds": [10,0,1,28],
+                        "name":"accessor3_effect",
+                        "text":"<empty>",
+                        "justify" : "left",
+                        "align" : "middle",
+                        "style":"normal"
+                    }
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,23 @@
+{
+    "tileSet":
+    [
+        {
+            "name":"Path Floor",
+            "index":1,
+            "floor":true,
+            "alignToFloor":true,
+            "model":"models/village/path_tile.model"
+        },
+        {
+            "name":"house_exit",
+            "index":3,
+            "alignToFloor":true
+        },
+        {
+            "name":"Town Gate",
+            "index":4,
+            "alignToFloor":false,
+            "model":"models/village/path_tile.model"
+        }
+    ]
+}

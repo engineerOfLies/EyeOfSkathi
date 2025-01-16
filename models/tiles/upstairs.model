@@ -1,0 +1,8 @@
+{
+    "model":
+    {
+        "obj":"models/tiles/upstairs.obj",
+        "texture":"models/tiles/walltile.png",
+        "materialFile":"models/tiles/dungeon_tile.material"
+    }
+}

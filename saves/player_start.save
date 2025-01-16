@@ -1,0 +1,60 @@
+{
+    "name": "Unknown Hero",
+    "experience": 0,
+    "xpLevel": 1,
+    "health": 200,
+    "stamina": 150,
+    "mana": 20,
+    "attributes": [
+        {
+            "name": "strength",
+            "uses": 0,
+            "level": 1
+        },
+        {
+            "name": "endurance",
+            "uses": 0,
+            "level": 1
+        },
+        {
+            "name": "dexterity",
+            "uses": 0,
+            "level": 1
+        },
+        {
+            "name": "agility",
+            "uses": 0,
+            "level": 1
+        },
+        {
+            "name": "focus",
+            "uses": 0,
+            "level": 1
+        },
+        {
+            "name": "mind",
+            "uses": 0,
+            "level": 1
+        }
+    ],
+    "inventory": 
+    [
+        {
+            "name": "healthbar",
+            "amount": 1
+        }
+    ],
+    "equips": 
+    [
+        {
+            "name": "healthbar",
+            "slot": "tool1"
+        }
+    ],
+    "location": "dungeon",
+    "dungeon": "defs/dungeons/colony_command_center.def",
+    "level": "command_center_level_1",
+    "history": {},
+    "position": [6,11,0],
+    "rotation": 90
+}

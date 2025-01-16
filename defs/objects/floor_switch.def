@@ -1,0 +1,25 @@
+{
+    "name":"floor_switch",
+    "model":"models/objects/floor_switch/floor_switch.model",
+    "color":[255,255,255,255],
+    "bounds":
+    {   
+        "box":
+        {
+            "m":[-0.5,-0.5,0],
+            "s":[1,1,1]
+        }
+    },
+    "sounds":
+    [
+        {
+            "name":"activate",
+            "file":"models/objects/floor_switch/click.wav"
+        },
+        {
+            "name":"deactivate",
+            "file":"models/objects/floor_switch/click.wav"
+        }
+    ],
+    "levelColor":1
+}

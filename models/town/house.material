@@ -1,0 +1,11 @@
+{
+    "material":
+    {
+        "name":"house_base",
+        "ambient":[64,64,64,255],
+        "diffuse":[200,200,255,255],
+        "specular":[8,8,8,8],
+        "transparency":1,
+        "shininess":2
+    }
+}

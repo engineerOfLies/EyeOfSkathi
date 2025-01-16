@@ -1,0 +1,16 @@
+{
+    "model":
+    {
+        "obj":"models/world/encounter_terrain.obj",
+        "texture":"models/world/encounter_terrain.png",
+        "material":
+        {
+            "name":"encounter_terrain",
+            "ambient":[16,16,16,255],
+            "diffuse":[255,255,255,255],
+            "specular":[8,8,8,8],
+            "transparency":1,
+            "shininess":2
+        }
+    }
+}

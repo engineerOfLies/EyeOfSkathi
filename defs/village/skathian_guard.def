@@ -1,0 +1,17 @@
+{
+    "name":"npc_guard",
+    "model":"models/npcs/skathian_guard/skathian_guard.model",
+    "color":[255,255,255,255],
+    "speedMax":0.075,
+    "solid":1,
+    "turnSpeedMax":0.05,
+    "health":100,
+    "bounds":
+    {
+        "sphere":
+        {
+            "c":[0,0,0.5],
+            "r":0.35
+        }
+    }
+}

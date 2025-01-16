@@ -1,0 +1,21 @@
+{
+"window":{
+    "dimensions" : [0,0,0.675,100],
+    "justify":"center",
+    "align":"bottom",
+    "elements":
+    [
+      {
+        "type": "list",
+        "name": "list",
+        "bounds": [16,2,1,1],
+        "style": "vertical",
+        "packed":true,
+        "item_size" : [1,8],
+        "elements":
+        [
+        ]
+      }
+    ]
+    }
+}

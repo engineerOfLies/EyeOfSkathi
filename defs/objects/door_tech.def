@@ -1,0 +1,28 @@
+{
+    "name":"door_tech",
+    "model":"models/objects/door_tech.model",
+    "scale":[0.5,0.5,0.5],
+    "color":[255,255,255,255],
+    "bounds":
+    {   
+        "box":
+        {
+            "m":[-0.5,-0.5,0],
+            "s":[1,1,1]
+        }
+    },
+    "levelColor":1,
+    "solid":1,
+    "sounds":
+    [
+        {
+            "name":"open",
+            "file":"sounds/effects/tech_door.wav"
+        },
+        {
+            "name":"close",
+            "file":"sounds/effects/tech_door.wav"
+        }
+    ],
+    "#comment":"above is standard entity data, below is custom to this entity"
+}

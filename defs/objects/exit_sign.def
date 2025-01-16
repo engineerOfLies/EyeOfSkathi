@@ -1,0 +1,13 @@
+{
+    "name":"exit_sign",
+    "model":"models/objects/exit_sign.model",
+    "bounds":
+    {   
+        "box":
+        {
+            "m":[-0.5,-0.5,0],
+            "s":[1,1,1]
+        }
+    },
+    "solid":0
+}

@@ -1,0 +1,11 @@
+{
+    "window":
+    {
+        "name":"creation",
+        "dimensions" : [0,01,1,1],
+        "no_draw_generic":true,
+        "elements":
+        [
+        ]
+    }
+}

@@ -1,0 +1,14 @@
+{
+    "name":"house",
+    "model":"models/village/village_hut.model",
+    "scale":[1,1,1],
+    "color":[255,255,255,255],
+    "bounds":
+    {   
+        "box":
+        {
+            "m":[-0.5,-0.5,0],
+            "s":[1,1,1]
+        }
+    }
+}

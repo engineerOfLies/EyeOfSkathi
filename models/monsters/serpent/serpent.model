@@ -1,0 +1,25 @@
+{
+    "model":
+    {
+        "gltf":"models/monsters/serpent/serpent.gltf",
+        "texture":"models/monsters/serpent/serpent_skin.png",
+        "armature":"models/monsters/serpent/serpent.gltf",
+        "material":
+        {
+            "name":"serpent_base",
+            "ambient":[128,128,128,255],
+            "diffuse":[255,255,255,255],
+            "specular":[128,128,128,64],
+            "transparency":1,
+            "shininess":128
+        },
+        "matrix":
+        {
+            "#comment":"this is a delta on what is loaded from file",
+            "position":[0,0,0],
+            "rotation":[0,0,180],
+            "scale":[1,1,1]
+        },
+        "actionListFile":"models/monsters/serpent/serpent_actions.anim"
+    }
+}

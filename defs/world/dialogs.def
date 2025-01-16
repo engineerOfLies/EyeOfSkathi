@@ -1,0 +1,757 @@
+{
+    "dialogs":
+    [
+        {
+            "name":"governor",
+            "displayName":"Cmdr O'Hare",
+            "greet":"There you are, how are you faring?",
+            "topics":
+            [
+                {
+                    "name":"About Munnin",
+                    "dialog":"I suppose you already know a bit already about our expedition.  Our colony ship was destined for a different solar system entirely.  We never made it.  As my people explain it magnetars have an effect that reaches even into fourth dimensional travel.  We passed through the magnetic field in fourth space and got knocked out of fourth space.  We ended up in this system with many critical systems damaged.",
+                    "topics":
+                    [
+                        {
+                            "name":"Magnetars",
+                            "dialog":"Please ask the scientists downstairs, I barely understand it myself.  All I know is that they have such a powerful magnetic field that it plays havoc with tech.  Knocked out our FTL drive."
+                        },
+                        {
+                            "name":"The Crash",
+                            "dialog":"Well, after we dropped out of FTL, we made for the only inhabitable planet in the system in case we couldn't fix it.  The sad part is, we could.  We had been in orbit for a few hours trying to effect repairs when we started going down.  Upon re-entry the ship broke apart.  Thankfully, this part of the ship was designed to separate and make landfall.  We were able to make a safe-ish landing.",
+                            "topics":
+                            [
+                                {
+                                    "name":"How did it happen?",
+                                    "dialog":"Isn't that the million credit question?  We don't know.  One moment we were in orbit making repairs and the next we were falling into the atmosphere.  I understand that your ship had a similar fate.  If you could retrieve the black box from your ship and the colony ship we might just figure out what happened.  If you do, bring it to Dr. Burton downstairs."
+                                },
+                                {
+                                    "name":"The Other Half",
+                                    "dialog":"We have spotted the crash site.  It landed near the lake to the east of here.  Unfortunately, on the other side of the river from here.  We have tried to reach it, bit the river and lake are overrun with hostile native life forms.",
+                                    "topics":
+                                    [
+                                        {
+                                            "name":"Native Life forms",
+                                            "dialog":"From what we can tell there is a sentient species native to this planet.  They have about medieval level of technology.  There are also a myriad of other life forms that are very dangerous.  There are the bandits too.",
+                                            "topics":
+                                            [
+                                                {
+                                                    "name":"Natives",
+                                                    "dialog":"They are humanoid and have a spoken and written language, but our linguist hasn't been able to crack their language yet.  We have had a few unfortunate encounters with them that ended up violent.  We were never meant to land on an inhabited planet, you see.  So I have ordered our people to keep their distance if they can.  Avoid conflict.  This is their world after all."
+                                                },
+                                                {
+                                                    "name":"Hostile Life",
+                                                    "dialog":"I'm told the local life is not what would be expected on an alien planet.  The life resembles earth creatures a little too closely.  They should be more alien than they are.  They are also extremely hostile to anything they come in contact with.  I would suggest you be cautious if you go outside of the colony walls."
+                                                },
+                                                {
+                                                    "name":"Bandits? Here?",
+                                                    "dialog":"Bandit Co. Interstellar.  The group of pirates and thugs have somehow managed to make their way onto this planet.  We suspect they stowed away and quickly setup camp somewhere on this planet after landing.  They assault anyone they come across so be on your guard."
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "name":"Crash Site",
+                                            "dialog":"Should you find a way to reach the other half of the colony ship, you might be able to activate its World-Gate.  If you can do that we should be able to recover much needed supplies and the rest of the colonists stuck in cryogenic sleep.",
+                                            "topics":
+                                            [
+                                                {
+                                                    "name":"The Colonists",
+                                                    "dialog":"What you see in this colony now are only a fraction of the people who were bound to be founders of the colony.  The vast majority of us were safely asleep in cryo sleep awaiting for the colony to be set up.  Their cryo pods have self sustaining power supplies that could last years if they need to. All the same they would be better of the sooner we get to them."
+                                                },
+                                                {
+                                                    "name":"World-Gate",
+                                                    "dialog":"The colony ship was made up of three parts: The Ship, the Landing Colony (where we are now), and an Orbiting Station to be left in geo-synchronous orbit above the landing colony.  In order to shuttle supplies between the station and the colony we were both equipped with a world gate, a scaled down FTL gate for travel within planetary ranges.",
+                                                    "topics":
+                                                    [
+                                                        {
+                                                            "name":"How to Activate?",
+                                                            "dialog":"Well if you can get to the colony ship and turn on the reactor.  Hopefully enough of the ship is still intact to active the World-Gate.  It will connect to the pair gate here in the command center.  We would then be able to retreive our people and resources at our convenience."
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name":"Work",
+                    "dialog":"We don't have an specific openings at the moment.  Our colony was well staffed from the get-go.  However, a person with your talents I am sure will find ways to help out.",
+                    "topics":
+                    [
+                        {
+                            "name":"Xenobiology",
+                            "dialog":"Our Xenobiologist is always looking for specimens to study of the local life forms if you can handle the native life forms."
+                        },
+                        {
+                            "name":"Engineering",
+                            "dialog":"Our Head of Engineering is swamped trying to make sure our colony is up and running. As well as still trying to figure out why we crashed in the first place."
+                        },
+                        {
+                            "name":"Anthropologist",
+                            "dialog":"Next to your house, our anthropologist has set up a small trading spot.  But I understand he really wants to get his hands on some native writing to help crack their language."
+                        },
+                        {
+                            "name":"Grunt Work",
+                            "dialog":"The colony's lower decks have become infested with native life forms.  It seems our automated defenses are on the fritz.  We could really use someone to clean it out and reset our defense systems in the lower decks.  Do watch out for the service drones, though.  They seem to be stuck in hostile mode."
+                        },
+                        {
+                            "name":"Scout Ship",
+                            "dialog":"The ship you landed on is still intact.  Crashed in the foothills to the north of here.  If you could retreive it's black back for Dr. Burton we might be able to begin to piece together why we both crashed here."
+                        }
+                    ]
+                },
+                {
+                    "name":"About My Ship",
+                    "conditions":
+                    [
+                        {
+                            "event":"blackbox_recovery",
+                            "value":"true",
+                            "state":1
+                        }
+                    ],
+                    "dialog":"I have read Dr. Burton's Report on your ship's blackbox recorder.  It seems your ship, and likely our colony ship, were both shot down by an energy weapon originating in the mountains north of town.  Somewhere in the mountains.  Furthermore, your ship detected a jamming signal explaining how, even considering the nearbby pulsar, we cannot contact the outside world.  I would like to ask you to investigate this further.  Seek out the Colony Ship.",
+                    "topics":
+                    [
+                        {
+                            "name":"Colony Ship",
+                            "dialog":"As you should know, our colony was being transported to our intended destination aboard the colony ship Huggin.  You may have seen the crash site east of here.  If you can find your way into the ship, we would like you to recover its blackbox so we can learn more about the whereabouts of the source of the weapon that shot us down.  Furthermore the ship has more advanced sensors than your ship has.  It's possible we will learn more about the area with it."
+                        }
+                    ]
+                }
+            ],
+            "onExit":
+            {
+                "events":
+                [
+                    {
+                        "conditions":
+                        [
+                            {
+                                "event":"blue_key",
+                                "value":"true",
+                                "state":0
+                            },
+                            {
+                                "event":"blackbox_recovery",
+                                "value":"true",
+                                "state":1
+                            }
+                        ],
+                        "displayName":"Just one more thing",
+                        "dialog":"You will need this key card to access the colony ship.  And if you can find the ship's Colony Transponder we can use the Planetary Gates between our colony and the ship to recover some very needed equipment.  There will be a reward in it for you, and we will be able to outfit you with better equipment.",
+                        "giveItem":
+                        {
+                            "name":"blue_key_card",
+                            "amount":1
+                        },
+                        "setEvent":
+                        {
+                            "event":"blue_key",
+                            "value":"true"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name":"ed_01",
+            "displayName":"ED 01",
+            "topics":
+            [
+                {
+                    "name":"About ED 01",
+                    "dialog":"Good day, I am Executive Droid ED 01.  The commander just calls me Eddy.  I assist the Governor with his day to day tasks.  Let me know if you need anything from him."
+                }
+            ]
+        },
+        {
+            "name":"ed_02",
+            "displayName":"ED 02",
+            "greet":"You are on level 2 of the command center : Security.  Behind you is the exit, around the center are the stairs to the governor's office and the doors the Security Office."
+        },
+        {
+            "name":"ed_03",
+            "displayName":"ED 03",
+            "greet":"You are on level 1 of the command center : Reception and Medical Bay.  Behind you is the Medical Bay.  The central column behind me holds stairs up to Security, and down to research.  If you countinue around the central column you will find the reception desk and the exit to the town."
+        },
+        {
+            "name":"sd_02",
+            "displayName":"SD 02",
+            "greet":"I am Security Droid SD 02.  I am the assistant to the chief security.  I make sure he is kept up to speed on any and all alerts and help him to organize and communicate with the rest of the security force."
+        },
+        {
+            "name":"security_chief",
+            "displayName":"Chief Doyle",
+            "topics":
+            [
+                {
+                    "name":"About Chief Doyle",
+                    "dialog":"I was the head of security on the colony ship and now I am the Chief of Security here for the Munnin Colony.  I am in charge of the colony defense force.  All the security guards you see around the town report to me."
+                },
+                {
+                    "name":"Security",
+                    "dialog":"For the most part everyone in the town is a law abiding citizen.  Outside of town is another story.",
+                    "topics":
+                    [
+                        {
+                            "name":"Unlawful Citizens?",
+                            "dialog":"Nothing serious, but there have been some reports of missing property.  If we catch anyone engaging in any unlawful activity they will spend some time in our holding cells.",
+                            "topics":
+                            [
+                                {
+                                    "name":"Holding Cells",
+                                    "dialog":"located to the left of this office when you leave here.  The command center is equipped with 4 holding cells.  I really don't expect for these to be ever used."
+                                }
+                            ]
+                        },
+                        {
+                            "name":"Outside Dangers",
+                            "dialog":"Well somehow there are bandits on this planet that is otherwise under developed, in addition to the hostile beasts that roam the countryside.",
+                            "topics":
+                            [
+                                {
+                                    "name":"Bandits?",
+                                    "dialog":"Bandit Co. Interstellar.  They are an organized crime syndicate that somehow manages to permeat the entire known galaxy.  Everywhere there are credits to steal, there are Bandit Co. bandits to try and steal them.  I think they mostly survive because they are not really good at their jobs.  They are easily handled by a well trained police or military officer.  Still, they somehow managed to get this planet at the same time we did."
+                                },
+                                {
+                                    "name":"Hostile Beasts",
+                                    "dialog":"The doctors in the basement know more than I do, I just know that the local animal life is very dangerous and very hostile to outsiders.  In the first few days after we made landfall we lost a lot of people to animal attacks.  That is, until we were able to deploy the colony defenses.  Still, I make sure our guards are posted around the town to protect the people."
+                                },
+                                {
+                                    "name":"Natives",
+                                    "dialog":"The Pax Interstellar treaty between the major galactic superpowers forbids the colonization or interference with any planet that has a sentient local population.  If not for the emergency nature of our situation, we would never have landed on this planet.  Nor do we intend to stay here as soon as we can escape.  However, in the mean time the native population doesn't appear to be very welcoming.  Our orders are to avoid them if possible, but if not you are allowed to defend yourself."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name":"Work",
+                    "dialog":"I am afraid we don't need any more officers in the defense force, but there are some odd jobes that we haven't taken care of yet.",
+                    "topics":
+                    [
+                        {
+                            "name":"Lower Decks",
+                            "dialog":"The town is filled with access tunnels to various systems"
+                        },
+                        {
+                            "name":"Colony Black Box",
+                            "dialog":"we need to figure out exactly how and why our colony ship was brought down.  In order to do that, we need someone to find the wreck of the colony ship and retreive its black box.  I think I should be able to use it to find out happened.  Then maybe we can start thinking about getting off this planet."
+                        },
+                        {
+                            "name":"Bandits",
+                            "dialog":"There is a reward for anyone who can find the hideout where the Bandits are holed up."
+                        }
+                    ]
+                }                
+            ]
+        },
+        {
+            "name":"Dr. Biggs",
+            "displayName":"Dr. Biggs",
+            "greet":"How are you feeling?",
+            "topics":
+            [
+                {
+                    "name":"Where am I",
+                    "dialog":"You are in the medical bay of the Solarian Colony Ship Munnin.  You crash landed on this planet, same as us.  We were able to recover you from your ship's wreck and get you here for medical attention.",
+                    "topics":
+                    [
+                        {
+                            "name":"My ship?",
+                            "dialog":"I don't know much about where it is, I hear its mostly intact."
+                        },
+                        {
+                            "name":"Munnin Colony Ship?",
+                            "dialog":"We crash landed here ourselves a few months back.  This planet was not our intended destination, but we have made it our home until rescue can arrive."
+                        }
+                    ]
+                },
+                {
+                    "name":"Who are you?",
+                    "dialog":"I am the chief medical officer for the colony, Dr. Biggs.  I mostly just make sure everyone is healthy."
+                }
+            ],
+            "onExit":
+            {
+                "events":
+                [
+                    {
+                        "conditions":
+                        [
+                            {
+                                "event":"doctor_intro",
+                                "value":"true",
+                                "state":0
+                            }
+                        ],
+                        "displayName":"Farewell",
+                        "dialog":"Since you are stranded here too, we went ahead and set up a house pod for you.  It is the orange one near the town exit.  In there you will find some credits you can use to outfit yourself.  Be sure to equip at least a weapon before you go anywhere dangerous.  Take this key card card.  It will let you access most areas in the town.",
+                        "giveItem":
+                        {
+                            "name":"white_key_card",
+                            "amount":1
+                        },
+                        "setEvent":
+                        {
+                            "event":"doctor_intro",
+                            "value":"true"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name":"command_center_reception",
+            "displayName":"Reception",
+            "greet":"Welcome to the Munnin Colony Command Center",
+            "topics":
+            [
+                {
+                    "name":"About Command Center",
+                    "dialog":"This is the central hub of the Munnin Colony.  It was equipped with all we would need to set up the initial colony.  We also house some essential facilities here for the colony.",
+                    "topics":
+                    [
+                        {
+                            "name":"Med Bay",
+                            "dialog":"The medical bay is directly behind me.  All are welcome if they need treatment.  The Medical bay is run by Dr. Biggs.",
+                            "topics":
+                            [
+                                {
+                                    "name":"Dr. Biggs",
+                                    "dialog":"Our chief medical officer is quite experienced in general practice and surgery for Solarians and a wide range of sentient species."
+                                }
+                            ]
+                        },
+                        {
+                            "name":"Governor's Office",
+                            "dialog":"Located on the top floor of this building is the governor's office.  He has overseen the initial setup of the colony.  As this was not our original intended destination he has had to adapt to constantly changing situations on a planet that is not entirely peaceful.",
+                            "topics":
+                            [
+                                {
+                                    "name":"Governor O'Hare",
+                                    "dialog":"His office is located on the top floor of this building.  His door is always open."
+                                }
+                            ]
+                        },
+                        {
+                            "name":"Security Office",
+                            "dialog":"Located on the second floor of this building is the security office.  There you will be able to talk to our head of security, Office Doyle.",
+                            "topics":
+                            [
+                                {
+                                    "name":"Officer Doyle",
+                                    "dialog":"Officer Doyle has many years running security on a space station.  We should be in good hands trusting him with our safety."
+                                }
+                            ]
+                        },
+                        {
+                            "name":"Research Labs",
+                            "dialog":"Located in the basement you will find our many research labs.  Please stop and speak with our researchers.  They are always looking for people to help with their research",
+                            "topics":
+                            [
+                                {
+                                    "name":"Types of research",
+                                    "dialog":"You will have to talk to our researchers to get the specifics, but I understand their topics of interest range from materials, weapons design, and xenobiology!"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name":"Vendle",
+            "displayName":"Vendle",
+            "topics":
+            [
+                {
+                    "name":"About Vendle",
+                    "dialog":"I'm an anthropologist and linguist.  I was hoping the planet we settled on would have ancient ruins of lost civilizations to uncover.  I never imaginged we would land on a planet with an ACTUAL living native population.  If you can find anything of native origin in your travels, I would be happy to pay you a fair price for it.  I have already made some amazing discoveries on my own.",
+                    "topics":
+                    [
+                        {
+                            "name":"Artifacts",
+                            "dialog":"They don't need to be particularly rare or exciting, but anything you find that is of native origin I could use in my research.  I am really hoping to decipher their language so we can communicate and maybe open up trade.",
+                            "topics":
+                            [
+                                {
+                                    "name":"Native Language",
+                                    "dialog":"Our universal translators only work for languages that we already understand.  In order to update our translators I will need enough samples of their language in order to make sense of it.  Once I do that, I can update everyone's translator software and we should be able to talk with them."
+                                }
+                            ]
+                        },
+                        {
+                            "name":"Discoveries",
+                            "dialog":"The native Skathians, while medieval in their technology level, have developed some astounding crafts!  We have found a few in the area and observed their scouts with impressive equipment and even weilding a primitive form of technomancy!",
+                            "topics":
+                            [
+                                {
+                                    "name":"Crafts",
+                                    "dialog":"They seem to have a good understanding of their local flaura and fauna and have used them to create truely miraculous potions!  I have a few that I found that I am willing to part with for a price.  Don't worry, I had the lab check it out and it appears safe for consumption."
+                                },
+                                {
+                                    "name":"Equiment",
+                                    "dialog":"The local wildlife is particularly hardy and dangerous.  The Skathians have created their equipment with a metal equally as impressive to match.  The Skathian steel is somehow harder than normal steel and able to pierce the hides and shells of the most dangerous local wildlife."
+                                },
+                                {
+                                    "name":"Technomancy?",
+                                    "dialog":"I know its crazy, but our town watch have observed them performing what can only be desribed as magic!  This is the first observed case of such a primitive culture weilding it!"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name":"Officer Steve",
+            "displayName":"Officer Steve",
+            "greet":"Greetings",
+            "topics":
+            [
+                {
+                    "name":"About Steve",
+                    "dialog":"Nothing much to tell.  I work security for the town.  Mostly its guard duty and the occasional bug hunt."
+                },
+                {
+                    "name":"Guarding",
+                    "dialog":"We are having some trouble in the maintenance decks below the town.  Some of those slime creatues got into the systems and have played havoc with the security systems.  Its pretty dangerous down there.",
+                    "topics":
+                    [
+                        {
+                            "name":"The Danger",
+                            "dialog":"The slimes are not too much trouble, but they activated the security drones.   The drones are now treating ANYONE like a threat down there.  Strangely enought, not the slimes."
+                        },
+                        {
+                            "name":"Help",
+                            "dialog":"If you could maybe clear out the slimes and disable the security terminal that would be great.  You will need to find the yellow access key card down there.  I ah... kind of lost it when I was down there last.  "
+                        }
+                    ]
+                }
+            ],
+            "onExit":
+            {
+                "events":
+                [
+                    {
+                        "conditions":
+                        [
+                            {
+                                "event":"lower_decks_cleared",
+                                "value":"true",
+                                "state":0
+                            },
+                            {
+                                "event":"lower_decks_security",
+                                "value":"true",
+                                "state":1
+                            }
+                        ],
+                        "displayName":"Thank You!",
+                        "dialog":"Oh wow, you actually managed to disable the security drones!  Thank you so much.  here take this as a little reward.  Please don't mention this to anyone.",
+                        "giveItem":
+                        {
+                            "name":"credits",
+                            "amount":100
+                        },
+                        "setEvent":
+                        {
+                            "event":"lower_decks_cleared",
+                            "value":"true"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name":"Guard",
+            "displayName":"Gaurd",
+            "greet":"You may not pass"
+        },
+        {
+            "name":"GuardPassive",
+            "displayName":"Guard",
+            "greet":"You may Proceed"
+        },
+        {
+            "name":"command_center_guard1",
+            "displayName":"Gaurd",
+            "greet":"As you were"
+        },
+        {
+            "displayName":"Orion",
+            "name":"Orion",
+            "topics":
+            [
+                {
+                    "name":"About Shop",
+                    "dialog":"I have scavenged some supplies from the colony that people around here may find useful. I also have a fabricator to make more as we need."
+                },
+                {
+                    "name":"About Orion",
+                    "dialog":"My name is Orion.  I am the former inventory officer from the ship.  I was originally supposed to stay with the ship and never make landfall.  However, since we appear to be stuck here, I figured I figured I could use my accounting and inventory management skills to open this here shop."
+                },
+                {
+                    "name":"Munnin",
+                    "dialog":"I was one of the crew who was not in cryo on the ship.  I was in charge of inventory on the ship before we crashed.",
+                    "topics":
+                    [
+                        {
+                            "name":"The Crash",
+                            "dialog":"I was doing a supply check after we dropped out of FTL.  Then I heard some explosions and ran to the nearest escape pod.  I landed not far from the front half of the ship."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name":"Margul",
+            "displayName":"Margul",
+            "topics":
+            [
+                {
+                    "name":"About Margul",
+                    "dialog":"Hi, my name is Margul.  I used to work on da ship making repairs to the ship hull.  Now I have been put in charge of the weapons for the town.  Dis place is dangerous and everyone should be prepared to defend themselves."
+                },
+                {
+                    "name":"Weapons",
+                    "dialog":"Most of the colony weapons were in the other half of the colony ship.  What we have here are only what we have been able to fabricate, but we are limited in what we can make.  Still these basic steel weapons are better than nothing.  I have been using my metal working skills to make more too.  I make a pretty good Axe",
+                    "topics":
+                    [
+                        {
+                            "name":"Steel Weapons",
+                            "dialog":"Our fabricators were meant for 3D Printing basic tools and necessities.  They can do a range of plastics and metals.  For more better materials like alloys we will need the better grade fabricators that are in the other half of the colony ship",
+                            "topics":
+                            [
+                                {
+                                    "name":"The Other Half",
+                                    "dialog":"The colony ship broke in two on the way down.  The other half has more of the industrial grade equipment that we could use to make more powerful weapons.  If we can find a way to get to the old ship, we should be able to offer better products."
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name":"Lance",
+            "displayName":"Lance",
+            "topics":
+            [
+                {
+                    "name":"About Lance",
+                    "dialog":"Hey, I'm Lance.  If you need armor, you come and look for me."
+                },
+                {
+                    "name":"About Armor",
+                    "dialog":"We have civilian and security grade armors for sale.  Normally I wouldn't be able to sell non civilian grade armor to non security personel, but this planet is a lot more dangerous than the one we were bound for.  There are very strange and deadly creatures on this world.  Better protect yourself."
+                }
+            ]
+        },
+        {
+            "name":"burton",
+            "displayName":"Dr. Burton",
+            "topics":
+            [
+                {
+                    "name":"About Dr. Burton",
+                    "dialog":"Greetings!  My name is Ezra Burton, PhD.  I am the head of the applied physics engineering lab.  Here we design and build all manner of technologies that the colony will need.  As a secondary mandate, we are interested in alien materials and technologies.  If you come across any in your travels, please bring them to me.",
+                    "topics":
+                    [
+                        {
+                            "name":"Alien Technology",
+                            "dialog":"The locals of this planet are not as technologically advanced as we are, but they are more experienced working with their native materials.  From what I hear the few times our security teams have had conflict with the Skathians, their weapons proved very formidable in deed.  I would love to get my hands on some of their tools to see what we could discover."
+                        },
+                        {
+                            "name":"Engineering",
+                            "dialog":"We have a few fabricators that were usable after the crash landing. We put them to purpose replicating what we need.  If we could recover the industrial grade fabricators from the crash of the colony ship, we could manufacture much better equipment."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name":"Oris",
+            "displayName":"Dr. Oris",
+            "topics":
+            [
+                {
+                    "name":"About Dr. Oris",
+                    "dialog":"Hello, I am the director of the colony's xenobiology lab.  We study the functionality of life across its many forms found throughout the known galaxy.",
+                    "topics":
+                    [
+                        {
+                            "name":"Alien Life",
+                            "dialog":"The whole of the universe is made up of the same basic building blocks.  However, life finds a myriad of ways of putting them together in order to create living biological systems.  Many are similar to the life we have known from our homeworld, but just as many are completely different."
+                        },
+                        {
+                            "name":"Life on Skathi",
+                            "dialog":"This planet we find ourselves on is a bit of an enigma.  While the few specimens we have been able to collect are indeed alient to us, a great deal about the planets and animals we have observed are extremely Earth-like."
+                        }
+                    ]
+                },
+                {
+                    "name":"Requests",
+                    "dialog":"Why yes, this lab is ALWAYS looking for additional specimens for our research.  Some may even lead to new discoveries that could help us all.",
+                    "topics":
+                    [
+                        {
+                            "name":"Specimens",
+                            "dialog":"We have only been on this planet a few months more than you, so we have only scratched the surface about what secrets the life on this planet may hold.  If you recover any samples in your excursions, please bring them back here.  We don't have much of a budget, but we can pay you for what you bring back."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name":"Elric",
+            "displayName":"Elric",
+            "topics":
+            [
+                {
+                    "name":"About Elric",
+                    "dialog":"Greetings, I am the Technomage Elric.  I was part of the colony ship's magical security division, and now I have set up this humble shop for anyone interested in learning the mystical arts.",
+                    "topics":
+                    [
+                        {
+                            "name":"Magic",
+                            "dialog":"While there is no such thing as TRUE magic, we have come extremely close to it with advanced technologies.  We use femto-scale machines and programming to manipulate energies, technologies, and even biology to create the mystical effects the average person perceived as magic."
+                        },
+                        {
+                            "name":"About Technomages",
+                            "dialog":"We are dreamers, shapers, singers, and makers. We study the mysteries of laser and circuit, crystal and scanner, holographic demons and invocations of equations. These are the tools we employ, and we know many things."
+                        }
+                    ]
+                },
+                {
+                    "name":"Wares",
+                    "dialog":"I sell a variety of magical artifacts that most will find useful for protection.  For those with the MIND for magic, I also sell Spells and Catalysts for casting."
+                }
+            ]
+        },
+        {
+            "name":"skathian_guard0",
+            "displayName":"Guard",
+            "greet":"va, ghuy'cha'!"
+        },
+        {
+            "name":"skathian_guard1",
+            "displayName":"Gaurd",
+            "greet":"How do you speak our language?"
+        },
+        {
+            "name":"skathian_guard2",
+            "displayName":"Gaurd",
+            "greet":"Watch yourself offworlder."
+        },
+        {
+            "name":"akatz",
+            "displayName":"A'Katz",
+            "topics":
+            [
+                {
+                    "name":"About A'Katz",
+                    "dialog":"Nothing to tell.  I am the town's blacksmith.  I made weapons and armor for our warriors and hunters.  If you want any, you will need coin."
+                },
+                {
+                    "name":"About Armor",
+                    "dialog":"Skathian steel is strong.  Stronger than your weak offworlder steel.  If you want to survive here, you should get yourself some some better armor."
+                },
+                {
+                    "name":"About Weapons",
+                    "dialog":"Skathian blades are sharp.  Sharp enough to piece the shells of even the hardest of Scorpions.  If you want to hunt, you should get a good sharp weapon."
+                },
+                {
+                    "name":"About Steel",
+                    "dialog":"The process of making steel is long and precise.  The way is passed down from smith to apprentice.  We only make it once a year.  We need to mine the ore and harvest scales from the deadly serpents."
+                }
+            ]
+        },
+        {
+            "name":"mirfu",
+            "displayName":"Mir'Fu",
+            "topics":
+            [
+                {
+                    "name":"About Mir'Fu",
+                    "dialog":"I am the town's elder Alchemist.  I sell potions and teach my apprentice the craft."
+                },
+                {
+                    "name":"About Alchemy",
+                    "dialog":"Alchemists learn how to harvest special materials from the plants, animals, and the land itself in order to draw out their innate magical properties.  A option properly distilled, combined, and brewed will be very effective for all manner of purposes."
+                },
+                {
+                    "name":"About Ingredients",
+                    "dialog":"We gather special ingredients from all around the area.  If you come across any materials that I can use in my potion making, I would be happy to give you coin for your troubles."
+                }
+            ]
+        },
+        {
+            "name":"stefu0",
+            "displayName":"Skathian",
+            "greet":"chaq DujmeyVam Daghaj'a'?"
+        },
+        {
+            "name":"stefu1",
+            "displayName":"Ste'Fu",
+            "greet":"Greetings outsider, do you speak our language?",
+            "topics":
+            [
+                {
+                    "name":"Greet",
+                    "dialog":"Greetings outsider, do you speak our language?",
+                    "topics":
+                    [
+                        {
+                            "name":"Skathi",
+                            "dialog":"This is our home.  You offworlders have invaded our lands.  Our ancient scrolls tell us this is not the first time that our world has been visited by people from the stars.",
+                            "topics":
+                            [
+                                {
+                                    "name":"Other Visitors?",
+                                    "dialog":"Many generations ago, people from the stars descended upon our world.  They stayed less than a generation, but they left this world cursed.  Many evils have plagued our home ever since.",
+                                    "topics":
+                                    [
+                                        {
+                                            "name":"What Evils?",
+                                            "dialog":"The great monsters of claw and metal that live in the lakes, caves, and roam the lands were not here before.  Our dead will now rise up as evil {gham} and we are forced to burn them.  And the sorcerers who stole our temples were not of this world."
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "onExit":
+            {
+                "events":
+                [
+                    {
+                        "conditions":
+                        [
+                            {
+                                "event":"skathian_intro",
+                                "value":"true",
+                                "state":0
+                            }
+                        ],
+                        "displayName":"Farewell",
+                        "dialog":"Outsider, as long as you act peacefully in our town, you are welcome to stay and shop around.  Be careful, however, many of our people are very distrustful of you offworlders.",
+                        "setEvent":
+                        {
+                            "event":"skathian_intro",
+                            "value":"true"
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}

@@ -1,0 +1,8 @@
+{
+    "model":
+    {
+        "obj":"models/objects/end_table.obj",
+        "texture":"models/objects/end_table.png",
+        "materialFile":"models/objects/object.material"
+    }
+}

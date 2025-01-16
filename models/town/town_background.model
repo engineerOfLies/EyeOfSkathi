@@ -1,0 +1,16 @@
+{
+    "model":
+    {
+        "obj":"models/town/town_floor.obj",
+        "texture":"models/town/town_floor.png",
+        "material":
+        {
+            "name":"town_base",
+            "ambient":[16,16,16,255],
+            "diffuse":[255,255,255,255],
+            "specular":[8,8,8,8],
+            "transparency":1,
+            "shininess":2
+        }
+    }
+}

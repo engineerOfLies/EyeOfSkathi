@@ -1,0 +1,8 @@
+{
+    "model":
+    {
+        "obj":"models/equipment/sword/short_sword.obj",
+        "texture":"models/equipment/sword/sword.png",
+        "materialFile":"models/equipment/equipment.material"
+    }
+}

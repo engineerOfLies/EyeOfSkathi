@@ -1,0 +1,76 @@
+{
+    "model":
+    {
+        "gltf":"models/monsters/slime/slime.gltf",
+        "texture":"models/monsters/slime/skin.png",
+        "armature":"models/monsters/slime/slime.gltf",
+        "material":
+        {
+            "name":"slime_base",
+            "ambient":[255,255,255,255],
+            "diffuse":[255,255,255,128],
+            "specular":[64,64,64,64],
+            "transparency":1,
+            "shininess":128
+        },
+        "matrix":
+        {
+            "#comment":"this is a delta on what is loaded from file",
+            "position":[0,0,0],
+            "rotation":[0,0,180],
+            "scale":[1,1,1]
+        },
+        "actionList":
+        [
+            {
+                "action": "idle",
+                "startFrame": 1,
+                "endFrame": 20,
+                "frameRate": 0.2,
+                "type": "loop"
+            },
+            {
+                "action": "walk",
+                "startFrame": 21,
+                "endFrame": 28,
+                "frameRate": 0.1,
+                "type": "loop"
+            },
+            {
+                "action": "pain",
+                "startFrame": 29,
+                "endFrame": 38,
+                "frameRate": 0.2,
+                "type": "pass"
+            },
+            {
+                "action": "die",
+                "startFrame": 39,
+                "endFrame": 45,
+                "frameRate": 0.2,
+                "type": "pass"
+            },
+            {
+                "action": "dead",
+                "startFrame": 45,
+                "endFrame": 45,
+                "frameRate": 0.05,
+                "type": "pass"
+            },
+            {
+                "action": "attack1",
+                "startFrame": 46,
+                "endFrame": 61,
+                "frameRate": 0.2,
+                "type": "pass"
+            },
+            {
+                "action": "attack2",
+                "startFrame": 62,
+                "endFrame": 74,
+                "frameRate": 0.2,
+                "type": "pass"
+            }
+        ]
+    }
+}

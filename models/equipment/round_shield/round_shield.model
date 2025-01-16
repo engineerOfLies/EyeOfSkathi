@@ -1,0 +1,16 @@
+{
+    "model":
+    {
+        "obj":"models/equipment/round_shield/round_shield.obj",
+        "texture":"models/equipment/round_shield/shield_skin.png",
+        "material":
+        {
+            "name":"shield_base",
+            "ambient":[64,64,64,255],
+            "diffuse":[255,255,255,255],
+            "specular":[8,8,8,8],
+            "transparency":1,
+            "shininess":2
+        }
+    }
+}

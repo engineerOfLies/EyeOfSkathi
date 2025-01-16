@@ -1,0 +1,61 @@
+{
+    "actionList":
+    [
+        {
+            "action": "idle",
+            "startFrame": 1,
+            "endFrame": 16,
+            "frameRate": 0.5,
+            "type": "loop"
+        },
+        {
+            "action": "walk",
+            "startFrame": 17,
+            "endFrame": 32,
+            "frameRate": 0.5,
+            "type": "loop"
+        },
+        {
+            "action": "pain",
+            "startFrame": 83,
+            "endFrame": 89,
+            "frameRate": 0.2,
+            "type": "pass"
+        },
+        {
+            "action": "die",
+            "startFrame": 97,
+            "endFrame": 105,
+            "frameRate": 0.2,
+            "type": "pass"
+        },
+        {
+            "action": "dead",
+            "startFrame": 105,
+            "endFrame": 105,
+            "frameRate": 0.5,
+            "type": "none"
+        },
+        {
+            "action": "attack1",
+            "startFrame": 32,
+            "endFrame": 50,
+            "frameRate": 0.4,
+            "type": "pass"
+        },
+        {
+            "action": "attack2",
+            "startFrame": 51,
+            "endFrame": 64,
+            "frameRate": 0.4,
+            "type": "pass"
+        },
+        {
+            "action": "attack3",
+            "startFrame": 65,
+            "endFrame": 82,
+            "frameRate": 0.4,
+            "type": "pass"
+        }
+    ]
+}

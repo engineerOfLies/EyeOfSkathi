@@ -1,0 +1,139 @@
+{
+    "window":
+    {
+        "name":"main_menu",
+        "dimensions" : [-317,0,305,320],
+        "align" : "middle",
+        "elements":
+        [
+            {
+                "type": "button",
+                "name" : "item_down",
+                "hotkey":"item_down"
+            },
+            {
+                "type": "button",
+                "name" : "item_up",
+                "hotkey":"item_up"
+            },
+            {
+                "type": "list",
+                "bounds": [0,10,1,1],
+                "style": "vertical",
+                "item_size" : [1,36],
+                "elements":
+                [
+                    {
+                        "type": "label",
+                        "bounds": [0,0,1,40],
+                        "text":"Planet Skathi IV",
+                        "justify" : "center",
+                        "align" : "middle",
+                        "style":"H1"
+                    },
+                    {
+                        "type": "list",
+                        "name": "buttons",
+                        "bounds": [70,10,160,1],
+                        "style": "vertical",
+                        "item_size" : [1,64],
+                        "elements":
+                        [
+                            {
+                                "type": "button",
+                                "name":"newgame",
+                                "id" : 1,
+                                "canHasFocus":true,
+                                "sound":"confirm",
+                                "bounds": [0,0,160,42],
+                                "hotkey":"newgame",
+                                "label" :
+                                {
+                                    "type": "label",
+                                    "bounds": [0,0,160,48],
+                                    "text":"New Game",
+                                    "justify" : "center",
+                                    "align" : "middle",
+                                    "style":"H4"
+                                },
+                                "actor" :
+                                {
+                                    "type": "actor",
+                                    "actor" : "actors/button.actor"
+                                }
+                            },
+                            {
+                                "type": "button",
+                                "name" : "continue",
+                                "id" : 2,
+                                "canHasFocus":true,
+                                "hotkey":"continue",
+                                "sound":"confirm",
+                                "bounds": [0,0,160,42],
+                                "label" :
+                                {
+                                    "type": "label",
+                                    "bounds": [0,0,160,48],
+                                    "text":"Continue",
+                                    "justify" : "center",
+                                    "align" : "middle",
+                                    "style":"H4"
+                                },
+                                "actor" :
+                                {
+                                    "type": "actor",
+                                    "actor" : "actors/button.actor"
+                                }
+                            },
+                            {
+                                "type": "button",
+                                "name":"intro",
+                                "canHasFocus":true,
+                                "id" : 3,
+                                "bounds": [0,0,160,42],
+                                "sound":"confirm",
+                                "label" :
+                                {
+                                    "type": "label",
+                                    "bounds": [0,0,160,48],
+                                    "text":"Intro",
+                                    "justify" : "center",
+                                    "align" : "middle",
+                                    "style":"H4"
+                                },
+                                "actor" :
+                                {
+                                    "type": "actor",
+                                    "actor" : "actors/button.actor"
+                                }
+                            },
+                            {
+                                "type": "button",
+                                "name":"quit",
+                                "canHasFocus":true,
+                                "id" : 4,
+                                "bounds": [0,0,160,42],
+                                "hotkey":"quit",
+                                "sound":"cancel",
+                                "label" :
+                                {
+                                    "type": "label",
+                                    "bounds": [0,0,160,48],
+                                    "text":"Quit",
+                                    "justify" : "center",
+                                    "align" : "middle",
+                                    "style":"H4"
+                                },
+                                "actor" :
+                                {
+                                    "type": "actor",
+                                    "actor" : "actors/button.actor"
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

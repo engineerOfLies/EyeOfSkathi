@@ -1,0 +1,8 @@
+{
+    "model":
+    {
+        "obj":"models/equipment/wand/wand.obj",
+        "texture":"models/equipment/wand/wand_skin.png",
+        "materialFile":"models/equipment/equipment.material"
+    }
+}

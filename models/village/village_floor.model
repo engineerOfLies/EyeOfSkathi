@@ -1,0 +1,8 @@
+{
+    "model":
+    {
+        "obj":"models/village/floor.obj",
+        "texture":"models/village/floor.png",
+        "materialFile": "models/village/village_base.material"
+    }
+}

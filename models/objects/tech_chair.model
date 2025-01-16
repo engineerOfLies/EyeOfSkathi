@@ -1,0 +1,8 @@
+{
+    "model":
+    {
+        "obj":"models/objects/tech_chair.obj",
+        "texture":"models/objects/tech_chair_skin.png",
+        "materialFile":"models/objects/object.material"
+    }
+}

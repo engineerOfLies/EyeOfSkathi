@@ -1,0 +1,42 @@
+{
+    "tileSet":
+    [
+        {
+            "name":"Cave Floor",
+            "index":1,
+            "floor":true,
+            "model":"models/tiles/cave_floor.model",
+            "description":"The floor is solid stone."
+        },
+        {
+            "name":"Cave Wall",
+            "index":2,
+            "cornerPiece":true,
+            "alignToFloor":true,
+            "solid":true,
+            "model":"models/tiles/cave_wall.model",
+            "description":"This wall is made of solid stone.  Carved by water, geological forces and time."
+        },
+        {
+            "name":"Cave Stairs Down",
+            "index":3,
+            "alignToFloor":true,
+            "model":"models/tiles/cave_stairs_down.model",
+            "description":"The path leads below"
+        },
+        {
+            "name":"Cave Stairs Up",
+            "index":4,
+            "alignToFloor":true,
+            "model":"models/tiles/cave_stairs_up.model",
+            "description":"This path leads higher up"
+        },
+        {
+            "name":"Door Way",
+            "index":5,
+            "alignToFloor":true,
+            "model":"models/tiles/cave_doorway.model",
+            "description":"A doorway through"
+        }
+    ]
+}

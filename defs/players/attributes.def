@@ -1,0 +1,41 @@
+{
+    "attributes":
+    [
+        {
+            "name":"strength",
+            "short":"str",
+            "displayName":"Strength",
+            "description":"How much you can lift and how hard you hit."
+        },
+        {
+            "name":"endurance",
+            "short":"end",
+            "displayName":"Endurance",
+            "description":"How tough you are and how much damage you can take.  Affects your total health."
+        },
+        {
+            "name":"dexterity",
+            "short":"dex",
+            "displayName":"Dexterity",
+            "description":"How much fine motor control you have.  Increase the accuracy of ranged weapons and damage with finesse weapons."
+        },
+        {
+            "name":"agility",
+            "short":"agi",
+            "displayName":"Agility",
+            "description":"How graceful you move your whole body.  Increases your ability to dodge attacks."
+        },
+        {
+            "name":"focus",
+            "short":"foc",
+            "displayName":"Focus",
+            "description":"How keen your intellect is, how well you can hold complex concepts in your mind.  Essential for technomancy.  Increases your ability to cast spells effectively."
+        },
+        {
+            "name":"mind",
+            "short":"mnd",
+            "displayName":"Mind",
+            "description":"How strong your connection is to your Mystical Interface Nanotech Drive.  Increases your mana capacity and resistance to mystical effects."
+        }
+    ]
+}

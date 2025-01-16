@@ -1,0 +1,52 @@
+{
+    "window":
+    {
+        "name":"dialog",
+        "dimensions" : [0,0.5,0.675,0.35],
+        "color":[255,255,255,200],
+        "justify" : "center",
+        "elements":
+        [
+            {
+                "type": "list",
+                "bounds": [4,4,1,1],
+                "style": "vertical",
+                "item_size" : [1,40],
+                "elements":
+                [
+                    {
+                        "type": "label",
+                        "name": "title",
+                        "bounds": [0,0,1,50],
+                        "text":" ",
+                        "justify" : "left",
+                        "align" : "middle",
+                        "style":"H4"
+                    },
+                    {
+                        "type": "label",
+                        "name": "text",
+                        "bounds": [0,0,0.95,1],
+                        "text":" ",
+                        "wraps":true,
+                        "justify" : "left",
+                        "align" : "top",
+                        "style":"normal"
+                    }
+                ]
+            },
+            {
+                "type": "button",
+                "sound":"confirm",
+                "name": "cancel",
+                "hotkey":"close"
+            },
+            {
+                "type": "button",
+                "sound":"confirm",
+                "name": "ok",
+                "hotkey":"ok"
+            }
+        ]
+    }
+}

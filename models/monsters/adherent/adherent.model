@@ -1,0 +1,17 @@
+{
+    "model":
+    {
+        "gltf":"models/monsters/adherent/adherent.gltf",
+        "texture":"models/monsters/adherent/adherent_skin.png",
+        "armature":"models/monsters/adherent/adherent.gltf",
+        "materialFile":"models/player/human_male.material",
+        "actionListFile":"models/monsters/adherent/adherent.anim",
+        "matrix":
+        {
+            "#comment":"this is a delta on what is loaded from file",
+            "position":[0,0,0.1],
+            "rotation":[0,0,180],
+            "scale":[1,1,1]
+        }
+    }
+}

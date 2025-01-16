@@ -1,0 +1,16 @@
+{
+    "model":
+    {
+        "obj":"models/town/town_exit.obj",
+        "texture":"models/town/exit_skin.png",
+        "material":
+        {
+            "name":"exit_base",
+            "ambient":[16,16,16,255],
+            "diffuse":[255,255,255,255],
+            "specular":[8,8,8,8],
+            "transparency":1,
+            "shininess":2
+        }
+    }
+}

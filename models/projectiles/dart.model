@@ -1,0 +1,15 @@
+{
+    "model":
+    {
+        "obj":"models/projectiles/dart.obj",
+        "texture":"models/projectiles/dart_skin.png",
+        "materialFile":"models/projectiles/physical.material",
+        "matrix":
+        {
+            "#comment":"this is a delta on what is loaded from file",
+            "position":[0,0,0],
+            "rotation":[0,0,0],
+            "scale":[0.5,0.5,0.5]
+        }
+   }
+}

@@ -1,0 +1,49 @@
+{
+    "tileSet":
+    [
+        {
+            "name":"Panel Floor",
+            "index":1,
+            "floor":true,
+            "model":"models/tiles/floortile_tech.model",
+            "description":"The floor is made of solid stone tiles."
+        },
+        {
+            "name":"Panel Wall",
+            "index":2,
+            "cornerPiece":true,
+            "solid":true,
+            "model":"models/tiles/walltile_tech.model",
+            "description":"This wall is made of solid stone bricks.  Very precisely cut to have no gaps."
+        },
+        {
+            "name":"Stairs Down",
+            "index":3,
+            "alignToFloor":true,
+            "model":"models/tiles/downstairs_tech.model",
+            "description":"The path leads below"
+        },
+        {
+            "name":"Stairs Up",
+            "index":4,
+            "alignToFloor":true,
+            "model":"models/tiles/upstairs_tech.model",
+            "description":"This path leads higher up"
+        },
+        {
+            "name":"Door Way",
+            "index":5,
+            "alignToFloor":true,
+            "model":"models/tiles/doortile_tech.model",
+            "description":"A doorway through"
+        },
+        {
+            "name":"Window",
+            "index":6,
+            "alignToFloor":true,
+            "solid":true,
+            "model":"models/tiles/tech_window.model",
+            "description":"A Window"
+        }
+    ]
+}

@@ -1,0 +1,48 @@
+{
+    "model":
+    {
+        "gltf":"models/objects/doortile_tech.gltf",
+        "texture":"models/objects/door_skin_tech.png",
+        "armature":"models/objects/doortile_tech.gltf",
+        "material":
+        {
+            "name":"door_base",
+            "ambient":[16,16,16,255],
+            "diffuse":[255,255,255,255],
+            "specular":[8,8,8,8],
+            "transparency":1,
+            "shininess":2
+        },
+        "actionList":
+        [
+            {
+                "action": "closed",
+                "startFrame": 0,
+                "endFrame": 0,
+                "frameRate": 0,
+                "type": "none"
+            },
+            {
+                "action": "opened",
+                "startFrame": 5,
+                "endFrame": 5,
+                "frameRate": 0,
+                "type": "none"
+            },
+            {
+                "action": "open",
+                "startFrame": 0,
+                "endFrame": 4,
+                "frameRate": 0.5,
+                "type": "pass"
+            },
+            {
+                "action": "close",
+                "startFrame": 4,
+                "endFrame": 7,
+                "frameRate": 0.5,
+                "type": "pass"
+            }
+        ]
+    }
+}

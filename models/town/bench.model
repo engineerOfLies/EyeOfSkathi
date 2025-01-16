@@ -1,0 +1,23 @@
+{
+    "model":
+    {
+        "obj":"models/town/bench.obj",
+        "texture":"models/town/bench_skin.png",
+        "matrix":
+        {
+            "#comment":"this is a delta on what is loaded from file",
+            "position":[0,-0.25,0],
+            "rotation":[0,0,0],
+            "scale":[1,1,1]
+        },
+        "material":
+        {
+            "name":"bench_base",
+            "ambient":[16,16,16,255],
+            "diffuse":[255,255,255,255],
+            "specular":[8,8,8,8],
+            "transparency":1,
+            "shininess":2
+        }
+    }
+}

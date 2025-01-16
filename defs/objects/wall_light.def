@@ -1,0 +1,27 @@
+{
+    "name":"wall_light",
+    "model":"models/objects/wall_torch.model",
+    "scale":[0.5,0.5,0.5],
+    "color":[255,255,255,255],
+    "bounds":
+    {   
+        "box":
+        {
+            "m":[-0.25,-0,0],
+            "s":[0.9,0.9,0.9]
+        }
+    },
+    "offsetHeight":0.75,
+    "offsetWall":0.61,
+    "light":
+    {
+        "color":[255,255,190,255],
+        "direction":[0,1,0,1],
+        "position":[0,0,0,1.0],
+        "ambientCoefficient":0.02,
+        "attenuation":1,
+        "angle":0,
+        "brightness":1.2
+    },
+    "levelColor":1
+}

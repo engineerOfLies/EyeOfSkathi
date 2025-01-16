@@ -1,0 +1,8 @@
+{
+    "model":
+    {
+        "obj":"models/projectiles/magic_bolt.obj",
+        "texture":"models/projectiles/magic_bolt.png",
+        "materialFile":"models/projectiles/energy_bolt.material"
+    }
+}

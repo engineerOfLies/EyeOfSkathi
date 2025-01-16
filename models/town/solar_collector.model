@@ -1,0 +1,16 @@
+{
+    "model":
+    {
+        "obj":"models/town/solar_collector.obj",
+        "texture":"models/town/solar_collector_skin.png",
+        "material":
+        {
+            "name":"facility_base",
+            "ambient":[64,64,64,255],
+            "diffuse":[200,200,255,255],
+            "specular":[8,8,8,8],
+            "transparency":1,
+            "shininess":2
+        }
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "model":
+    {
+        "obj":"models/objects/dart_trap/dart_trap.obj",
+        "texture":"models/objects/dart_trap/dart_trap_skin.png",
+        "materialFile":"models/objects/object.material"
+    }
+}
