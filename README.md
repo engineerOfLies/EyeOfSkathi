@@ -6,3 +6,5 @@ The player can create their own character to try to attempt to unravel a mystery
 
 The game is not yet complete, but this repo can be cloned if you want to help out with testing.
 The game is provided as-is with no support.  
+
+Watch the dev Journal [here](https://www.youtube.com/playlist?list=PLMSfp83ifZRwCqagJEDqj2mb9Y4vxfdOA)
