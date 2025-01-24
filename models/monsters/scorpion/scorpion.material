@@ -1,0 +1,11 @@
+{
+    "material":
+    {
+        "name":"scorpion_base",
+        "ambient":[255,255,255,255],
+        "diffuse":[255,255,255,255],
+        "specular":[64,64,64,64],
+        "transparency":1,
+        "shininess":128
+    }
+}

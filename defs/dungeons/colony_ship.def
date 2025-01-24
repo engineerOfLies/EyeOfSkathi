@@ -106,7 +106,7 @@
         },
         {
             "name":"level_2",
-            "color":[100,100,200,255],
+            "color":[15,70,101,255],
             "tilemap":
             {
                 "size":[30,30]
@@ -125,12 +125,12 @@
                 {
                     "name":"monster_skeletal",
                     "amount":2,
-                    "loot":"credits",
+                    "loot":"healthbar",
                     "count":0,
-                    "countVariance":10
+                    "countVariance":2
                 },
                 {
-                    "name":"monster_security_drone",
+                    "name":"monster_service_drone",
                     "amount":4,
                     "loot":"credits",
                     "count":0,
@@ -148,8 +148,8 @@
                 {
                     "name":"chest",
                     "amount":1,
-                    "loot":"healthbar",
-                    "count":5
+                    "loot":"heavy_boots1",
+                    "count":1
                 }
             ],
             "exits":
@@ -159,6 +159,141 @@
                     "id":0,
                     "destination":"level",
                     "level":"level_1",
+                    "toExit":1
+                },
+                {
+                    "type":4,
+                    "id":1,
+                    "destination":"level",
+                    "level":"level_3",
+                    "toExit":0
+                }
+            ]
+        },
+        {
+            "name":"level_3",
+            "color":[128,128,128,255],
+            "music":"sounds/bgm/dungeon3.wav",
+            "tilemap":
+            {
+                "size":[24,24]
+            },
+            "updateRate":50000,
+            "wandering":
+            {
+                "name":"monster_slime",
+                "limit":5,
+                "comment":"more monsters won't spawn if limit is currently met,  Only check once ever 'rate' ticks"
+            },
+            "monsters":
+            [
+                {
+                    "name":"monster_skeletal",
+                    "amount":2
+                },
+                {
+                    "name":"monster_security_drone",
+                    "amount":5,
+                    "amountVariance":3
+                },
+                {
+                    "name":"monster_red_slime",
+                    "amount":2,
+                    "amountVariance":1
+                }
+            ],
+            "treasures":
+            [
+                {
+                    "name":"tech_chest",
+                    "amount":1,
+                    "loot":"cdf_blaster",
+                    "count":1
+                },
+                {
+                    "name":"tech_chest",
+                    "amount":1,
+                    "amountVariance":1,
+                    "loot":"coins",
+                    "count":25
+                }
+            ],
+            "exits":
+            [
+                {
+                    "type":4,
+                    "id":0,
+                    "destination":"level",
+                    "level":"level_2",
+                    "toExit":1
+                },
+                {
+                    "type":3,
+                    "id":1,
+                    "destination":"level",
+                    "level":"level_4",
+                    "toExit":0
+                }
+            ]
+        },
+        {
+            "name":"level_4",
+            "color":[100,100,100,255],
+            "music":"sounds/bgm/dungeon3.wav",
+            "tilemap":
+            {
+                "size":[30,28]
+            },
+            "updateRate":50000,
+            "wandering":
+            {
+                "name":"monster_skeletal",
+                "limit":5
+            },
+            "monsters":
+            [
+                {
+                    "name":"monster_skeletal",
+                    "amount":3,
+                    "amountVariance":1,
+                    "loot":"coins",
+                    "count":10
+                },
+                {
+                    "name":"monster_security_drone",
+                    "amount":3,
+                    "amountVariance":1
+                }
+            ],
+            "treasures":
+            [
+                {
+                    "name":"tech_chest",
+                    "amount":1,
+                    "loot":"colony_transponder",
+                    "count":1
+                },
+                {
+                    "name":"tech_chest",
+                    "amount":1,
+                    "loot":"credits",
+                    "count":100
+                },
+                {
+                    "name":"tech_chest",
+                    "amount":1,
+                    "loot":"cdf_blaster",
+                    "count":2
+                }
+            ],
+            "exits":
+            [
+                {
+                    "type":4,
+                    "id":0,
+                    "placement":"easter",
+                    "destination":"level",
+                    "level":"level_3",
                     "toExit":1
                 }
             ]

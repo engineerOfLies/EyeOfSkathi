@@ -23,7 +23,7 @@
             "monsters":
             [
                 {
-                    "name":"monster_scorpion",
+                    "name":"monster_blue_scorpion",
                     "amount":2,
                     "loot":"coins",
                     "count":10
@@ -80,16 +80,26 @@
             {
                 "size":[30,30]
             },
+            "updateRate":50000,
+            "wandering":
+            {
+                "name":"monster_blue_scorpion",
+                "limit":5
+            },
             "monsters":
             [
                 {
-                    "name":"monster_scorpion",
-                    "amount":2,
+                    "name":"monster_blue_scorpion",
+                    "amount":2
+                },
+                {
+                    "name":"monster_slime",
+                    "amount":4,
                     "loot":"coins",
                     "count":10
                 },
                 {
-                    "name":"monster_slime",
+                    "name":"monster_sk_zombie",
                     "amount":4,
                     "loot":"coins",
                     "count":10
@@ -138,7 +148,7 @@
             "updateRate":50000,
             "wandering":
             {
-                "name":"monster_red_slime",
+                "name":"monster_blue_scorpion",
                 "limit":5
             },
             "monsters":
@@ -154,6 +164,12 @@
                     "amount":4,
                     "loot":"coins",
                     "count":10
+                },
+                {
+                    "name":"monster_serpent",
+                    "amount":1,
+                    "loot":"coins",
+                    "count":100
                 }
             ],
             "treasures":
@@ -199,13 +215,13 @@
             "updateRate":50000,
             "wandering":
             {
-                "name":"monster_red_slime",
+                "name":"monster_sk_zombie",
                 "limit":5
             },
             "monsters":
             [
                 {
-                    "name":"monster_scorpion",
+                    "name":"monster_blue_scorpion",
                     "amount":2,
                     "loot":"coins",
                     "count":10

@@ -77,7 +77,7 @@
             "action":"left_shoot",
             "damageFrame":452,
             "damageType":"energy",
-            "damageAmount":10,
+            "damageAmount":8,
             "hits":2,
             "recoverFrames":20,
             "unblockable":false,

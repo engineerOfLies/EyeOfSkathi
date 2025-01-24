@@ -1,0 +1,8 @@
+{
+    "model":
+    {
+        "obj":"models/equipment/blaster/blaster.obj",
+        "texture":"models/equipment/blaster/bci_blaster_skin.png",
+        "materialFile":"models/equipment/equipment.material"
+    }
+}

@@ -122,6 +122,58 @@
                             "dialog":"As you should know, our colony was being transported to our intended destination aboard the colony ship Huggin.  You may have seen the crash site east of here.  If you can find your way into the ship, we would like you to recover its blackbox so we can learn more about the whereabouts of the source of the weapon that shot us down.  Furthermore the ship has more advanced sensors than your ship has.  It's possible we will learn more about the area with it."
                         }
                     ]
+                },
+                {
+                    "name":"About The Colony Ship",
+                    "conditions":
+                    [
+                        {
+                            "event":"colony_transponder_recovery",
+                            "value":"true",
+                            "state":1
+                        }
+                    ],
+                    "dialog":"Congratulations on recovering the transponder from the colony ship.  This colony owes you a debt of gratitude.  With that transponder in place we have learned some very concerning things about the circumstances of our arrival.  We can also now activate the Planetary Gate.",
+                    "topics":
+                    [
+                        {
+                            "name":"Colony Ship",
+                            "dialog":"Just like with your scout ship, our Colony Ship was shot down when we jumped out of Fourth Space for emergency repairs.  We didn't realize it at the time that we were attacked and that the crash was not due to continued malfunctions.",
+                            "topics":
+                            [
+                                {
+                                    "name":"Attack",
+                                    "dialog":"With the additional sensor data from the colony ship we have learned that there are structures on this planet that are not from here.  In fact the facilities look like old Solarian Empire structures.  I suspect this planet was used as a scouting base during the last Solarian War.  Hopefully it is as simple as an old automated security system that is somehow still active",
+                                    "topics":
+                                    [
+                                        {
+                                            "name":"Next Steps",
+                                            "dialog":"We will start retreiving the supplies and people from the colony ship.  In the meantime, I would like you to help find the facility that is responsible for the attack and shut it down so we can finally call for help."
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name":"Planetary Gate",
+                            "dialog":"We can now use the Planetary Gate here in the command center to connect to the gate in the Colony ship.  It was originally intended to help ferry goods from orbit to planet side without the need for a launch vehicle.  We can now use it to not only recover those supplies, but the remainder of the colonist left aboard the ship still in cry-sleep.",                            
+                            "topics":
+                            [
+                                {
+                                    "name":"Colonists",
+                                    "dialog":"While in transit, the majority of the people who signed up to start the new colony were put into cryo sleep to skip the long journel to our destined star.  Those of us awake in the colony now are mostly the crew from the ship.  Only myself and a few others were meant to live in the colony.",
+                                    "topics":
+                                    [
+                                        {
+                                            "name":"What Now?",
+                                            "dialog":"Now we will rescue their cryopods and hook them up to the colony's power grid to make sure they stay safe.  Hopefully, we can solve this mystery and get help so we can leave this planet.  We will leave most of the colonists in cryo to prevent a strain on our limited resources for now."
+                                        }
+                                    ]
+
+                                }
+                            ]
+                        }
+                    ]
                 }
             ],
             "onExit":

@@ -226,15 +226,15 @@
             "type":"item",
             "attach":"item",
             "equips":"hand",
-            "action":"slash",
+            "action":"stab",
             "usage":"attack",
             "cooldown":90,
             "staminaCost":30,
             "attack":
             {
-                "action":"slash",
+                "action":"stab",
                 "damageType":"physical",
-                "damageSubtype":"slash",
+                "damageSubtype":"pierce",
                 "damageAmount":8,
                 "damageVariance":3,
                 "hits":1,
@@ -252,12 +252,67 @@
                     },
                     {
                         "attribute":"dexterity",
-                        "scale":0.25
+                        "scale":0.35
                     }
                 ],
                 "accuracyBonus":[]
             },
             "description":"A standard short sword made out of steel.  Mostly used for sport fencing.  Dexterity and Strength will improve the damage output of this weapon."
+        },
+        {
+            "name":"longsword1",
+            "displayName":"Steel Long Sword",
+            "model":"models/equipment/longsword/longsword.model",
+            "icon":"models/equipment/longsword/longsword_icon.png",
+            "trains":
+            [
+                "strength",
+                "dexterity"
+            ],
+            "cost":60,
+            "type":"item",
+            "attach":"item",
+            "equips":"hand",
+            "action":"slash",
+            "usage":"attack",
+            "cooldown":90,
+            "staminaCost":45,
+            "attack":
+            {
+                "action":"slash",
+                "damageType":"physical",
+                "damageSubtype":"slash",
+                "damageAmount":10,
+                "damageVariance":4,
+                "hits":1,
+                "unblockable":false,
+                "undodgeable":false,
+                "recoverFrames":20,
+                "rangeMin":0,
+                "rangeMax":2,
+                "accuracy":0.85,
+                "criticalMod":1.25,
+                "damageBonus":
+                [   
+                    {
+                        "attribute":"strength",
+                        "scale":0.35
+                    },
+                    {
+                        "attribute":"dexterity",
+                        "scale":0.25
+                    }
+                ],
+                "criticalBonus":
+                [
+                    {
+                        "attribute":"dexterity",
+                        "scale":0.15
+                    }
+                ],
+                "accuracyBonus":[]
+            },
+            "description":"A standard longsword made out of steel.  This weapon has a longer reach than a short sword, but is still light enough to be used one-handed.  Dexterity and Strength will improve the damage output of this weapon."
         },
         {
             "name":"sword2",
@@ -299,7 +354,7 @@
                     },
                     {
                         "attribute":"dexterity",
-                        "scale":0.25
+                        "scale":0.35
                     }
                 ],
                 "accuracyBonus":[]
@@ -308,7 +363,7 @@
         },
         {
             "name":"2h_sword1",
-            "displayName":"Steel Long Sword",
+            "displayName":"Steel Great Sword",
             "model":"models/equipment/2h_sword/2h_sword.model",
             "icon":"models/equipment/2h_sword/2h_sword_icon.png",
             "trains":
@@ -349,20 +404,20 @@
                 "action":"2h_attack",
                 "damageType":"physical",
                 "damageSubtype":"slash",
-                "damageAmount":15,
+                "damageAmount":12,
                 "damageVariance":6,
                 "hits":1,
                 "unblockable":false,
                 "undodgeable":false,
                 "recoverFrames":20,
                 "rangeMin":0,
-                "rangeMax":1,
+                "rangeMax":2,
                 "accuracy":0.85,
                 "damageBonus":
                 [   
                     {
                         "attribute":"strength",
-                        "scale":0.35
+                        "scale":0.45
                     },
                     {
                         "attribute":"dexterity",
@@ -371,7 +426,7 @@
                 ],
                 "accuracyBonus":[]
             },
-            "description":"A large sword that needs two hands to weild effectively.  It can also be used to block."
+            "description":"A large sword that needs two hands to weild effectively.  It can also be used to block.  The blade is long enough to reach an extra space away"
         },
         {
             "name":"dagger1",
@@ -405,6 +460,7 @@
                 "rangeMin":0,
                 "rangeMax":1,
                 "accuracy":0.85,
+                "criticalMod":1.65,
                 "damageBonus":
                 [   
                     {
@@ -469,9 +525,9 @@
             ],
             "attack":
             {
-                "action":"slash",
-                "damageType":"physical",
-                "damageSubtype":"stab",
+                "action":"shoot",
+                "damageType":"energy",
+                "damageSubtype":"energy",
                 "damageAmount":3,
                 "damageVariance":2,
                 "hits":1,
@@ -501,6 +557,294 @@
                 ]
             },
             "description":"A consumer grade side arm.  It has a regenerating power source to automatically recharge the internal capacitors once depleted.  Dexterity improves this weapon's accuracy and critical rate"
+        },
+        {
+            "name":"bci_blaster",
+            "displayName":"BCI Blaster",
+            "model":"models/equipment/blaster/bci_blaster.model",
+            "icon":"models/equipment/blaster/bci_blaster_icon.png",
+            "cost":50,
+            "type":"item",
+            "attach":"item",
+            "equips":"hand",
+            "action":"shoot",
+            "usage":"attack",
+            "cooldown":70,
+            "staminaCost":10,
+            "trains":
+            [
+                "dexterity"
+            ],
+            "attack":
+            {
+                "action":"shoot",
+                "damageType":"energy",
+                "damageSubtype":"energy",
+                "damageAmount":4,
+                "damageVariance":4,
+                "hits":1,
+                "unblockable":false,
+                "undodgeable":false,
+                "recoverFrames":20,
+                "rangeMin":0,
+                "rangeMax":10,
+                "accuracy":0.85,
+                "projectile":"blaster_bolt_red",
+                "damageBonus":
+                [   
+                ],
+                "criticalBonus":
+                [
+                    {
+                        "attribute":"dexterity",
+                        "scale":0.25
+                    }
+                ],
+                "accuracyBonus":
+                [
+                    {
+                        "attribute":"dexterity",
+                        "scale":0.25
+                    }
+                ]
+            },
+            "description":"A Bandit-Co Interstellar standard issue blaster.  It is slightly modified from the consumer grade model to have a higher damage output, plus additional components to make it shoot red."
+        },
+        {
+            "name":"cdf_blaster",
+            "displayName":"CDF Blaster",
+            "model":"models/equipment/blaster/cdf_blaster.model",
+            "icon":"models/equipment/blaster/cdf_blaster_icon.png",
+            "cost":150,
+            "type":"item",
+            "attach":"item",
+            "equips":"hand",
+            "action":"shoot",
+            "usage":"attack",
+            "cooldown":70,
+            "staminaCost":10,
+            "trains":
+            [
+                "dexterity"
+            ],
+            "attack":
+            {
+                "action":"shoot",
+                "damageType":"energy",
+                "damageSubtype":"energy",
+                "damageAmount":18,
+                "damageVariance":8,
+                "hits":1,
+                "unblockable":false,
+                "undodgeable":false,
+                "recoverFrames":20,
+                "rangeMin":0,
+                "rangeMax":10,
+                "accuracy":0.85,
+                "projectile":"blaster_bolt2",
+                "damageBonus":
+                [   
+                ],
+                "criticalMod":1.25,
+                "criticalBonus":
+                [
+                    {
+                        "attribute":"dexterity",
+                        "scale":0.25
+                    }
+                ],
+                "accuracyBonus":
+                [
+                    {
+                        "attribute":"dexterity",
+                        "scale":0.25
+                    }
+                ]
+            },
+            "description":"Standard issue blaster for the Colony Defense Force.  Hits harder than the consumer grade."
+        },
+        {
+            "name":"sem_blaster",
+            "displayName":"SEM Blaster",
+            "model":"models/equipment/blaster/sem_blaster.model",
+            "icon":"models/equipment/blaster/sem_blaster_icon.png",
+            "cost":1000,
+            "type":"item",
+            "attach":"item",
+            "equips":"hand",
+            "action":"shoot",
+            "usage":"attack",
+            "cooldown":60,
+            "staminaCost":10,
+            "trains":
+            [
+                "dexterity"
+            ],
+            "attack":
+            {
+                "action":"shoot",
+                "damageType":"energy",
+                "damageSubtype":"energy",
+                "damageAmount":18,
+                "damageVariance":8,
+                "hits":1,
+                "unblockable":false,
+                "undodgeable":false,
+                "recoverFrames":20,
+                "rangeMin":0,
+                "rangeMax":10,
+                "accuracy":0.85,
+                "projectile":"blaster_bolt3",
+                "damageBonus":
+                [   
+                ],
+                "criticalMod":1.25,
+                "criticalBonus":
+                [
+                    {
+                        "attribute":"dexterity",
+                        "scale":0.25
+                    }
+                ],
+                "accuracyBonus":
+                [
+                    {
+                        "attribute":"dexterity",
+                        "scale":0.25
+                    }
+                ]
+            },
+            "description":"Solarian Empire Military blaster.  This is an antigue from the days when the Solarian Empire was far more militaristic.  This weapon deals a lot more damage than the standard defense force sidearms."
+        },
+        {
+            "name":"shadow_blaster",
+            "displayName":"Shadow Blaster",
+            "model":"models/equipment/blaster/shadow_blaster.model",
+            "icon":"models/equipment/blaster/shadow_blaster_icon.png",
+            "cost":8000,
+            "type":"item",
+            "attach":"item",
+            "equips":"hand",
+            "action":"shoot",
+            "usage":"attack",
+            "cooldown":60,
+            "staminaCost":10,
+            "trains":
+            [
+                "dexterity"
+            ],
+            "attack":
+            {
+                "action":"shoot",
+                "damageType":"energy",
+                "damageSubtype":"energy",
+                "damageAmount":35,
+                "damageVariance":15,
+                "hits":1,
+                "unblockable":false,
+                "undodgeable":false,
+                "recoverFrames":20,
+                "rangeMin":0,
+                "rangeMax":10,
+                "accuracy":0.85,
+                "projectile":"shadow_blaster_bolt",
+                "damageBonus":
+                [   
+                ],
+                "criticalMod":2.0,
+                "criticalBonus":
+                [
+                    {
+                        "attribute":"dexterity",
+                        "scale":0.45
+                    }
+                ],
+                "accuracyBonus":
+                [
+                    {
+                        "attribute":"dexterity",
+                        "scale":0.5
+                    }
+                ]
+            },
+            "description":"An experimental blaster developed here at the ancient ship research facility.  This blaster uses an experimental power source that massively increases its power output.  It is unknown if there any side effects for the user."
+        },
+        {
+            "name":"shot1",
+            "displayName":"Light Shot",
+            "model":"models/equipment/blaster/blaster.model",
+            "icon":"models/equipment/blaster/blaster_icon.png",
+            "twoHanded":1,
+            "cost":150,
+            "type":"item",
+            "attach":"item",
+            "equips":"hand",
+            "action":"shoot",
+            "usage":"attack",
+            "cooldown":70,
+            "staminaCost":10,
+            "altAction":"block",
+            "altUsage":"block",
+            "altCooldown":0,
+            "altStaminaCost":15,
+            "trains":
+            [
+                "dexterity",
+                "strength"
+            ],
+            "armor":
+            [
+                {
+                    "damageType":"physical",
+                    "scale":0.3
+                },
+                {
+                    "damageType":"energy",
+                    "scale":0.65
+                },
+                {
+                    "damageType":"magic",
+                    "scale":0.15
+                }
+            ],
+            "attack":
+            {
+                "action":"shoot",
+                "damageType":"energy",
+                "damageSubtype":"energy",
+                "damageAmount":0,
+                "damageVariance":3,
+                "hits":6,
+                "unblockable":false,
+                "undodgeable":true,
+                "recoverFrames":20,
+                "rangeMin":0,
+                "rangeMax":2,
+                "accuracy":0.45,
+                "fireEffect":"shotGunEffect",
+                "sounds":
+                [
+                    {
+                        "name":"fire",
+                        "file":"models/projectiles/plasma_fire.wav"
+                    }
+                ],
+                "criticalBonus":
+                [
+                    {
+                        "attribute":"dexterity",
+                        "scale":0.25
+                    }
+                ],
+                "accuracyBonus":
+                [
+                    {
+                        "attribute":"strength",
+                        "scale":0.25
+                    }
+                ]
+            },
+            "description":"A consumer grade energy shotgun.  It has a regenerating power source to automatically recharge the internal capacitors once depleted.  It fires multiple energy pulese per shot increasing chances for a hit.  Each individual shot is weak.  Dexterity improves this weapon's accuracy and critical rate"
         },
         {
             "name":"shield1",

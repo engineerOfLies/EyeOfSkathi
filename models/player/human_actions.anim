@@ -352,6 +352,34 @@
             "type": "pass"
         },
         {
+            "action": "2h_shoot",
+            "startFrame": 508,
+            "endFrame": 530,
+            "frameRate": 0.4,
+            "type": "pass"
+        },
+        {
+            "action": "2h_shoot_start",
+            "startFrame": 508,
+            "endFrame": 513,
+            "frameRate": 0.4,
+            "type": "pass"
+        },
+        {
+            "action": "2h_shoot_damage",
+            "startFrame": 513,
+            "endFrame": 513,
+            "frameRate": 0,
+            "type": "none"
+        },
+        {
+            "action": "2h_shoot_recover",
+            "startFrame": 514,
+            "endFrame": 530,
+            "frameRate": 0.75,
+            "type": "pass"
+        },
+        {
             "action": "right_cast",
             "startFrame": 350,
             "endFrame": 370,

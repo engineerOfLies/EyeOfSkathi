@@ -5,15 +5,7 @@
         "texture":"models/monsters/drone/service_drone.png",
         "armature":"models/monsters/drone/executive_drone.gltf",
         "actionListFile":"models/monsters/drone/drone_actions.anim",
-        "material":
-        {
-            "name":"drone_base",
-            "ambient":[128,128,128,255],
-            "diffuse":[255,255,255,255],
-            "specular":[128,128,128,64],
-            "transparency":1,
-            "shininess":128
-        },
+        "materialFile":"models/monsters/drone/drone_base.material",
         "matrix":
         {
             "#comment":"this is a delta on what is loaded from file",

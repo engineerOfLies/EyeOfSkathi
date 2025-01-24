@@ -55,12 +55,12 @@
                             [
                                 "axe1",
                                 "shield1",
-                                "heavy_jacket1",
-                                "heavy_boots1"
+                                "light_jacket1",
+                                "light_boots1"
                             ]
                         },
                         {
-                            "name":"Like most Soldiers, I was a pretty good shot.",
+                            "name":"Like most Soldiers, I was a pretty good with a shot.",
                             "classname":"Soldier",
                             "strength":1,
                             "dexterity":1,
@@ -68,8 +68,7 @@
                             "focus":1,
                             "giveItems":
                             [
-                                "blaster1",
-                                "shield1",
+                                "shot1",
                                 "focus_shot",
                                 "light_jacket1",
                                 "light_boots1"
@@ -84,8 +83,8 @@
                             "focus":1,
                             "giveItems":
                             [
+                                "shield1",
                                 "blaster1",
-                                "dagger1",
                                 "light_jacket1",
                                 "light_boots1"
                             ]
@@ -114,7 +113,7 @@
                             "giveItems":
                             [
                                 "blaster1",
-                                "sword1",
+                                "longsword1",
                                 "leather_vest1",
                                 "leather_boots1",
                                 "quick_shot"
@@ -127,7 +126,7 @@
                             "agility":2,
                             "giveItems":
                             [
-                                "dagger1",
+                                "sword1",
                                 "dagger1",
                                 "leather_vest1",
                                 "leather_boots1",
@@ -160,7 +159,7 @@
                             "agility":1,
                             "giveItems":
                             [
-                                "sword1",
+                                "longsword1",
                                 "dagger1",
                                 "leather_vest1",
                                 "leather_boots1",

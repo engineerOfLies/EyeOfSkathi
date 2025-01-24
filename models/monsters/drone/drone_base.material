@@ -1,0 +1,11 @@
+{
+    "material":
+    {
+        "name":"drone_base",
+        "ambient":[128,128,128,255],
+        "diffuse":[255,255,255,255],
+        "specular":[128,128,128,64],
+        "transparency":1,
+        "shininess":128
+    }
+}

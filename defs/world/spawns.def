@@ -132,6 +132,11 @@
             "defFile":"defs/monsters/executive_drone.def"
         },
         {
+            "name":"npc_civilian_drone",
+            "spawnClass":"npc_entity_new",
+            "defFile":"defs/monsters/civilian_drone.def"
+        },
+        {
             "name":"npc_security_drone",
             "spawnClass":"npc_entity_new",
             "defFile":"defs/monsters/security_drone.def"
@@ -315,6 +320,11 @@
             "name":"monster_scorpion",
             "spawnClass":"monster_spawn",
             "defFile":"defs/monsters/scorpion.def"
+        },
+        {
+            "name":"monster_blue_scorpion",
+            "spawnClass":"monster_spawn",
+            "defFile":"defs/monsters/blue_scorpion.def"
         },
         {
             "name":"monster_scorpion_green",

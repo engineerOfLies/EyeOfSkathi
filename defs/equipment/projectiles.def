@@ -99,6 +99,7 @@
                     "scale":0.25
                 }
             ],
+            "criticalMod":1.25,
             "criticalBonus":
             [
                 {
@@ -147,6 +148,114 @@
             }
         },
         {
+            "name":"blaster_bolt3",
+            "displayName":"Gold Blaster Bolt",
+            "speedMax":0.35,
+            "color":[255,255,50,128],
+            "model":"models/projectiles/blaster_bolt.model",
+            "impactEffect":"blasterImpactEffect",
+            "trailEffect":"blasterTrailEffect",
+            "ttl":20,
+            "bounds":
+            {
+                "sphere":
+                {
+                    "c":[0,0,0.5],
+                    "r":0.35
+                }
+            },
+            "sounds":
+            [
+                {
+                    "name":"shoot",
+                    "file":"models/projectiles/plasma_fire.wav"
+                },
+                {
+                    "name":"impact",
+                    "file":"sounds/effects/blaster_impact.wav"
+                }
+            ],
+            "light":
+            {
+                "color":[255,255,50,255],
+                "direction":[0,1,0,0],
+                "position":[0,0,0,1],
+                "ambientCoefficient":0.02,
+                "attenuation":0.5,
+                "angle":0,
+                "brightness":2
+            },
+            "accuracyBonus":
+            [
+                {
+                    "attribute":"dexterity",
+                    "scale":0.25
+                }
+            ],
+            "criticalMod":1.5,
+            "criticalBonus":
+            [
+                {
+                    "attribute":"dexterity",
+                    "scale":0.25
+                }
+            ]
+        },
+        {
+            "name":"shadow_blaster_bolt",
+            "displayName":"Shadow Blaster Bolt",
+            "speedMax":0.35,
+            "color":[53,0,69,128],
+            "model":"models/projectiles/blaster_bolt.model",
+            "impactEffect":"blasterImpactEffect",
+            "trailEffect":"blasterTrailEffect",
+            "ttl":20,
+            "bounds":
+            {
+                "sphere":
+                {
+                    "c":[0,0,0.5],
+                    "r":0.35
+                }
+            },
+            "sounds":
+            [
+                {
+                    "name":"shoot",
+                    "file":"models/projectiles/plasma_fire.wav"
+                },
+                {
+                    "name":"impact",
+                    "file":"sounds/effects/blaster_impact.wav"
+                }
+            ],
+            "light":
+            {
+                "color":[53,0,69,128],
+                "direction":[0,1,0,0],
+                "position":[0,0,0,1],
+                "ambientCoefficient":0.02,
+                "attenuation":0.5,
+                "angle":0,
+                "brightness":2
+            },
+            "accuracyBonus":
+            [
+                {
+                    "attribute":"dexterity",
+                    "scale":0.25
+                }
+            ],
+            "criticalMod":1.5,
+            "criticalBonus":
+            [
+                {
+                    "attribute":"dexterity",
+                    "scale":0.25
+                }
+            ]
+        },
+        {
             "name":"slime_ball",
             "displayName":"Slime Ball",
             "speedMax":0.35,
@@ -180,6 +289,31 @@
             "displayName":"Scorpion Spit",
             "speedMax":0.25,
             "color":[0,100,0,128],
+            "model":"models/projectiles/blaster_bolt.model",
+            "impactEffect":"spitEffect",
+            "trailEffect":"spitEffect",
+            "ttl":20,
+            "bounds":
+            {
+                "sphere":
+                {
+                    "c":[0,0,0.5],
+                    "r":0.35
+                }
+            },
+            "sounds":
+            [
+                {
+                    "name":"shoot",
+                    "file":"models/monsters/scorpion/spit_hit.wav"
+                }
+            ]
+        },
+        {
+            "name":"scorpion_spit2",
+            "displayName":"Scorpion Spit",
+            "speedMax":0.25,
+            "color":[0,100,200,128],
             "model":"models/projectiles/blaster_bolt.model",
             "impactEffect":"spitEffect",
             "trailEffect":"spitEffect",

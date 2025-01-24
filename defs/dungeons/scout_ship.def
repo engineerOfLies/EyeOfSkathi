@@ -7,8 +7,68 @@
     "music":"sounds/bgm/dungeon.wav",
     "levels":
     [
+{
+            "name":"level_1",
+            "color":[160,160,160,255],
+            "tilemap":
+            {
+                "size":[16,20]
+            },
+            "updateRate":50000,
+            "wandering":
+            {
+                "name":"monster_slime",
+                "limit":2
+            },
+            "monsters":
+            [
+                {
+                    "name":"monster_bandit",
+                    "amount":2,
+                    "loot":"bci_blaster",
+                    "count":1
+                },
+                {
+                    "name":"monster_slime",
+                    "amount":1,
+                    "loot":"health_potion",
+                    "count":1
+                },
+                {
+                    "name":"monster_slime",
+                    "amount":3,
+                    "loot":"coins",
+                    "count":10
+                }
+            ],
+            "treasures":
+            [
+                {
+                    "name":"tech_chest",
+                    "amount":2,
+                    "loot":"healthbar",
+                    "count":2
+                }
+            ],
+            "exits":
+            [
+                {
+                    "type":4,
+                    "id":0,
+                    "destination":"world",
+                    "toExit":12
+                },
+                {
+                    "type":3,
+                    "id":1,
+                    "destination":"level",
+                    "level":"level_2",
+                    "toExit":0
+                }
+            ]
+        },
         {
-            "name": "level_1",
+            "name": "level_2",
             "prefab": 1,
             "musicFilename": "sounds/bgm/dungeon.wav",
             "wallLights": "wall_light_tech",
@@ -21,15 +81,16 @@
             ],
             "exits": [
                 {
-                    "type": 5,
-                    "id": 0,
+                    "type":4,
+                    "id":0,
+                    "destination":"level",
+                    "level":"level_1",
+                    "toExit":1,
                     "roomId": 4,
                     "location": [
                         5,
                         26
-                    ],
-                    "destination": "world",
-                    "toExit": 12
+                    ]
                 }
             ],
             "spawns": [
@@ -103,15 +164,6 @@
                     "location": [
                         7,
                         8,
-                        0
-                    ],
-                    "rotation": 0
-                },
-                {
-                    "entity": "door_tech",
-                    "location": [
-                        5,
-                        26,
                         0
                     ],
                     "rotation": 0
@@ -329,9 +381,6 @@
             ],
             "tilemap":
             {
-                "size":[12.000000,27.000000],
-                "offset":[0.000000,0.000000],
-                "numTiles":324,
                 "tileSetFile":"defs/tiles/tileset_tech.def",
                 "tiles":
                 [
@@ -361,7 +410,7 @@
                     [0,0,2,1,1,1,1,2,0,0,0,0],
                     [0,0,2,1,1,1,1,2,0,0,0,0],
                     [0,0,2,1,1,1,1,2,0,0,0,0],
-                    [0,0,2,2,2,5,2,2,0,0,0,0]
+                    [0,0,2,2,2,4,2,2,0,0,0,0]
                 ]
             }
         }

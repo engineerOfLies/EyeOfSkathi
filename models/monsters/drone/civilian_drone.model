@@ -1,8 +1,8 @@
 {
     "model":
     {
-        "gltf":"models/monsters/drone/executive_drone.gltf",
-        "texture":"models/monsters/drone/executive_drone.png",
+        "gltf":"models/monsters/drone/civilian_drone.gltf",
+        "texture":"models/monsters/drone/civilian_drone.png",
         "armature":"models/monsters/drone/executive_drone.gltf",
         "actionListFile":"models/monsters/drone/drone_actions.anim",
         "materialFile":"models/monsters/drone/drone_base.material",

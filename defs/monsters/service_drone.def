@@ -55,7 +55,7 @@
         },
         {
             "damageType":"energy",
-            "soak":3
+            "scale":0.5
         }
     ],
     "attacks":

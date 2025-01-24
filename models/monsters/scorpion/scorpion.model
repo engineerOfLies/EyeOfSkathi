@@ -4,18 +4,9 @@
         "gltf":"models/monsters/scorpion/scorpion.gltf",
         "texture":"models/monsters/scorpion/scorpion_skin.png",
         "armature":"models/monsters/scorpion/scorpion.gltf",
-        "material":
-        {
-            "name":"scorpion_base",
-            "ambient":[255,255,255,255],
-            "diffuse":[255,255,255,255],
-            "specular":[64,64,64,64],
-            "transparency":1,
-            "shininess":128
-        },
+        "materialFile":"models/monsters/scorpion/scorpion.material",
         "matrix":
         {
-            "#comment":"this is a delta on what is loaded from file",
             "position":[0,0,0],
             "rotation":[0,0,0],
             "scale":[0.1,0.1,0.1]

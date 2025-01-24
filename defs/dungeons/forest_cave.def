@@ -85,6 +85,12 @@
             "monsters":
             [
                 {
+                    "name":"monster_bandit",
+                    "amount":2,
+                    "loot":"bci_blaster",
+                    "count":1
+                },
+                {
                     "name":"monster_red_slime",
                     "amount":5,
                     "amountVariance":3
@@ -156,6 +162,12 @@
                     "name":"monster_scorpion",
                     "amount":3,
                     "amountVariance":1
+                },
+                {
+                    "name":"monster_blue_scorpion",
+                    "amount":1,
+                    "loot":"stinger",
+                    "count":1
                 }
             ],
             "treasures":

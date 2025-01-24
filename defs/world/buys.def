@@ -55,7 +55,8 @@
             "specifics":
             [
                 "skathian_steel_ingot",
-                "scout_blackbox"
+                "scout_blackbox",
+                "colony_transponder"
             ],
             "onSell":
             [
@@ -77,6 +78,29 @@
                             "setEvent":
                             {
                                 "event":"blackbox_recovery",
+                                "value":"true"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "itemSold":"colony_transponder",
+                    "events":
+                    [
+                        {
+                            "conditions":
+                            [
+                                {
+                                    "event":"colony_transponder_recovery",
+                                    "value":"true",
+                                    "state":0
+                                }
+                            ],
+                            "displayName":"Transponder",
+                            "dialog":"Oh WONDERFUL!,  We will now be able to remotely access the computer systems of the colony ship and retreive the flight logs and sensor readings!  I will dig right in and see what we can learn from this.  This will also enable us to active a planetary gate to the colony ship to recover many of our supplies!",
+                            "setEvent":
+                            {
+                                "event":"colony_transponder_recovery",
                                 "value":"true"
                             }
                         }

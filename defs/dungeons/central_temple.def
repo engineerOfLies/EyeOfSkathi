@@ -216,8 +216,8 @@
             "updateRate":50000,
             "wandering":
             {
-                "name":"monster_red_slime",
-                "limit":5
+                "name":"monster_blue_scorpion",
+                "limit":3
             },
             "monsters":
             [
@@ -232,6 +232,10 @@
                     "amount":4,
                     "loot":"coins",
                     "count":10
+                },
+                {
+                    "name":"monster_blue_scorpion",
+                    "amount":3
                 }
             ],
             "treasures":
