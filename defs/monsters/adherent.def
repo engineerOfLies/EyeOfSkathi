@@ -22,6 +22,11 @@
         "sightRange":15,
         "lookHeight":0.5,
         "damageEffect":"bloodDamageEffect",
+        "types":
+        [
+            "caster",
+            "biological"
+        ],
         "huntLimit":12
     },
     "sounds":

@@ -1,0 +1,8 @@
+{
+    "model":
+    {
+        "obj":"models/equipment/blaster/shot.obj",
+        "texture":"models/equipment/blaster/cdf_blaster_skin.png",
+        "materialFile":"models/equipment/equipment.material"
+    }
+}

@@ -114,8 +114,9 @@
             "equips":
             [
                 "body",
-                "legs"
-                "head"
+                "legs",
+                "head",
+                "wrist_item"
             ]
         },
         {

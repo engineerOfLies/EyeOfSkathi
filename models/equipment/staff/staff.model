@@ -1,0 +1,8 @@
+{
+    "model":
+    {
+        "obj":"models/equipment/staff/staff.obj",
+        "texture":"models/equipment/staff/staff_skin.png",
+        "materialFile":"models/equipment/equipment.material"
+    }
+}

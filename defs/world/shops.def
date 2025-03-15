@@ -80,6 +80,10 @@
                     "stock":-1
                 },
                 {
+                    "item":"poisoncure",
+                    "stock":-1
+                },
+                {
                     "item":"flashlight",
                     "stock":1
                 }
@@ -109,6 +113,10 @@
                 },
                 {
                     "item":"blaster1",
+                    "stock":-1
+                },
+                {
+                    "item":"shot1",
                     "stock":-1
                 }
             ]

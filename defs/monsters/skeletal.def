@@ -21,6 +21,11 @@
         "sightRange":12,
         "lookHeight":0.5,
         "damageEffect":"slimeDamageEffect",
+        "types":
+        [
+            "undead",
+            "animated"
+        ],
         "huntLimit":12
     },
     "sounds":

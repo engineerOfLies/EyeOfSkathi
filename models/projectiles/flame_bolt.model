@@ -1,0 +1,8 @@
+{
+    "model":
+    {
+        "obj":"models/projectiles/flame_bolt.obj",
+        "texture":"models/projectiles/flame_bolt_skin.png",
+        "materialFile":"models/projectiles/energy_bolt.material"
+    }
+}

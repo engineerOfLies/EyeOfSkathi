@@ -1,0 +1,45 @@
+{
+    "sequence":
+    [
+        {
+            "title":"Combat Actions",
+            "background":"images/tutorials/combat_screen_combat_rose.png",
+            "dialog":"In Red, you will see the combat actions available to you.  Two of them: Items, and Dodge are always avaialable.  The other two represent the weapons you have equipped to your left and right hands."
+        },
+        {
+            "title":"Dodging",
+            "background":"images/tutorials/dodging.png",
+            "dialog":"Regardless of your equipment, you can always try to dodge (K).  If you time it right, there is a chance you will not get hit by an attack.  This chance is improved by your Agility.  However, some attacks cannot be dodged.  Dodging has a cooldown before you can use it again."
+        },
+        {
+            "title":"Blocking",
+            "background":"images/tutorials/blocking.png",
+            "dialog":"If you have a shield equipped, or a two handed weapon, you can attempt to block an attack.  Block actions can be held as long as you need.  However, blocking doesn't always block all damage and some attacks will go through a block.  While blocking an attack, you will lose stamina relative to the strength of the attack.  With a two handed weapon, the Left (J) action will block."
+        },
+        {
+            "title":"Attacking",
+            "background":"images/tutorials/attacking.png",
+            "dialog":"If you have a weapon in equipped in either hand, or a two handed weapon, you can attack.  You will attempt to damage any monsters in front of you.  Weapons have a range however and will not connect with any monsters out of their range.  With a two handed weapon, the Right (L) action will attack."
+        },
+        {
+            "title":"Close Range",
+            "background":"images/tutorials/range_1.png",
+            "dialog":"When directly facing a monster, your combat view will focus on the monster like this.  Looking up at tall monsters, and down on short ones.  Weapons with a range of 1 will connect (affected by attributes)."
+        },
+        {
+            "title":"Range 2",
+            "background":"images/tutorials/range_2.png",
+            "dialog":"When 1 space away from a monster, most melee weapons will not connect regardless of skill.  However, a few larger melee weapons will have a range of up to 2."
+        },
+        {
+            "title":"Range 3",
+            "background":"images/tutorials/range_3.png",
+            "dialog":"When 2 spaces away from a monster, All melee weapons will miss.  However, shotguns and other ranged weapons will still reach the opponent."
+        },
+        {
+            "title":"Long Range",
+            "background":"images/tutorials/ranged_attack.png",
+            "dialog":"At 3 or more spaces away only long ranged projectile attacks (and some spells) will connect to opponent.  Beware, as monsters may have long ranged attacks as well.  Pay attention to line of sight that monsters may have on you."
+        }
+    ]
+}

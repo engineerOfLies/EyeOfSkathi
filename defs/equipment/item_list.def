@@ -26,11 +26,9 @@
             "limit":10,
             "stackable":1,
             "equips":"tool",
-            "effect":"player_heal",
-            "power":0.2,
-            "duration":200,
-            "damageType":"health",
-            "description":"A ready to eat candy bar that is infused with medical nanites that will instantly recover 10 health points."
+            "effect":"statusEffect",
+            "statusEffect":"healthbar",
+            "description":"A ready to eat candy bar that is infused with medical nanites that will quickly recover 30 health points."
         },
         {
             "name":"manabar",
@@ -42,9 +40,8 @@
             "singleUse":1,
             "equips":"tool",
             "type":"item",
-            "effect":"player_mana_recover",
-            "power":0.1,
-            "duration":100,
+            "effect":"statusEffect",
+            "statusEffect":"mana_recover",
             "description":"A ready to eat candy bar that is infused with magical nanites that will recover 20 mana points."
         },
         {
@@ -57,10 +54,34 @@
             "singleUse":1,
             "stackable":1,
             "type":"item",
-            "effect":"player_stamina_boost",
-            "power":0.01,
-            "duration":500,
+            "effect":"statusEffect",
+            "statusEffect":"player_stamina_boost",
             "description":"A ready to eat candy bar that is infused with energy nanites that will increase the rate of your stamina recovery for a short time."
+        },
+        {
+            "name":"poisoncure",
+            "displayName":"Poison Cure",
+            "icon":"images/items/poison_cure.png",
+            "equips":"tool",
+            "cost":25,
+            "limit":10,
+            "singleUse":1,
+            "stackable":1,
+            "type":"item",
+            "effect":"statusEffect",
+            "statusEffect":"poison_cure",
+            "description":"A pill with will clear out any poisons that are in your body."
+        },
+        {
+            "name":"flashlight",
+            "cost":50,
+            "displayName":"Flashlight",
+            "unique":1,
+            "icon":"models/objects/flashlight.png",
+            "equips":"tool",
+            "type":"item",
+            "effect":"flashlight",
+            "description":"A flashlight with a bent head meant to be worn instead of held.  Very usefulf for exploring dark dungeons and caves.  Must be equipped to be used."
         },
         {
             "name":"health_potion",
@@ -72,9 +93,8 @@
             "limit":10,
             "stackable":1,
             "equips":"tool",
-            "effect":"player_heal",
-            "power":0.5,
-            "duration":100,
+            "effect":"statusEffect",
+            "statusEffect":"health_potion",
             "damageType":"health",
             "description":"A concoction made by the Skathians that seems to speed recovery of injuries."
         },
@@ -88,9 +108,8 @@
             "singleUse":1,
             "equips":"tool",
             "type":"item",
-            "effect":"player_mana_recover",
-            "power":0.1,
-            "duration":200,
+            "effect":"statusEffect",
+            "statusEffect":"mana_potion",
             "description":"The Skathians have made a potion that rapidly recovers mana stores.  Hopefully, it is safe."
         },
         {
@@ -103,9 +122,8 @@
             "singleUse":1,
             "stackable":1,
             "type":"item",
-            "effect":"player_stamina_boost",
-            "power":0.02,
-            "duration":600,
+            "effect":"statusEffect",
+            "statusEffect":"stamina_potion",
             "description":"Drinking this will fill you with physical energy for a short time.  It also makes your heart race."
         },
         {
@@ -275,7 +293,7 @@
             "equips":"hand",
             "action":"slash",
             "usage":"attack",
-            "cooldown":90,
+            "cooldown":100,
             "staminaCost":45,
             "attack":
             {
@@ -487,7 +505,7 @@
         },
         {
             "name":"wand1",
-            "displayName":"Wooden Wand",
+            "displayName":"Steel Wand",
             "model":"models/equipment/wand/wand.model",
             "icon":"models/equipment/wand/wand_icon.png",
             "trains":
@@ -501,10 +519,82 @@
             "equips":"hand",
             "action":"cast",
             "staminaCost":10,
-            "spellSlots":1,
+            "powerMod":1,
+            "spellSlots":2,
             "cooldown":60,
             "usage":"spellcast",
-            "description":"It appears to be a simple wooden stick, like a conductor's baton.  Looking closely, however, there is the merest glint of microscopic circuitry.  This allows for 1 spell to be equipped."
+            "description":"It appears to be a simple steel rod, like a conductor's baton.  Looking closely, however, there is the merest glint of microscopic circuitry.  This allows for 2 spells to be equipped."
+        },
+        {
+            "name":"wand2",
+            "displayName":"Wood Wand",
+            "model":"models/equipment/wand/wand.model",
+            "icon":"models/equipment/wand/wand_icon.png",
+            "trains":
+            [
+                "focus",
+                "mind"
+            ],
+            "cost":150,
+            "type":"item",
+            "attach":"item",
+            "equips":"hand",
+            "action":"cast",
+            "powerMod":0.9,
+            "staminaCost":10,
+            "spellSlots":2,
+            "cooldown":70,
+            "usage":"spellcast",
+            "description":"This appears to be an ordinary stick, although expertly carved by a Skathian craftsman.  It has the unmistable glow of Ather betrying its true nature.  Runes can been intricately etched in the surface of the wood allowing it be used as a spell catalyst.  It will allow you equip 2 spells at once."
+        },
+        {
+            "name":"wand3",
+            "displayName":"Wood Staff",
+            "model":"models/equipment/staff/staff.model",
+            "icon":"models/equipment/staff/staff_icon.png",
+            "trains":
+            [
+                "focus",
+                "mind"
+            ],
+            "cost":400,
+            "type":"item",
+            "attach":"item",
+            "equips":"hand",
+            "action":"cast",
+            "staminaCost":20,
+            "powerMod":1.1,
+            "spellSlots":4,
+            "cooldown":80,
+            "usage":"spellcast",
+            "description":"What appears to be a well worn walking stick is, in fact, a powerful catalyst.  Similar in craftsmanship to the Skathian wooden wand, this staff is exquisitely carved with runes and is warm with magical power."
+        },
+        {
+            "name":"wand4",
+            "displayName":"SEM Scepter",
+            "model":"models/equipment/staff/scepter.model",
+            "icon":"models/equipment/staff/scepter_icon.png",
+            "trains":
+            [
+                "focus",
+                "mind"
+            ],
+            "cost":1200,
+            "type":"item",
+            "attach":"item",
+            "equips":"hand",
+            "twoHanded":1,
+            "action":"cast",
+            "usage":"spellcast",
+            "altAction":"cast",
+            "altUsage":"spellcast",
+            "cooldown":60,
+            "altCooldown":60,
+            "staminaCost":30,
+            "altStaminaCost":30,
+            "spellSlots":6,
+            "powerMod":1.3,
+            "description":"This is a Solarian Empire battle scepter.  It must be used 2 handed, but it can be equipped with up to 6 spells.  Spells cast through this catalyst will be amplified by the circuitry embedded within."
         },
         {
             "name":"blaster1",
@@ -569,8 +659,8 @@
             "equips":"hand",
             "action":"shoot",
             "usage":"attack",
-            "cooldown":70,
-            "staminaCost":10,
+            "cooldown":80,
+            "staminaCost":12,
             "trains":
             [
                 "dexterity"
@@ -622,7 +712,7 @@
             "action":"shoot",
             "usage":"attack",
             "cooldown":70,
-            "staminaCost":10,
+            "staminaCost":15,
             "trains":
             [
                 "dexterity"
@@ -674,8 +764,8 @@
             "equips":"hand",
             "action":"shoot",
             "usage":"attack",
-            "cooldown":60,
-            "staminaCost":10,
+            "cooldown":80,
+            "staminaCost":25,
             "trains":
             [
                 "dexterity"
@@ -685,8 +775,8 @@
                 "action":"shoot",
                 "damageType":"energy",
                 "damageSubtype":"energy",
-                "damageAmount":18,
-                "damageVariance":8,
+                "damageAmount":20,
+                "damageVariance":10,
                 "hits":1,
                 "unblockable":false,
                 "undodgeable":false,
@@ -727,8 +817,8 @@
             "equips":"hand",
             "action":"shoot",
             "usage":"attack",
-            "cooldown":60,
-            "staminaCost":10,
+            "cooldown":100,
+            "staminaCost":30,
             "trains":
             [
                 "dexterity"
@@ -772,8 +862,8 @@
         {
             "name":"shot1",
             "displayName":"Light Shot",
-            "model":"models/equipment/blaster/blaster.model",
-            "icon":"models/equipment/blaster/blaster_icon.png",
+            "model":"models/equipment/blaster/shot.model",
+            "icon":"models/equipment/blaster/shot_icon.png",
             "twoHanded":1,
             "cost":150,
             "type":"item",
@@ -781,8 +871,8 @@
             "equips":"hand",
             "action":"shoot",
             "usage":"attack",
-            "cooldown":70,
-            "staminaCost":10,
+            "cooldown":90,
+            "staminaCost":30,
             "altAction":"block",
             "altUsage":"block",
             "altCooldown":0,
@@ -819,9 +909,10 @@
                 "undodgeable":true,
                 "recoverFrames":20,
                 "rangeMin":0,
-                "rangeMax":2,
+                "rangeMax":3,
                 "accuracy":0.45,
-                "fireEffect":"shotGunEffect",
+                "fireEffect":"ShotGunEffect",
+                "projectile":"shot_bolt1",
                 "sounds":
                 [
                     {
@@ -847,11 +938,320 @@
             "description":"A consumer grade energy shotgun.  It has a regenerating power source to automatically recharge the internal capacitors once depleted.  It fires multiple energy pulese per shot increasing chances for a hit.  Each individual shot is weak.  Dexterity improves this weapon's accuracy and critical rate"
         },
         {
+            "name":"shot2",
+            "displayName":"BCI Shotgun",
+            "model":"models/equipment/blaster/bci_shot.model",
+            "icon":"models/equipment/blaster/bci_shot_icon.png",
+            "twoHanded":1,
+            "cost":150,
+            "type":"item",
+            "attach":"item",
+            "equips":"hand",
+            "action":"shoot",
+            "usage":"attack",
+            "cooldown":100,
+            "staminaCost":35,
+            "altAction":"block",
+            "altUsage":"block",
+            "altCooldown":0,
+            "altStaminaCost":15,
+            "trains":
+            [
+                "dexterity",
+                "strength"
+            ],
+            "armor":
+            [
+                {
+                    "damageType":"physical",
+                    "scale":0.25
+                },
+                {
+                    "damageType":"energy",
+                    "scale":0.5
+                },
+                {
+                    "damageType":"magic",
+                    "scale":0.1
+                }
+            ],
+            "attack":
+            {
+                "action":"shoot",
+                "damageType":"energy",
+                "damageSubtype":"energy",
+                "damageAmount":0,
+                "damageVariance":4,
+                "hits":6,
+                "unblockable":false,
+                "undodgeable":true,
+                "recoverFrames":20,
+                "rangeMin":0,
+                "rangeMax":3,
+                "accuracy":0.45,
+                "fireEffect":"BCIShotGunEffect",
+                "sounds":
+                [
+                    {
+                        "name":"fire",
+                        "file":"models/projectiles/plasma_fire.wav"
+                    }
+                ],
+                "criticalBonus":
+                [
+                    {
+                        "attribute":"dexterity",
+                        "scale":0.15
+                    }
+                ],
+                "accuracyBonus":
+                [
+                    {
+                        "attribute":"strength",
+                        "scale":0.15
+                    }
+                ]
+            },
+            "description":"A modified consumer grade shotgun.  Some of the safety features have been removed to increase the damage output of each damage beam and to make it red.  They also also added some custom woodworking branded with the BCI logo for nostalgia and cool factors.  Arguably better than the standard."
+        },
+        {
+            "name":"shot3",
+            "displayName":"CDF Shot",
+            "model":"models/equipment/blaster/cdf_shot.model",
+            "icon":"models/equipment/blaster/cdf_shot_icon.png",
+            "twoHanded":1,
+            "cost":750,
+            "type":"item",
+            "attach":"item",
+            "equips":"hand",
+            "action":"shoot",
+            "usage":"attack",
+            "cooldown":95,
+            "staminaCost":35,
+            "altAction":"block",
+            "altUsage":"block",
+            "altCooldown":0,
+            "altStaminaCost":15,
+            "trains":
+            [
+                "dexterity",
+                "strength"
+            ],
+            "armor":
+            [
+                {
+                    "damageType":"physical",
+                    "scale":0.45
+                },
+                {
+                    "damageType":"energy",
+                    "scale":0.25
+                },
+                {
+                    "damageType":"magic",
+                    "scale":0.2
+                }
+            ],
+            "attack":
+            {
+                "action":"shoot",
+                "damageType":"energy",
+                "damageSubtype":"energy",
+                "damageAmount":1,
+                "damageVariance":8,
+                "hits":8,
+                "unblockable":false,
+                "undodgeable":true,
+                "recoverFrames":20,
+                "rangeMin":0,
+                "rangeMax":3,
+                "accuracy":0.45,
+                "fireEffect":"CDFShotGunEffect",
+                "sounds":
+                [
+                    {
+                        "name":"fire",
+                        "file":"models/projectiles/plasma_fire.wav"
+                    }
+                ],
+                "criticalBonus":
+                [
+                    {
+                        "attribute":"dexterity",
+                        "scale":0.25
+                    }
+                ],
+                "accuracyBonus":
+                [
+                    {
+                        "attribute":"strength",
+                        "scale":0.35
+                    }
+                ]
+            },
+            "description":"Securit Grade plasma shot gun.  Its wide dispersal pattern is meant to quickly overwhelm opponents.  Much stronger beams than consumer grade, but still not as powerful as military grade."
+        },
+        {
+            "name":"shot4",
+            "displayName":"SEM Shot",
+            "model":"models/equipment/blaster/sem_shot.model",
+            "icon":"models/equipment/blaster/sem_shot_icon.png",
+            "twoHanded":1,
+            "cost":3000,
+            "type":"item",
+            "attach":"item",
+            "equips":"hand",
+            "action":"shoot",
+            "usage":"attack",
+            "cooldown":120,
+            "staminaCost":45,
+            "altAction":"block",
+            "altUsage":"block",
+            "altCooldown":0,
+            "altStaminaCost":15,
+            "trains":
+            [
+                "dexterity",
+                "strength"
+            ],
+            "armor":
+            [
+                {
+                    "damageType":"physical",
+                    "scale":0.45
+                },
+                {
+                    "damageType":"energy",
+                    "scale":0.25
+                },
+                {
+                    "damageType":"magic",
+                    "scale":0.2
+                }
+            ],
+            "attack":
+            {
+                "action":"shoot",
+                "damageType":"energy",
+                "damageSubtype":"energy",
+                "damageAmount":2,
+                "damageVariance":8,
+                "hits":9,
+                "unblockable":false,
+                "undodgeable":true,
+                "recoverFrames":20,
+                "rangeMin":0,
+                "rangeMax":3,
+                "accuracy":0.5,
+                "fireEffect":"SEMShotGunEffect",
+                "sounds":
+                [
+                    {
+                        "name":"fire",
+                        "file":"models/projectiles/plasma_fire.wav"
+                    }
+                ],
+                "criticalBonus":
+                [
+                    {
+                        "attribute":"dexterity",
+                        "scale":0.25
+                    }
+                ],
+                "accuracyBonus":
+                [
+                    {
+                        "attribute":"strength",
+                        "scale":0.45
+                    }
+                ]
+            },
+            "description":"Old Solarian Empire Military issue plasma shotgun.  Super heated plasma bolts are meant to penetrate even the toughest of armors."
+        },
+        {
+            "name":"shot5",
+            "displayName":"Shadow Shot",
+            "model":"models/equipment/blaster/shadow_shot.model",
+            "icon":"models/equipment/blaster/shadow_shot_icon.png",
+            "twoHanded":1,
+            "cost":24000,
+            "type":"item",
+            "attach":"item",
+            "equips":"hand",
+            "action":"shoot",
+            "usage":"attack",
+            "cooldown":150,
+            "staminaCost":50,
+            "altAction":"block",
+            "altUsage":"block",
+            "altCooldown":0,
+            "altStaminaCost":15,
+            "trains":
+            [
+                "dexterity",
+                "strength"
+            ],
+            "armor":
+            [
+                {
+                    "damageType":"physical",
+                    "scale":0.5
+                },
+                {
+                    "damageType":"energy",
+                    "scale":0.5
+                },
+                {
+                    "damageType":"magic",
+                    "scale":0.4
+                }
+            ],
+            "attack":
+            {
+                "action":"shoot",
+                "damageType":"energy",
+                "damageSubtype":"energy",
+                "damageAmount":3,
+                "damageVariance":12,
+                "hits":10,
+                "unblockable":false,
+                "undodgeable":true,
+                "recoverFrames":20,
+                "rangeMin":0,
+                "rangeMax":3,
+                "accuracy":0.2,
+                "fireEffect":"ShadowShotGunEffect",
+                "sounds":
+                [
+                    {
+                        "name":"fire",
+                        "file":"models/projectiles/plasma_fire.wav"
+                    }
+                ],
+                "criticalBonus":
+                [
+                    {
+                        "attribute":"dexterity",
+                        "scale":0.25
+                    }
+                ],
+                "accuracyBonus":
+                [
+                    {
+                        "attribute":"strength",
+                        "scale":0.5
+                    }
+                ]
+            },
+            "description":"Experimental plasma shotgun using an Ancient power source.  This doesn't appear to be stable as it shakes violently as it powers up, requiring greater strength to control.  Damage output is frightening."
+        },
+        {
             "name":"shield1",
             "displayName":"Steel Buckler",
             "model":"models/equipment/round_shield/round_shield.model",
             "icon":"models/equipment/round_shield/shield_icon.png",
             "cost":60,
+            "staminaCost":10,
             "type":"item",
             "equips":"hand",
             "action":"block",
@@ -1059,15 +1459,6 @@
             "description":"Trousers made from light, but strong fibers to provide some protection against a range of damage types."
         },
         {
-            "name":"flashlight",
-            "cost":50,
-            "displayName":"Flashlight",
-            "unique":1,
-            "icon":"models/objects/flashlight.png",
-            "type":"item",
-            "description":"A flashlight with a bent head meant to be worn instead of held.  Very usefulf for exploring the dark dungeons"
-        },
-        {
             "name":"stinger",
             "displayName":"Scorpion Stinger",
             "icon":"images/items/scorpion_tail.png",
@@ -1170,7 +1561,7 @@
         {
             "name":"bio_heal",
             "displayName":"Bio Heal",
-            "icon":"images/effects/flame_bolt_icon.png",
+            "icon":"images/effects/bioheal.png",
             "unique":1,
             "spheres":["biomancy"],
             "type":"spell",
@@ -1179,9 +1570,9 @@
             "action":"cast",
             "usage":"effect",
             "manaCost":15,
-            "power":0.2,
-            "duration":500,
             "cooldown":100,
+            "effect":"statusEffect",
+            "statusEffect":"bioheal",
             "trains":
             [
                 "mind"
@@ -1235,6 +1626,62 @@
                 ]
             },
             "description":"A basic combat spell that shoots a bolt of flame forwards."
+        },
+        {
+            "name":"stun_bolt",
+            "displayName":"Stun Bolt",
+            "icon":"images/effects/static_bolt_icon.png",
+            "unique":1,
+            "spheres":["technomancy"],
+            "type":"spell",
+            "cost":150,
+            "equips":"spell",
+            "action":"cast",
+            "usage":"spell",
+            "manaCost":5,
+            "trains":
+            [
+                "focus"
+            ],
+            "attack":
+            {
+                "action":"cast",
+                "damageType":"magic",
+                "damageSubtype":"energy",
+                "bonusTypes":
+                [
+                    "machine"
+                ],
+                "bonusDamage":5,
+                "damageAmount":0,
+                "damageVariance":2,
+                "hits":1,
+                "unblockable":false,
+                "undodgeable":false,
+                "recoverFrames":20,
+                "rangeMin":0,
+                "rangeMax":10,
+                "accuracy":0.85,
+                "projectile":"stun_bolt1",
+                "statusTypeFilter":"machine",
+                "statusEffect":"stunned",
+                "statusChance":0.25,
+                "damageBonus":
+                [   
+                    {
+                        "attribute":"focus",
+                        "scale":0.01
+                    }
+                ],
+                "accuracyBonus":
+                [
+                    {
+                        "attribute":"dexterity",
+                        "scale":0.25
+                    }
+                ]
+            },
+            "description":"A basic combat spell will stun and deal minor damage.  Most effective against machines."
         },
         {
             "name":"mana_bolt",
@@ -1299,30 +1746,59 @@
             "equips":"spell",
             "action":"cast",
             "usage":"effect",
-            "effect":"player_magic_shield",
+            "effect":"statusEffect",
+            "statusEffect":"player_magic_shield",
             "manaCost":15,
             "cooldown":100,
-            "armor":
-            [
-                {
-                    "damageType":"physical",
-                    "soak":4
-                },
-                {
-                    "damageType":"energy",
-                    "soak":3
-                },
-                {
-                    "damageType":"magic",
-                    "soak":2
-                }
-            ],
-            "duration":500,
             "trains":
             [
                 "mind"
             ],
             "description":"A basic defense spell that creates a temporary barrier that reduced damage received."
+        },
+        {
+            "name":"static_charge",
+            "displayName":"Static Charge",
+            "icon":"images/effects/static_charge.png",
+            "unique":1,
+            "color":[255,255,100,64],
+            "spheres":["sorcery"],
+            "cost":150,
+            "type":"spell",
+            "equips":"spell",
+            "action":"cast",
+            "usage":"effect",
+            "effect":"statusEffect",
+            "statusEffect":"extra_melee_attack",
+            "manaCost":15,
+            "cooldown":100,
+            "trains":
+            [
+                "mind"
+            ],
+            "description":"This spell enchants the other hand weapon to deal additional damage on hit."
+        },
+        {
+            "name":"overcharge",
+            "displayName":"Overcharge",
+            "icon":"images/effects/overcharge.png",
+            "unique":1,
+            "color":[255,255,100,64],
+            "spheres":["sorcery"],
+            "cost":150,
+            "type":"spell",
+            "equips":"spell",
+            "action":"cast",
+            "usage":"effect",
+            "effect":"statusEffect",
+            "statusEffect":"overcharge",
+            "manaCost":15,
+            "cooldown":100,
+            "trains":
+            [
+                "mind"
+            ],
+            "description":"This spell enchants your ranged weapon to deal 25% additional damage."
         },
         {
             "name":"technomancy",
@@ -1347,14 +1823,6 @@
             "type":"skill",
             "unique":1,
             "description":"You have focused your study of magic on the interaction between energy and matter.  What our primitive ancestors understood as the four elements of earth, water, air, and fire, you understand at a deeper level."
-        },
-        {
-            "name":"wizardry",
-            "displayName":"Wizardry",
-            "icon":"images/effects/magic_shield.png",
-            "type":"skill",
-            "unique":1,
-            "description":"You have dedicated your studies to the purest understanding of the nature of magic itself.  Of course it is well known to be an application of modern technology, but you see it for its potential.  You can wield thaumic particles unlike no other.  You do not need another vessel to give magic form and function."
         },
         {
             "name":"focus_shot",

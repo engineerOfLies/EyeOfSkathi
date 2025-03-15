@@ -22,6 +22,11 @@
         "sightRange":15,
         "lookHeight":0.65,
         "damageEffect":"botDamageEffect",
+        "types":
+        [
+            "machine",
+            "drone"
+        ],
         "huntLimit":15
     },
     "sounds":

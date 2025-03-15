@@ -328,26 +328,6 @@
                             "align" : "middle",
                             "style":"H5"
                         }
-                    },
-                    {
-                        "type": "button",
-                        "name":"flash_light",
-                        "id" : 14,
-                        "canHasFocus":true,
-                        "sound":"confirm",
-                        "color": [0,192,192,255],
-                        "highColor": [0,255,255,255],
-                        "pressColor": [0,128,128,255],
-                        "bounds": [0,0,1,32],
-                        "label":
-                        {
-                            "type": "label",
-                            "bounds": [0,0,1,32],
-                            "text":"Toggle Flashlight",
-                            "justify" : "left",
-                            "align" : "middle",
-                            "style":"H5"
-                        }
                     }
                 ]
             },
@@ -482,15 +462,6 @@
                         "bounds": [0,0,1,32],
                         "name":"right_action_button",
                         "text":"L",
-                        "justify" : "left",
-                        "align" : "middle",
-                        "style":"H5"
-                    },
-                    {
-                        "type": "label",
-                        "bounds": [0,0,1,32],
-                        "name":"flash_light_button",
-                        "text":"F",
                         "justify" : "left",
                         "align" : "middle",
                         "style":"H5"

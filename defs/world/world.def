@@ -134,7 +134,7 @@
                     "playerSpawn":[17,16,0],
                     "rotation":0,
                     "target":"defs/dungeons/east_central_mountain_pass.def",
-                    "enter":"level_1",
+                    "enter":"level_3",
                     "enterId":1
                 }
             },

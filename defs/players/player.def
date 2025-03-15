@@ -6,9 +6,9 @@
     "bodyGear":"models/player/human_upper_default.model",
     "legGear":"models/player/human_lower_default.model",
     "color":[255,255,255,255],
-    "speedMax":0.075,
+    "speedMax":0.085,
     "solid":1,
-    "turnSpeedMax":0.075,
+    "turnSpeedMax":0.085,
     "health":100,
     "sounds":
     [

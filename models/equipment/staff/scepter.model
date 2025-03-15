@@ -1,0 +1,8 @@
+{
+    "model":
+    {
+        "obj":"models/equipment/staff/scepter.obj",
+        "texture":"models/equipment/staff/scepter_skin.png",
+        "materialFile":"models/equipment/equipment.material"
+    }
+}

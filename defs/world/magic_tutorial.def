@@ -1,0 +1,35 @@
+{
+    "sequence":
+    [
+        {
+            "title":"Magic Basics",
+            "background":"images/tutorials/magic_equipment.png",
+            "dialog":"In order to cast magic in Eye of Skathi, you will need a magical Catalyst (in this case a Steel Wand) and know one or more spells.  The Technomancer classes start with these, but anyone can learn magic and find a catalyst in the game.  The Catalyst will determine how many slots you have for casting spells.  In this case, the Steel Wand provides 2 Spell Slots."
+        },
+        {
+            "title":"Spells",
+            "background":"images/tutorials/spell_screen.png",
+            "dialog":"Players learn spells at character creation, from purchasing them at a magic shop, or they can be found while dungeon exploring.  Combat spells deal damage and status effects to monsters in front of the player.  Support spells give the player temporary boosts like health regeneration, damages bonuses, and extra defense.  Spells have a Mana cost though, and if you don't have enough Mana, you cannot cast the spell."
+        },
+        {
+            "title":"Magic Combat",
+            "background":"images/tutorials/magic_wand.png",
+            "dialog":"In combat you cast a spell by using the wand action.  Here it is equipped to the left action."
+        },
+        {
+            "title":"Spell Slots",
+            "background":"images/tutorials/magic_wand.png",
+            "dialog":"After you select the magic catalyst, the menu changes to show your available spells.  Just like with combat actions, the spell slots correspond to the I,J,K, and L action keys.  Selecting the Spell will cast it."
+        },
+        {
+            "title":"Spells",
+            "background":"images/tutorials/combat_spell.png",
+            "dialog":"Here a flame bolt spell has just been cast.  You can see some mana has been spent and the fire bolt has appeared in front of the player.  This spell will deal fire damage to the enemy."
+        },
+        {
+            "title":"Mage Stats",
+            "background":"images/tutorials/mage_stats.png",
+            "dialog":"There are two key attributes for a spell caster: Focus and MIND.  Together these stats will determine how much Mana the player has available.  Individual spells will use these in different way to increase the power and duration of spells.  Typically Focus helps with direct action spells, while MIND affects defensive and general spell duration."
+        }
+    ]
+}

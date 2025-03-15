@@ -21,6 +21,11 @@
         "sightRange":10,
         "lookHeight":0.25,
         "damageEffect":"slimeDamageEffect",
+        "types":
+        [
+            "amorphous",
+            "biological"
+        ],
         "huntLimit":15
     },
     "sounds":

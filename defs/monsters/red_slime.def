@@ -22,6 +22,11 @@
         "sightRange":10,
         "lookHeight":0.25,
         "damageEffect":"redslimeDamageEffect",
+        "types":
+        [
+            "amorphous",
+            "biological"
+        ],
         "huntLimit":15
     },
     "armor":
@@ -77,6 +82,11 @@
             "damageSubtype":"impact",
             "damageFrame":55,
             "damageAmount":8,
+            "statusEffect":"poison",
+            "statusChance":0.1,
+            "statusPower":0.2,
+            "statusDuration":50,
+            "statusDelay":3600,
             "unblockable":false,
             "undodgeable":false,
             "recoverFrames":20,

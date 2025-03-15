@@ -1,0 +1,8 @@
+{
+    "model":
+    {
+        "obj":"models/tiles/event_horizon.obj",
+        "texture":"models/tiles/event_horizon.png",
+        "materialFile":"models/tiles/dungeon_tile.material"
+    }
+}

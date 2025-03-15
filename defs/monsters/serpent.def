@@ -23,6 +23,11 @@
         "sightRange":12,
         "lookHeight":0.35,
         "damageEffect":"serpentDamageEffect",
+        "types":
+        [
+            "reptile",
+            "biological"
+        ],
         "huntLimit":12
     },
     "sounds":
@@ -69,6 +74,11 @@
             "damageFrame":61,
             "damageAmount":25,
             "hits":1,
+            "statusEffect":"poison",
+            "statusChance":0.1,
+            "statusPower":0.75,
+            "statusDuration":75,
+            "statusDelay":3600,
             "unblockable":false,
             "undodgeable":false,
             "recoverFrames":20,
@@ -83,6 +93,11 @@
             "damageType":"physical",
             "hits":1,
             "damageAmount":46,
+            "statusEffect":"poison",
+            "statusChance":0.1,
+            "statusPower":0.25,
+            "statusDuration":50,
+            "statusDelay":3600,
             "recoverFrames":25,
             "unblockable":false,
             "undodgeable":false,

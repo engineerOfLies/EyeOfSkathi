@@ -1,0 +1,17 @@
+{
+    "window":
+    {
+        "name":"novel",
+        "dimensions" : [0,1,1,1],
+        "no_draw_generic":true,
+        "elements":
+        [
+            {
+                "type": "button",
+                "sound":"confirm",
+                "name": "cancel",
+                "hotkey":"close"
+            }
+        ]
+    }
+}

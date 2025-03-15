@@ -44,6 +44,15 @@
             "solid":true,
             "model":"models/tiles/tech_window.model",
             "description":"A Window"
+        },
+        {
+            "name":"Planetary Gate",
+            "index":7,
+            "alignToFloor":true,
+            "solid":false,
+            "floor":true,
+            "model":"models/tiles/planet_gate.model",
+            "description":"Used to transport to another location"
         }
     ]
 }

@@ -60,7 +60,7 @@
                             ]
                         },
                         {
-                            "name":"Like most Soldiers, I was a pretty good with a shot.",
+                            "name":"Like most Soldiers, I was a pretty good with a shotgun.",
                             "classname":"Soldier",
                             "strength":1,
                             "dexterity":1,
@@ -187,7 +187,8 @@
                                 "blaster1",
                                 "technomancy",
                                 "wand1",
-                                "magic_shield",
+                                "stun_bolt",
+                                "overcharge",
                                 "robe1",
                                 "trousers1"
                             ]
@@ -202,8 +203,9 @@
                             [
                                 "dagger1",
                                 "biomancy",
-                                "bio_heal",
                                 "wand1",
+                                "bio_heal",
+                                "magic_shield",
                                 "robe1",
                                 "trousers1"
                             ]
@@ -220,22 +222,7 @@
                                 "sorcery",
                                 "wand1",
                                 "flame_bolt",
-                                "robe1",
-                                "trousers1"
-                            ]
-                        },
-                        {
-                            "name":"As a Wizard, I study magic itself.",
-                            "classname":"Wizard",
-                            "dexterity":1,
-                            "mind":1,
-                            "focus":2,
-                            "giveItems":
-                            [
-                                "dagger1",
-                                "wizardry",
-                                "wand1",
-                                "mana_bolt",
+                                "static_charge",
                                 "robe1",
                                 "trousers1"
                             ]

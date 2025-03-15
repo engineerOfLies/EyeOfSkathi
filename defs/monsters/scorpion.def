@@ -23,6 +23,11 @@
         "sightRange":12,
         "lookHeight":0.35,
         "damageEffect":"scorpionDamageEffect",
+        "types":
+        [
+            "insect",
+            "biological"
+        ],
         "huntLimit":12
     },
     "sounds":
@@ -68,6 +73,11 @@
             "damageSubtype":"slash",
             "damageFrame":43,
             "damageAmount":18,
+            "statusEffect":"poison",
+            "statusChance":0.1,
+            "statusPower":0.25,
+            "statusDuration":50,
+            "statusDelay":3600,
             "hits":1,
             "unblockable":false,
             "undodgeable":false,

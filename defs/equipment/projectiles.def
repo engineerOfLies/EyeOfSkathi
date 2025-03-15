@@ -55,6 +55,35 @@
             ]
         },
         {
+            "name":"shot_bolt1",
+            "displayName":"Blaster Bolt",
+            "speedMax":0.3,
+            "color":[100,255,255,128],
+            "impactEffect":"blasterImpactEffect",
+            "ttl":2,
+            "sounds":
+            [
+                {
+                    "name":"shoot",
+                    "file":"models/projectiles/plasma_fire.wav"
+                },
+                {
+                    "name":"impact",
+                    "file":"sounds/effects/blaster_impact.wav"
+                }
+            ],
+            "light":
+            {
+                "color":[100,255,255,255],
+                "direction":[0,1,0,0],
+                "position":[0,0,0,1],
+                "ambientCoefficient":0.02,
+                "attenuation":0.5,
+                "angle":0,
+                "brightness":2
+            }
+        },
+        {
             "name":"blaster_bolt2",
             "displayName":"Blaster Bolt",
             "speedMax":0.3,
@@ -339,8 +368,8 @@
             "displayName":"Flame Bolt",
             "speedMax":0,
             "acceleration":0.02,
-            "color":[250,100,0,128],
-            "model":"models/projectiles/blaster_bolt.model",
+            "color":[250,100,0,255],
+            "model":"models/projectiles/flame_bolt.model",
             "ttl":20,
             "bounds":
             {
@@ -394,6 +423,40 @@
             "light":
             {
                 "color":[0,128,128,128],
+                "direction":[0,1,0,0],
+                "position":[0,0,0,1],
+                "ambientCoefficient":0.02,
+                "attenuation":0.5,
+                "angle":0,
+                "brightness":2
+            }
+        },
+        {
+            "name":"stun_bolt1",
+            "displayName":"Stun Bolt",
+            "speedMax":0,
+            "acceleration":0.02,
+            "color":[128,128,0,128],
+            "model":"models/projectiles/magic_bolt.model",
+            "ttl":20,
+            "bounds":
+            {
+                "sphere":
+                {
+                    "c":[0,0,0.5],
+                    "r":0.35
+                }
+            },
+            "sounds":
+            [
+                {
+                    "name":"shoot",
+                    "file":"models/projectiles/charge_release.wav"
+                }
+            ],
+            "light":
+            {
+                "color":[128,128,0,128],
                 "direction":[0,1,0,0],
                 "position":[0,0,0,1],
                 "ambientCoefficient":0.02,

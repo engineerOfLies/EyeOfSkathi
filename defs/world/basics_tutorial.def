@@ -1,0 +1,35 @@
+{
+    "sequence":
+    [
+        {
+            "title":"Movement Basics",
+            "background":"images/tutorials/combat_screen.png",
+            "dialog":"This is the combat view in Eye Of Skathi.  Here you can see the dungeon from the player's perspective.  You can move around with the WASD keys on the keyboard to move Forward, Strafe Left, Back, and Strafe Right respectively.  Turn to the right with E, and to the Left with Q."
+        },
+        {
+            "title":"Actions",
+            "background":"images/tutorials/combat_screen_combat_rose.png",
+            "dialog":"In Red, you will see the actions available to you.  The buttons I,J,K, and L correspond to the actions in the top,left, bottom, and right panels accordingly.  Two of them, Items and Dodge, are always avaialable.  The other two represent the weapons you have equipped to your left and right hands.  This menu may change with actions chosen."
+        },
+        {
+            "title":"Stats",
+            "background":"images/tutorials/combat_screen_stats.png",
+            "dialog":"In Red, you will see your live stats.  The top bar in red is your Health.  When it drops to nothing, your character dies and your journey with them ends.  The green bar shows your stamina.  Stamina is spent to perform physical actions.  It recovers quickly.  In blue is your Mana, your reserve of magical power.  It is used to cast spells if you know any."
+        },
+        {
+            "title":"Messages",
+            "background":"images/tutorials/combat_screen_messages.png",
+            "dialog":"In Red, you will see your messages.  This box will fill up with important information about what is going on in the game.  Pay attention, it will tell you when you level up!"
+        },
+        {
+            "title":"Options",
+            "background":"images/tutorials/options_menu.png",
+            "dialog":"If you hit F1, you can call up the options menu.  Navigate with WASD, Select with K and cancel with L.  From here you can change your character's equipment, view and upgrade attributes, View your inventory and save your progress and quit the game."
+        },
+        {
+            "title":"Interact",
+            "background":"images/tutorials/interact_button.png",
+            "dialog":"Keep in mind that you can interact with the world with the U key.  This will let you talk to people, open chests and doors, use terminals, rest at a bed, and many other things."
+        }
+    ]
+}
